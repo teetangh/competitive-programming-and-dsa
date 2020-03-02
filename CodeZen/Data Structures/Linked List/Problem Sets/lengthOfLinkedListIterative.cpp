@@ -1,17 +1,16 @@
 #include <iostream>
 #include "FINALLinkedList.hpp"
 
-void printIthNode(Node *head, int i)
+int length(Node *head)
 {
-
-    for (int j = 0; j < i; j++)
+    int count = 0;
+    // Node * temp = head;
+    while (head != NULL)
     {
+        ++count;
         head = head->next;
-        if (head == NULL)
-            return;
     }
-
-    cout << head->data;
+    return count;
 }
 
 int main()
@@ -19,6 +18,6 @@ int main()
     Node *head = takeInput_Better();
     int pos;
     cin >> pos;
-    printIthNode(head, pos);
+    cout << length(head);
     return 0;
 }

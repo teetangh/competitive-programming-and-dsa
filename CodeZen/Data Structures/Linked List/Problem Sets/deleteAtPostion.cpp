@@ -32,7 +32,7 @@ Node *deleteNode(Node *head, int i)
 
 int main()
 {
-    Node *head = takeInput();
+    Node *head = takeInput_Better();
     int pos;
     cin >> pos;
     head = deleteNode(head, pos);
