@@ -4,11 +4,20 @@ using namespace std;
 
 void print(Node *head)
 {
-    while (head->next != NULL)
+    Node *temp = head;
+
+    while (temp != NULL)
     {
-        cout << head->data;
-        head = head->next;
+        cout << temp->data << " ";
+        temp = temp->next;
     }
+
+    // temp = head;
+    // while (temp != NULL)
+    // {
+    //     cout << temp->data << " ";
+    //     temp = temp->next;
+    // }
 }
 
 int main()
@@ -28,5 +37,6 @@ int main()
     n4.next = &n5;
 
     // Printing the Linked List
+    print(head);
     print(head);
 }
