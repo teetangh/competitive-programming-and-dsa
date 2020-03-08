@@ -33,8 +33,23 @@ public:
     {
         if (size == capacity)
         {
-            cout << "Queue Full" << endl;
-            return;
+            T *newData = new T[2 * capacity];
+            int j = 0;
+            for (int i = firstIndex; i < capacity;)
+            {
+                newData[j++] = data[i++];
+            }
+            for (int i = 0; i < firstIndex;)
+            {
+                newData[j++] = data[i++];
+            }
+            delete[] data;
+            data = newData;
+            firstIndex = 0;
+            nextIndex = capacity;
+            capacity *= 2;
+            // cout << "Queue Full" << endl;
+            // return;
         }
         data[nextIndex] = element;
         nextIndex = (nextIndex + 1) % capacity;
