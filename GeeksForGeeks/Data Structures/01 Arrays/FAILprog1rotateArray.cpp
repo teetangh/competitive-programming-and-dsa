@@ -19,7 +19,7 @@ int main()
         for (j = 0; j < positions; j++)
         {
             int temp = myVec[i][1];
-            for (int k = 1; k <= size; k++)
+            for (int k = 1; k < size; k++)
                 myVec[i][k] = myVec[i][k + 1];
             myVec[i][k] = temp;
         }
