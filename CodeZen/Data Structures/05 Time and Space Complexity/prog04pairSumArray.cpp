@@ -54,17 +54,31 @@ void pairSum(int input[], int size, int x)
      * Print the output and don't return it.
      * Taking input is handled automatically.
      */
-    for (int i = 0; i < size; i++)
+    mergeSort(input, size);
+    int i = 0;
+    int j = size - 1;
+
+    int Jcounter = 0;
+
+    while (i < j)
     {
-        for (int j = i; j < size; j++)
+        // cout << " i= " << i << " j= " << j << " JCounter= " << Jcounter << endl;
+        if (input[i] + input[j] < x)
+            i++;
+        else if (input[i] + input[j] > x)
+            j--;
+
+        else if (input[i] + input[j] == x)
         {
-            if (input[i] + input[j] == x)
+            Jcounter++;
+            cout << input[i] << " " << input[j] << endl;
+            if (input[i] + input[j - 1] != x)
             {
-                if (input[i] <= input[j])
-                    cout << input[i] << " " << input[j] << endl;
-                else if (input[j] < input[i])
-                    cout << input[j] << " " << input[i] << endl;
+                j = j + Jcounter;
+                i++;
+                Jcounter = 0;
             }
+            j--;
         }
     }
 }
