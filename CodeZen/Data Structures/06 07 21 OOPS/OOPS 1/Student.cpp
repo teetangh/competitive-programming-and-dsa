@@ -51,4 +51,9 @@ public:
     {
         rollNumber = r;
     }
+
+    ~Student()
+    {
+        cout << " my student destructor called" << endl;
+    }
 };
