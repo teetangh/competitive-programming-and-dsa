@@ -58,6 +58,12 @@ void FindTriplet(int arr[], int size, int x)
      * Taking input is handled automatically.
      */
     mergeSort(arr, size);
+
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i];
+    }
+
     for (int i = 0; i < size - 2; i++)
     {
         for (int j = i + 1; j < size - 1; j++)
