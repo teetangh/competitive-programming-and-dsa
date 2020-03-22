@@ -8,6 +8,25 @@ private:
     int rollNumber;
 
 public:
+    // Default Constructor
+    Student()
+    {
+        cout << "Default Constructor called" << endl;
+    }
+    Student(int rollNumber)
+    {
+        cout << "Parametrized Constructor called" << endl;
+        cout << " this " << this << endl;
+        this->rollNumber = rollNumber;
+    }
+    Student(int age, int rollNUmber)
+    {
+        cout << "Parametrized Constructor 2 called" << endl;
+        cout << " this " << this << endl;
+        this->age = age;
+        this->rollNumber = rollNumber;
+    }
+
     void display()
     {
         cout << " age is " << age << " rollnumber is " << rollNumber << endl;

@@ -68,7 +68,7 @@ void FindTriplet(int arr[], int size, int x)
     {
         for (int j = i + 1; j < size - 1; j++)
         {
-            for (int k = j + 1; i < size; k++)
+            for (int k = j + 1; k < size; k++)
             {
                 if (arr[i] + arr[j] + arr[k] == x)
                 {
