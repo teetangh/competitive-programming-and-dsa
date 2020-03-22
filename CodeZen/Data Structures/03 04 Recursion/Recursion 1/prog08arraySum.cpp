@@ -2,7 +2,7 @@
 // #include "Solution.h"
 using namespace std;
 
-int power(int x, int n)
+int sum(int input[], int n)
 {
     /* Don't write main().
      Don't read input, it is passed as function argument.
@@ -10,17 +10,24 @@ int power(int x, int n)
      Taking input and printing output is handled automatically.
   */
     if (n == 0)
-        return 1;
+        return 0;
     else if (n == 1)
-        return x;
+        return input[n - 1];
     else
-        return x * power(x, n - 1);
+        return input[0] + sum(input + 1, n - 1);
 }
 
 int main()
 {
-    int x, n;
-    cin >> x >> n;
+    int n;
+    cin >> n;
 
-    cout << power(x, n) << endl;
+    int *input = new int[n];
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> input[i];
+    }
+
+    cout << sum(input, n) << endl;
 }
