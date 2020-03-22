@@ -10,23 +10,26 @@ int main(int argc, char const *argv[])
 
     Student s3, s4, s5;
 
-    s1.age = 24;
-    s1.rollNumber = 101;
+    s1.setAge(24, 123);
+    s1.setrollNumber(101);
 
-    cout << s1.age << endl;
-    cout << s1.rollNumber << endl;
+    cout << " S1 age " << s1.getAge() << endl;
+    cout << " S1 Roll Number " << s1.getRollNumber() << endl;
+    s1.display();
 
-    s2.age = 30;
+    s2.setAge(24, 123);
+    s2.display();
 
     // Create Objects Dynamically
     Student *s6 = new Student;
-    (*s6).age = 25;
-    (*s6).rollNumber = 105;
+    (*s6).setAge(25, 123);
+    (*s6).setrollNumber(105);
 
-    s6->age = 25;
-    s6->rollNumber = 105;
+    s6->setAge(25, 123);
+    s6->setrollNumber(105);
 
-    cout << s6->age << endl;
-    cout << s6->rollNumber << endl;
+    cout << s6->getAge() << endl;
+    cout << s6->getRollNumber() << endl;
+    s6->display();
     return 0;
 }
