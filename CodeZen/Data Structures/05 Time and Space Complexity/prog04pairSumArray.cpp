@@ -70,15 +70,47 @@ void pairSum(int input[], int size, int x)
 
         else if (input[i] + input[j] == x)
         {
-            Jcounter++;
-            cout << input[i] << " " << input[j] << endl;
-            if (input[i] + input[j - 1] != x)
+
+            if (input[i] != input[j])
             {
-                j = j + Jcounter;
-                i++;
-                Jcounter = 0;
+
+                Jcounter++;
+                cout << input[i] << " " << input[j] << endl;
+                if (input[i] + input[j - 1] != x)
+                {
+                    j = j + Jcounter;
+                    i++;
+                    Jcounter = 0;
+                }
+
+                //  i++;
+
+                j--;
             }
-            j--;
+
+            else
+            {
+                // input [i] == input[j] can only occur in the middle
+                int a = input[i];
+
+                int ctr = 0;
+
+                // Incrementing the total number of such duplicate elements in mid sorted array
+                for (int k = i; k <= j; k++)
+                {
+                    if (input[i] == a)
+                        ctr++;
+                }
+
+                // Calculating ctr-C-2
+                int s = (ctr * (ctr - 1)) / 2;
+
+                // Printing out the pair in the end
+                for (int k = 0; k < s; k++)
+                    cout << a << " " << a << endl;
+
+                break;
+            }
         }
     }
 }
