@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "Student.cpp"
+#include "include/Student.hpp"
 
 int main(int argc, char const *argv[])
 {

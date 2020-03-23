@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "Student.cpp"
+#include "include/Student.hpp"
 
 int main(int argc, char const *argv[])
 {
@@ -12,8 +12,8 @@ int main(int argc, char const *argv[])
     Student s4(s3);      // Copy Constructor
 
     s1 = s2; // Copy assignment operator
-    
+
     // Internally Copy assignment operator called
-    Student s5;     
-    s5 = s4;    
+    Student s5;
+    s5 = s4;
 }
