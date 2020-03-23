@@ -31,24 +31,21 @@ public:
         this->numerator /= gcd;
         this->denominator /= gcd;
     }
+
+    // WITHOUT OPERATOR OVERLOADING
     // f1 = f1 + f2
-    Fraction add(Fraction const &f2)
+    void add(Fraction const &f2)
     {
         int lcm = denominator * f2.denominator;
-        // cout << " DEBUG: lcm is " << lcm << endl;
         int x = lcm / denominator;
-        // cout << " DEBUG: x is " << x << endl;
         int y = lcm / f2.denominator;
-        // cout << " DEBUG: y is " << y << endl;
-
         int num = (x * numerator) + (y * f2.numerator);
         numerator = num;
         denominator = lcm;
-
-        // this->simplify();
         simplify();
     }
 
+    // WITHOUT OPERATOR OVERLOADING
     // f1=f1*f2
     void multiply(Fraction const &f2)
     {
@@ -57,5 +54,31 @@ public:
         simplify();
     }
 
-    // ~Fraction();
+    // Operator Overloading
+    // fNew = f1 + f2
+    Fraction operator+(Fraction const &f2)
+    {
+        int lcm = denominator * f2.denominator;
+        int x = lcm / denominator;
+        int y = lcm / f2.denominator;
+
+        int num = (x * numerator) + (y * f2.numerator);
+        // numerator = num;
+        // denominator = lcm;
+
+        Fraction fNew(num, lcm);
+        fNew.simplify();
+        return fNew;
+    }
+
+    // Operator Overloading
+    // fNew = f1 * f2
+    Fraction operator*(Fraction const &f2)
+    {
+        int n = numerator * f2.numerator;
+        int d = denominator * f2.denominator;
+        Fraction fNew(n, d);
+        fNew.simplify();
+        return fNew;
+    }
 };
