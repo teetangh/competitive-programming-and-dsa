@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "Student.cpp"
+#include "Student.hpp"
 
 int main()
 {
@@ -11,5 +11,5 @@ int main()
     Student s2(s1);
     s2.name[0] = 'x';
     s2.display();
-    s1.display();   //Shallow Copy constructor
+    s1.display(); //Shallow Copy constructor
 }
