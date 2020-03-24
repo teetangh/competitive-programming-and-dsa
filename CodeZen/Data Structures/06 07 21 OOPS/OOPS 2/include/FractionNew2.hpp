@@ -82,8 +82,10 @@ public:
         return fNew;
     }
 
+    // Operator Overloading
     bool operator==(Fraction const &f2) const
     {
         return (numerator == f2.numerator && denominator == f2.denominator);
     }
+
 };
