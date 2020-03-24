@@ -13,4 +13,12 @@ int main()
     f2.print();
     f4.print();
     // f3.print();
+
+    Fraction f5 = f1 * f2;
+    f5.print();
+
+    if (f1 == f2)
+        cout << " equal " << endl;
+    else
+        cout << " NOT equal " << endl;
 }

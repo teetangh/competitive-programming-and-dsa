@@ -56,7 +56,7 @@ public:
 
     // Operator Overloading
     // fNew = f1 + f2
-    Fraction operator+(Fraction const &f2)
+    Fraction operator+(Fraction const &f2) const
     {
         int lcm = denominator * f2.denominator;
         int x = lcm / denominator;
@@ -73,12 +73,17 @@ public:
 
     // Operator Overloading
     // fNew = f1 * f2
-    Fraction operator*(Fraction const &f2)
+    Fraction operator*(Fraction const &f2) const
     {
         int n = numerator * f2.numerator;
         int d = denominator * f2.denominator;
         Fraction fNew(n, d);
         fNew.simplify();
         return fNew;
+    }
+
+    bool operator==(Fraction const &f2) const
+    {
+        return (numerator == f2.numerator && denominator == f2.denominator);
     }
 };
