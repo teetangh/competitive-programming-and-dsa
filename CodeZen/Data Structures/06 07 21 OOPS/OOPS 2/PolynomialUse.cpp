@@ -52,6 +52,8 @@ int main()
         second.setCoefficient(degree2[i], coeff2[i]);
     }
 
+    // first.print();
+    // second.print();
     cin >> choice;
 
     switch (choice)

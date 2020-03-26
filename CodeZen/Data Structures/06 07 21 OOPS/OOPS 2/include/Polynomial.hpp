@@ -99,7 +99,7 @@ public:
             {
                 if (this->degCoeff[i] != 0 && P.degCoeff[j] != 0)
                 {
-                    newDegCoeff[i + j] = this->degCoeff[i] * P.degCoeff[i];
+                    newDegCoeff[i + j] += this->degCoeff[i] * P.degCoeff[j];
                 }
             }
         }
