@@ -32,28 +32,33 @@ public:
         this->denominator /= gcd;
     }
 
-    // WITHOUT OPERATOR OVERLOADING
-    // f1 = f1 + f2
-    void add(Fraction const &f2)
+    // WITHOUT Operator Overloading
+    // fNew = f1 + f2
+    Fraction add(Fraction const &f2) const
     {
         int lcm = denominator * f2.denominator;
         int x = lcm / denominator;
         int y = lcm / f2.denominator;
+
         int num = (x * numerator) + (y * f2.numerator);
-        numerator = num;
-        denominator = lcm;
-        simplify();
+        // numerator = num;
+        // denominator = lcm;
+
+        Fraction fNew(num, lcm);
+        fNew.simplify();
+        return fNew;
     }
 
-    // WITHOUT OPERATOR OVERLOADING
-    // f1=f1*f2
-    void multiply(Fraction const &f2)
+    //WITHOUT Operator Overloading
+    // fNew = f1 * f2
+    Fraction multiply(Fraction const &f2) const
     {
-        numerator *= f2.numerator;
-        denominator *= f2.denominator;
-        simplify();
+        int n = numerator * f2.numerator;
+        int d = denominator * f2.denominator;
+        Fraction fNew(n, d);
+        fNew.simplify();
+        return fNew;
     }
-
     // Operator Overloading
     // fNew = f1 + f2
     Fraction operator+(Fraction const &f2) const
@@ -88,4 +93,37 @@ public:
         return (numerator == f2.numerator && denominator == f2.denominator);
     }
 
+    // pre-increment
+    // return by reference so that temporary buffer is not created
+    // and also that nesting increment operators work
+    Fraction &operator++()
+    {
+        numerator = numerator + denominator;
+        simplify();
+        return *this;
+    }
+
+    // Post-increment
+    Fraction operator++(int) // (int) distinguishes it from pre-increment
+    {
+        Fraction fNew(numerator, denominator);
+        numerator = numerator + denominator;
+        simplify();
+        fNew.simplify();
+        return fNew;
+    }
+
+    Fraction &operator+=(Fraction const &f2)
+    {
+        int lcm = denominator * f2.denominator;
+        int x = lcm / denominator;
+        int y = lcm / f2.denominator;
+
+        int num = (x * numerator) + (y * f2.numerator);
+        numerator = num;
+        denominator = lcm;
+
+        simplify();
+        return *this;
+    }
 };
