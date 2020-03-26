@@ -1,5 +1,5 @@
 #include <iostream>
-#include "FINALLinkedList.hpp"
+#include "../include/FINALLinkedList.hpp"
 using namespace std;
 
 Node *insertNode(Node *head, int i, int data)

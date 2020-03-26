@@ -1,5 +1,5 @@
 #include <iostream>
-#include "FINALLinkedList.hpp"
+#include "../include/FINALLinkedList.hpp"
 Node *deleteNode(Node *head, int i)
 {
     Node *temp = head;

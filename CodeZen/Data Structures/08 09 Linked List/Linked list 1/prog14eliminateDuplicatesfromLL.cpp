@@ -1,6 +1,6 @@
 //Eliminate duplicates from a sorted linked list
 #include <iostream>
-#include "CNLinkedList.hpp"
+#include "../include/CNLinkedList.hpp"
 
 node *eliminate_duplicate(node *head)
 {

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "FINALLinkedList.hpp"
+#include "../include/FINALLinkedList.hpp"
 
 int indexOfNIter(Node *head, int n)
 {

@@ -1,6 +1,6 @@
 // Print a given linked list in reverse order. Tail first. You cant change any pointer in the linked list
 #include <iostream>
-#include "CNLinkedList.hpp"
+#include "../include/CNLinkedList.hpp"
 
 void print_linkedlist_spl(node *head)
 {

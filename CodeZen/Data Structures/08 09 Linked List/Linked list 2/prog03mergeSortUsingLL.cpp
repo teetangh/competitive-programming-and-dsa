@@ -1,7 +1,7 @@
 //merge sort recursive
 #include <iostream>
 // #include "CNLinkedList.hpp"
-#include "FINALLinkedList.hpp"
+#include "../include/FINALLinkedList.hpp"
 
 Node *mergeTwoLLs(Node *head1, Node *head2)
 {

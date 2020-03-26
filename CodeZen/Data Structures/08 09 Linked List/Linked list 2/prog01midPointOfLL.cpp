@@ -1,5 +1,5 @@
 #include <iostream>
-#include "CNLinkedList.hpp"
+#include "../include/CNLinkedList.hpp"
 
 node *midpoint_linkedlist(node *head)
 {

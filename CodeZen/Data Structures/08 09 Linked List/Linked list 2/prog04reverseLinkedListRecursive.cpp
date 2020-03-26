@@ -1,5 +1,5 @@
 #include <iostream>
-#include "CNLinkedList.hpp"
+#include "../include/CNLinkedList.hpp"
 
 node *reverse_linked_list_rec(node *head)
 {

@@ -1,6 +1,6 @@
 //Append the last n elements of a linked list to the front
 #include <iostream>
-#include "CNLinkedList.hpp"
+#include "../include/CNLinkedList.hpp"
 
 int lengthOfLL(node *head)
 {

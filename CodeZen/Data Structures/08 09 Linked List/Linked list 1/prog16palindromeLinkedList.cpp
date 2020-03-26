@@ -1,6 +1,6 @@
 //Check if a linked list is a palindrome
 #include <iostream>
-#include "CNLinkedList.hpp"
+#include "../include/CNLinkedList.hpp"
 
 node *returnReverseLinkedList(node *head)
 {

@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "Node.cpp"
+#include "../include/Node.cpp"
 
 void print(Node *head)
 {
