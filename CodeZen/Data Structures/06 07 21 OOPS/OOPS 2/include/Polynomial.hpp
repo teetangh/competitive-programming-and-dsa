@@ -48,7 +48,7 @@ public:
     Polynomial setCoefficient(int degree, int coefficient)
     {
         int *newDegCoeff;
-        while (this->capacity < degree)
+        while (this->capacity <= degree)
         {
             newDegCoeff = (int *)calloc(2 * capacity, sizeof(int));
             for (int i = 0; i < capacity; i++)
@@ -68,10 +68,15 @@ public:
     {
         Polynomial pNew;
         pNew.capacity = max(this->capacity, P.capacity);
-        for (int i = 0; i < pNew.capacity; i++)
-        {
-            pNew.degCoeff[i] = this->degCoeff[i] + P.degCoeff[i];
-        }
+        pNew.degCoeff = (int *)calloc(pNew.capacity, sizeof(int));
+        for (int i = 0; i < this->capacity; i++)
+            pNew.degCoeff[i] += this->degCoeff[i];
+        for (int i = 0; i < P.capacity; i++)
+            pNew.degCoeff[i] += P.degCoeff[i];
+        // for (int i = 0; i < pNew.capacity; i++)
+        // {
+        //     pNew.degCoeff[i] = this->degCoeff[i] + P.degCoeff[i];
+        // }
         return pNew;
     }
     // -
@@ -79,10 +84,15 @@ public:
     {
         Polynomial pNew;
         pNew.capacity = max(this->capacity, P.capacity);
-        for (int i = 0; i < pNew.capacity; i++)
-        {
-            pNew.degCoeff[i] = this->degCoeff[i] - P.degCoeff[i];
-        }
+        pNew.degCoeff = (int *)calloc(pNew.capacity, sizeof(int));
+        for (int i = 0; i < this->capacity; i++)
+            pNew.degCoeff[i] += this->degCoeff[i];
+        for (int i = 0; i < P.capacity; i++)
+            pNew.degCoeff[i] -= P.degCoeff[i];
+        // for (int i = 0; i < pNew.capacity; i++)
+        // {
+        //     pNew.degCoeff[i] = this->degCoeff[i] + P.degCoeff[i];
+        // }
         return pNew;
     }
 
