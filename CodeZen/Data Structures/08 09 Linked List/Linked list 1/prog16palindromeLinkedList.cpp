@@ -30,7 +30,7 @@ node *createReversedLinkedList(node *head)
     if (head == NULL)
         return NULL;
     else if (head != NULL && head->next == NULL)
-        return NULL;
+        return head;
     else
     {
         node *temp = head;
