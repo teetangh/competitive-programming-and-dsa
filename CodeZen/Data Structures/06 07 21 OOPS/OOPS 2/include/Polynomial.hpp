@@ -56,7 +56,7 @@ public:
                 newDegCoeff[i] = degCoeff[i];
             }
             delete[] degCoeff;
-            newDegCoeff = degCoeff;
+            degCoeff = newDegCoeff;
             capacity *= 2;
         }
         this->degCoeff[degree] = coefficient;
@@ -92,14 +92,14 @@ public:
         Polynomial pNew;
         pNew.capacity = this->capacity + P.capacity;
 
-        int *newDegCoeff = (int *)calloc(pNew.capacity, sizeof(int));
+        pNew.degCoeff = (int *)calloc(pNew.capacity, sizeof(int));
         for (int i = 0; i < this->capacity; i++)
         {
             for (int j = 0; j < P.capacity; j++)
             {
                 if (this->degCoeff[i] != 0 && P.degCoeff[j] != 0)
                 {
-                    newDegCoeff[i + j] += this->degCoeff[i] * P.degCoeff[j];
+                    pNew.degCoeff[i + j] += this->degCoeff[i] * P.degCoeff[j];
                 }
             }
         }
