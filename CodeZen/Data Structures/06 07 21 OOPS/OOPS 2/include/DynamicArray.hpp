@@ -55,7 +55,7 @@ public:
         nextIndex++;
     }
 
-    int gen(int i)
+    int get(int i) const
     {
         if (i < nextIndex)
             return data[i];
@@ -73,7 +73,7 @@ public:
             return;
     }
 
-    void print()
+    void print() const
     {
         for (int i = 0; i < nextIndex; i++)
             cout << data[i] << " ";
