@@ -38,6 +38,8 @@ node *skipMdeleteN(node *head, int M, int N)
 }
 // ---------------------- MY GOOD ONE-------------------------
 
+// ---------------------- HARSH IMPLEMENTATION-------------------------
+
 // node *skipMdeleteN(node *root, int m, int n)
 // {
 //     int cm = 0;
@@ -76,6 +78,7 @@ node *skipMdeleteN(node *head, int M, int N)
 //     }
 //     return root;
 // }
+// ---------------------- HARSH IMPLEMENTATION-------------------------
 
 // ---------------------- MY BAD ONE-------------------------
 

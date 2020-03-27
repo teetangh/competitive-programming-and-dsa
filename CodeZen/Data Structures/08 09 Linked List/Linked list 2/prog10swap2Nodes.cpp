@@ -5,7 +5,7 @@ using namespace std;
 node *swap_nodes(node *head, int i, int j)
 {
     //write your code here
-    
+     
 
 }
 
