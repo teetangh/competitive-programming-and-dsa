@@ -7,7 +7,7 @@ int sumOfNodes(TreeNode<int> *root)
 {
     // EDGE CASE NOT BASE CASE
     if (root == NULL)
-        return;
+        return 0;
     int sum = root->data;
 
     for (int i = 0; i < root->children.size(); i++)
