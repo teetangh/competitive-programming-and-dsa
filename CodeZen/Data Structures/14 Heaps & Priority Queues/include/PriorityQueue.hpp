@@ -58,6 +58,38 @@ public:
         // parentIndex = (childIndex - 1) / 2;
     }
 
+    //Delete from Heap and DOWN-HEAPIFY (or RemoveMin)
+    int removeMin()
+    {
+        // Complete this function
+        int ans = pq[0];
+
+        int parentIndex = 0;
+
+        int leftChildIndex = 2 * parentIndex + 1;
+        int rightChildIndex = 2 * parentIndex + 2;
+
+        int minIndex = parentIndex;
+        while (leftChildIndex && rightChildIndex < pq.size())
+        {
+            int minValue = min(pq[parentIndex], pq[leftChildIndex], pq[rightChildIndex]);
+
+            if (minValue == pq[parentIndex])
+                return ans;
+            else if (minValue == pq[leftChildIndex])
+                minIndex = leftChildIndex;
+            else
+                minIndex = rightChildIndex;
+
+            swap(pq[parentIndex], pq[minIndex]);
+
+            parentIndex = minIndex;
+            leftChildIndex = 2 * parentIndex + 1;
+            rightChildIndex = 2 * parentIndex + 2;
+        }
+        return ans;
+    }
+
     PriorityQueue()
     {
     }
