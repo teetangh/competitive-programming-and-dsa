@@ -5,6 +5,10 @@ using namespace std;
 
 int height(TreeNode<int> *root)
 {
+    // EDGE CASE NOT BASE CASE
+    if (root == NULL)
+        return 0;
+
     int currMaxHeight = 0;
 
     for (int i = 0; i < root->children.size(); i++)

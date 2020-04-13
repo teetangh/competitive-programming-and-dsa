@@ -5,6 +5,9 @@ using namespace std;
 
 int sumOfNodes(TreeNode<int> *root)
 {
+    // EDGE CASE NOT BASE CASE
+    if (root == NULL)
+        return;
     int sum = root->data;
 
     for (int i = 0; i < root->children.size(); i++)
