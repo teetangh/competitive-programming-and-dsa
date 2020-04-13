@@ -6,9 +6,9 @@ class TreeNode
 {
 public:
     T data;
-    vector<TreeNode<> *> children;
+    vector<TreeNode<T> *> children;
     // T is implicit here
-    // vector<TreeNode<T> *> children;
+    // vector<TreeNode<> *> children;
 
     TreeNode(T data)
     {
