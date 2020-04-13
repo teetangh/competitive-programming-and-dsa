@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include "include\TreeNode.hpp"
+#include "TreeNode.hpp"
 using namespace std;
 
 void printLevelWise(TreeNode<int> *root)
@@ -103,4 +103,12 @@ void printTree(TreeNode<int> *root)
     cout << endl;
     for (int i = 0; i < root->children.size(); i++)
         printTree(root->children[i]);
+}
+
+int numNodes(TreeNode<int> *root)
+{
+    int ans = 1;
+    for (int i = 0; i < root->children.size(); i++)
+        ans += numNodes(root->children[i]);
+    return ans;
 }
