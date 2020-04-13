@@ -78,23 +78,3 @@ void printTree(TreeNode<int> *root)
     for (int i = 0; i < root->children.size(); i++)
         printTree(root->children[i]);
 }
-
-int main()
-{
-    //STATICALLY INPUT
-    // TreeNode<int> *root = new TreeNode<int>(1);
-    // TreeNode<int> *node1 = new TreeNode<int>(2);
-    // TreeNode<int> *node2 = new TreeNode<int>(3);
-    // root->children.push_back(node1);
-    // root->children.push_back(node2);
-
-    //DYNAMICALLY INPUT
-    // TreeNode<int> *root = takeInput();
-    // printTree(root);
-
-    //DYNAMICALLY INPUT
-    TreeNode<int> *root = takeInputLevelWise();
-    printTree(root);
-
-    // TODO Delete Tree
-}
