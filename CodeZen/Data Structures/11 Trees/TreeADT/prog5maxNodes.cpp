@@ -10,7 +10,7 @@ TreeNode<int> *maxDataNode(TreeNode<int> *root)
     for (int i = 0; i < root->children.size(); i++)
     {
         TreeNode<int> *tempNode = maxDataNode(root->children[i]);
-        if (tempNode > maxNode)
+        if (tempNode->data > maxNode->data)
             maxNode = tempNode;
         else
             continue;
