@@ -105,48 +105,107 @@ public:
     }
 
     //Delete from Heap and DOWN-HEAPIFY (or RemoveMin)
-    // int MYremoveMin()
-    // {
-    //     int ans = pq[0];
-    //     int parentIndex = 0;
-    //     swap(pq[parentIndex], pq[pq.size() - 1]);
+    int MYremoveMin()
+    {
+        int ans = pq[0];
+        int parentIndex = 0;
+        swap(pq[parentIndex], pq[pq.size() - 1]);
+        pq.pop_back(); // to remove the last min element
+        int leftChildIndex = 2 * parentIndex + 1;
+        int rightChildIndex = 2 * parentIndex + 2;
 
-    //     int leftChildIndex = 2 * parentIndex + 1;
-    //     int rightChildIndex = 2 * parentIndex + 2;
+        while (leftChildIndex && rightChildIndex < pq.size())
+        {
+            int minIndex = parentIndex; //should be inside loop because it's dynamic
+            int minValue = min(pq[parentIndex], min(pq[leftChildIndex], pq[rightChildIndex]));
 
-    //     int minIndex = parentIndex;
-    //     while (leftChildIndex && rightChildIndex < pq.size())
-    //     {
-    //         int minValue = min(pq[parentIndex], pq[leftChildIndex], pq[rightChildIndex]);
+            if (minValue == pq[parentIndex])
+                return ans;
+            else if (minValue == pq[leftChildIndex])
+                minIndex = leftChildIndex;
+            else
+                minIndex = rightChildIndex;
 
-    //         if (minValue == pq[parentIndex])
-    //             return ans;
-    //         else if (minValue == pq[leftChildIndex])
-    //             minIndex = leftChildIndex;
-    //         else
-    //             minIndex = rightChildIndex;
+            swap(pq[parentIndex], pq[minIndex]);
 
-    //         swap(pq[parentIndex], pq[minIndex]);
+            parentIndex = minIndex;
+            leftChildIndex = 2 * parentIndex + 1;
+            rightChildIndex = 2 * parentIndex + 2;
+        }
 
-    //         parentIndex = minIndex;
-    //         leftChildIndex = 2 * parentIndex + 1;
-    //         rightChildIndex = 2 * parentIndex + 2;
-    //     }
+        if (leftChildIndex < pq.size() && rightChildIndex >= pq.size())
+        {
+            int minValue = min(pq[parentIndex], pq[leftChildIndex]);
+            if (minValue == pq[parentIndex])
+                return ans;
+            else if (minValue == pq[leftChildIndex])
+                swap(pq[parentIndex], pq[leftChildIndex]);
+        }
 
-    //     if (leftChildIndex < pq.size() && rightChildIndex >= pq.size())
-    //     {
-    //         int minValue = min(pq[parentIndex], pq[leftChildIndex]);
-    //         if (minValue == pq[parentIndex])
-    //             return ans;
-    //         else if (minValue == pq[leftChildIndex])
-    //             swap(pq[parentIndex], pq[leftChildIndex]);
-    //     }
+        return ans;
+    }
 
-    //     return ans;
-    // }
+    int removeMin2()
+    {
+        int ans = pq[0];
+        int parentIndex = 0;
+        swap(pq[parentIndex], pq[pq.size() - 1]);
+        pq.pop_back();
+        int leftChildIndex = 2 * parentIndex + 1;
+        int rightChildIndex = 2 * parentIndex + 2;
 
-    // PriorityQueue()
-    // {
-    // }
-    // ~PriorityQueue();
+        while (leftChildIndex && rightChildIndex < pq.size())
+        {
+            int minIndex = parentIndex;
+            int minValue = min(pq[parentIndex], min(pq[leftChildIndex], pq[rightChildIndex]));
+
+            if (minValue == pq[parentIndex])
+                return ans;
+            else if (minValue == pq[leftChildIndex])
+                minIndex = leftChildIndex;
+            else
+                minIndex = rightChildIndex;
+
+            swap(pq[parentIndex], pq[minIndex]);
+
+            parentIndex = minIndex;
+            leftChildIndex = 2 * parentIndex + 1;
+            rightChildIndex = 2 * parentIndex + 2;
+        }
+
+        return ans;
+    }
+
+    int removeMin3()
+    {
+        int ans = pq[0];
+        int parentIndex = 0;
+        pq[parentIndex] = pq[pq.size() - 1];
+        pq.pop_back();
+
+        int leftChildIndex = 2 * parentIndex + 1;
+        int rightChildIndex = 2 * parentIndex + 2;
+
+        while (leftChildIndex < pq.size())
+        {
+            int minIndex = parentIndex;
+            if (pq[minIndex] > pq[leftChildIndex])
+                minIndex = leftChildIndex;
+            if (rightChildIndex < pq.size() && pq[rightChildIndex] < pq[minIndex])
+            {
+                minIndex = rightChildIndex;
+            }
+            if (minIndex == parentIndex)
+            {
+                break;
+            }
+            swap(pq[parentIndex], pq[minIndex]);
+
+            parentIndex = minIndex;
+            leftChildIndex = 2 * parentIndex + 1;
+            rightChildIndex = 2 * parentIndex + 2;
+        }
+
+        return ans;
+    }
 };
