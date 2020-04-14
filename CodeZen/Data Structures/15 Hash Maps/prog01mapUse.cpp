@@ -1,5 +1,7 @@
 // Map -> BST -> log(n)
 // Unordered_map -> Hashtable -> O(1)
+// Set -> BST -> log(n)
+// Unordered_set -> Hashtable -> O(1)
 #include <iostream>
 #include <unordered_map>
 #include <string>
