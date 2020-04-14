@@ -145,7 +145,7 @@ public:
         return ans;
     }
 
-    int removeMin2()
+    int MYremoveMin2()
     {
         int ans = pq[0];
         int parentIndex = 0;
@@ -176,7 +176,7 @@ public:
         return ans;
     }
 
-    int removeMin3()
+    int MYremoveMin3()
     {
         int ans = pq[0];
         int parentIndex = 0;
