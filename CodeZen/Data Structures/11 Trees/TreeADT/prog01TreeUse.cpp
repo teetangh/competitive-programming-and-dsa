@@ -72,9 +72,13 @@ void printTree(TreeNode<int> *root)
 
     // children.size() is Working as a base Case
 
-    for (int i = 0; i < root->children.size(); i++)
+    // Printing current node's children
+    //Size function automatically implements the base case in case of generic Trees
+    for (int i = 0; i < root->children.size(); i++)  
         cout << root->children[i]->data << ",";
     cout << endl;
+    
+    //Recursively calling printTree on the current node's children to propagate the process down the tree 
     for (int i = 0; i < root->children.size(); i++)
         printTree(root->children[i]);
 }

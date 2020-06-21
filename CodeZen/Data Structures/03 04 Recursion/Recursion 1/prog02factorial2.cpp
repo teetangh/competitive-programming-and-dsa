@@ -5,11 +5,10 @@ int factorial(int n)
 {
     if (n == 0)
         return 1;
-    else
-    {
-        int smallOutput = factorial(n - 1);
-        return n * smallOutput;
-    }
+
+    int smallOutput = factorial(n - 1);
+    int output = n * smallOutput;
+    return output;
 }
 
 int main()

@@ -19,8 +19,8 @@ int main(int argc, char const *argv[])
     cout << c1 << endl;
     cout << pc << endl;
 
-    char str[] = "abcde";
-    char *pstr = "abcde";
+    char str[] = "abcde"; // Better implementation (Copies to new Array After creating the temporary array)
+    char *pstr = "abcde"; // Worse implementation (Points to temporary array itself)
 
     return 0;
 }

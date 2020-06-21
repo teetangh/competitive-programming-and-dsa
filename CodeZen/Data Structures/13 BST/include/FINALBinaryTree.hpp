@@ -1,6 +1,6 @@
 #include <iostream>
 #include <queue>
-#include "..\include\BinaryTreeNode.hpp"
+#include "BinaryTreeNode.hpp"
 using namespace std;
 
 BinaryTreeNode<int> *takeInputLevelWise()
@@ -10,16 +10,11 @@ BinaryTreeNode<int> *takeInputLevelWise()
     cin >> rootData;
     if (rootData == -1)
         return NULL;
-
-    // ROOT DATA IS NOT NULL
     BinaryTreeNode<int> *root = new BinaryTreeNode<int>(rootData);
-    // Mainttaing a dynamic queues of node elements as the user inputs the data
     queue<BinaryTreeNode<int> *> pendingNodes;
     pendingNodes.push(root);
-
     while (pendingNodes.size() != 0)
     {
-        // LEFT NODE CASE
         BinaryTreeNode<int> *front = pendingNodes.front();
         pendingNodes.pop();
         cout << "Enter Left Child of " << front->data << endl;
@@ -31,7 +26,6 @@ BinaryTreeNode<int> *takeInputLevelWise()
             front->left = child;
             pendingNodes.push(child);
         }
-        // RIGHT NODE CASE
         cout << "Enter Right Child of " << front->data << endl;
         int rightChildData;
         cin >> rightChildData;
@@ -76,22 +70,4 @@ void printTree(BinaryTreeNode<int> *root)
     cout << endl;
     printTree(root->left);
     printTree(root->right);
-}
-
-int main(int argc, char const *argv[])
-{
-    // STATICALLY
-    // BinaryTreeNode<int> *root = new BinaryTreeNode<int>(1);
-    // BinaryTreeNode<int> *node1 = new BinaryTreeNode<int>(2);
-    // BinaryTreeNode<int> *node2 = new BinaryTreeNode<int>(3);
-
-    // root->left = node1;
-    // root->right = node2;
-
-    // DYANMICALLY
-    BinaryTreeNode<int> *root = takeInputLevelWise();
-    // BinaryTreeNode<int> *root = takeInput();
-    printTree(root);
-    delete root;
-    return 0;
 }

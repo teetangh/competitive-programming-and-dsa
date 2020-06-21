@@ -8,13 +8,13 @@ int main()
     cout << c << endl;
 
     int *p = &i;
-    char *pc = (char *)p;
+    char *pc = (char *)p; //typecasting
 
     cout << endl;
-    cout << p << endl;
-    cout << pc << endl;
-    cout << *p << endl;
-    cout << *pc << endl;
+    cout << p << endl;   //Prints the address of pointer
+    cout << pc << endl;  //Prints till null character
+    cout << *p << endl;  //Reading as an integer
+    cout << *pc << endl; //Reading as a character
     cout << endl;
 
     cout << *(pc) << endl;

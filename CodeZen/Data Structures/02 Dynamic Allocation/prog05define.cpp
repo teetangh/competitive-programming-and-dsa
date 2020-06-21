@@ -9,5 +9,8 @@ int main()
     // double pi = 3.14 * r * r;
     // pi = pi + 1;
 
+    // 1. No Performance Hit
+    // 2. NO extra memory usage
+    // 3. Cannot be changed by others later
     cout << PI * r * r << endl;
 }

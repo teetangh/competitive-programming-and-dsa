@@ -4,12 +4,13 @@ using namespace std;
 
 int main()
 {
-    //vector<int> *vp = new vector<int>();
-    vector<int> v;
+    //vector<int> *vp = new vector<int>();  // Dynamic Allocation
+    vector<int> v; //Static Allocation
     v.push_back(10);
     v.push_back(20);
     v.push_back(30);
 
+    // Changing existing elements
     v[1] = 100;
 
     // Dont use [] for insertion rather use it to get and update only

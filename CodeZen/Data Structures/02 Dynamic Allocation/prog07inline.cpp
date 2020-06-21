@@ -3,6 +3,7 @@ using namespace std;
 
 inline int max(int a, int b)
 {
+    // tertiary operator
     return (a < b) ? a : b;
 }
 

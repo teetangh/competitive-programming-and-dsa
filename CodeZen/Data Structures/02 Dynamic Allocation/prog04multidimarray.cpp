@@ -33,10 +33,10 @@ int main()
         cout << endl;
     }
 
+    // Deleting each array
     for (int i = 0; i < m; i++)
-    {
-        delete p[i];
-    }
+        delete[] p[i];
 
+    // Deleting the array of the arrays
     delete[] p;
 }

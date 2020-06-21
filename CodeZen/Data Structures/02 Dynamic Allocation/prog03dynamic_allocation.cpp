@@ -35,13 +35,22 @@ int main()
     // Printing the maximum element
     cout << "MAX IS " << max << endl;
 
+    // MEMORY CONSUMPTION EVENTUALLY FULL
+    // HAS TO BE DELETED AFTER USE
+    // while (true)
+    // {
+    //     int *p = new int;
+    // }
+
     // Syntax for deleting dynamically allocated variables and arrays
     int *temp = new int;
     delete temp;
 
+    // Single Element Deletion
     temp = new int;
     delete temp;
 
+    // Array Deletion
     temp = new int[100];
     delete[] p;
 }
