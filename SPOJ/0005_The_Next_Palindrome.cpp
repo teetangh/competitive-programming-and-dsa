@@ -15,16 +15,16 @@ int next_palindrome(int current_number)
     // cout << "DEBUG" << current_number << "Num of Digits" << num_of_digits << endl;
     switch (num_of_digits % 2)
     {
-        // Even case
+    // Even case
     case 0:
-        if current_number & (1<< num_of_digits/2) > (1<<(num_of_digits/2 -1))
-    {}
+        if current_number & (1 << num_of_digits / 2) > (1 << (num_of_digits / 2 - 1))
+        {}
         break;
-    
-    
-        // Odd Case
+
+
+    // Odd Case
     case 1:
-    
+
         break;
     }
 }
