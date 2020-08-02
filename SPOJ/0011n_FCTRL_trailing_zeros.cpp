@@ -10,6 +10,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+namespace trick
+{
+	
+}
+
+
 namespace prime_factorisation
 {
 	pair<int, int> count_twos_and_fives(int num)
@@ -44,7 +50,8 @@ namespace prime_factorisation
 		pair<int, int> temp_pair = prime_factorisation::count_twos_and_fives(num);
 		int factor_2 = temp_pair.first;
 		int factor_5 = temp_pair.second;
-		cout << factor_2 << factor_5 << endl;
+		cout << factor_2 << "\n"
+			 << factor_5 << endl;
 		return std::min(factor_2, factor_5);
 	}
 
@@ -69,17 +76,17 @@ namespace brute_force
 		return zero_counter;
 	}
 
-	int factorial(int num)
-	{
-		int temp_product = 1;
-
-		for (int i = 2; i <= num; ++i)
-			temp_product *= i;
-
-		return temp_product;
-	}
 } // namespace brute_force
 
+int factorial(int num)
+{
+	int temp_product = 1;
+
+	for (int i = 2; i <= num; ++i)
+		temp_product *= i;
+
+	return temp_product;
+}
 int main()
 {
 #ifndef ONLINE_JUDGE
@@ -96,20 +103,21 @@ int main()
 	queue<int> mq;
 
 	int n;
-	while (test_cases--)
-	{
-		cin >> n;
-		mq.push(n);
-	}
+	// while (test_cases--)
+	// {
+	// 	cin >> n;
+	// 	mq.push(n);
+	// }
 
-	while (!mq.empty())
-	{
-		// int temp = brute_force::count_zeros_at_end(brute_force::factorial(mq.front()));
-		int temp = prime_factorisation::count_zeros_at_end(mq.front());
+	// while (!mq.empty())
+	// {
+	// 	// int temp = brute_force::count_zeros_at_end(brute_force::factorial(mq.front()));
+	// 	int temp = prime_factorisation::count_zeros_at_end(mq.front());
 
-		mq.pop();
-		cout << temp << endl;
-	}
+	// 	mq.pop();
+	// 	cout << temp << endl;
+	// }
 
-	// int temp = prime_factorisation::count_zeros_at_end(100);
+	int temp = prime_factorisation::count_zeros_at_end(factorial(10));
+	// cout << temp;
 }
