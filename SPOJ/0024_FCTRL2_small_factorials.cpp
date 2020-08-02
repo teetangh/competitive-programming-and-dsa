@@ -3,6 +3,18 @@
 
 using namespace std;
 
+int calculate_factorial(std::map<int, int> map;,int n)
+{
+	int num = 1;
+
+	vector <int> my_vec(100);
+	for (int i = 0; i < n; ++i)
+	{
+		
+	}
+
+}  
+
 int main()
 {
 	#ifndef ONLINE_JUDGE
@@ -12,7 +24,7 @@ int main()
 
 	int test_cases;
 	cin >> test_cases;
-	cout << test_cases;
+	// cout << test_cases;
 
-	retun 0;
+	return 0;
 }
