@@ -12,10 +12,22 @@
 
 using namespace std;
 
+int count_zeros_at_factorial_end2(int num)
+{
+    int counter = 0;
+    for (int i = 1; i <= num; ++i)
+    {
+        if (i % 5 == 0 )
+            counter ++;
+
+    }
+    return counter;
+}
+
 int count_of_zeroes(std::map<int, int> my_map, int i)
 {
     int save_num = i;
-    int factor_2 = 0;
+    int  factor_2 = 0;
     int factor_5 = 0;
     int current_count_of_zeroes = 0;
     while (i % 2 == 0 || i % 5 == 0)
@@ -81,7 +93,7 @@ int main()
     }
     while (test_cases2--)
     {
-        int temp_answer = count_zeros_at_factorial_end(mq.front());
+        int temp_answer = count_zeros_at_factorial_end2(mq.front());
         mq.pop();
         cout << temp_answer << endl;
     }

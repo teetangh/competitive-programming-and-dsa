@@ -1,9 +1,9 @@
 /////////////////////////////
 /* MY DEFINES*/
 // data types
-#define long long ll
+// #define long long ll
 // functions
-#define FOR(0,count) for (int i = 0; i < count; ++i)
+// #define FOR(0,count) for (int i = 0; i < count; ++i)
 
 /////////////////////////////
 
