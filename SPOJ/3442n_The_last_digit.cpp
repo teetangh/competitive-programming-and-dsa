@@ -1,12 +1,8 @@
 #include <iostream>
-#include <cmath>
 #include <bits/stdc++.h>
-
 using namespace std;
-
 int calculate_last_digit(int a, int b)
 {
-
     vector<vector<int>> roundTable = {
         {0},
         {1},
@@ -18,24 +14,19 @@ int calculate_last_digit(int a, int b)
         {7, 9, 3, 1},
         {8, 4, 2, 6},
         {9, 1}};
-
-    cout << "Here" << endl;
-
     if (a != 0 && b == 0)
         return 1;
     else if (a == 0 && b == 0)
         return 0;
+    else if (roundTable[a].size() == 1)
+    {
+        int b2 = b % (roundTable[a].size());
+        return roundTable[a][(b2)];
+    }
     else
     {
-        int b2 = b % (roundTable[a].size() - 1);
-
-        // n = 0.5 * (n + lower + fabs(n - lower));
-        // n = 0.5 * (n + upper - fabs(upper - n));
-
-        int lower = 0;
-        b2 = int(0.5 * (b2 + lower + abs(b2 - lower)));
-
-        return roundTable[a][(b2)];
+        int b2 = b % (roundTable[a].size());
+        return roundTable[a][(b2)-1];
     }
 }
 
@@ -47,10 +38,7 @@ int main(int argc, char const *argv[])
 #endif
     int test_cases;
     cin >> test_cases;
-    // cout << test_cases;
-
     queue<int> mq;
-
     int a, b;
     while (test_cases--)
     {
@@ -64,6 +52,5 @@ int main(int argc, char const *argv[])
         mq.pop();
         cout << temp << endl;
     }
-
     return 0;
 }
