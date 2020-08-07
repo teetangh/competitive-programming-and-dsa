@@ -3,20 +3,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int knapsack(vector<int> wt, vector<int> val, int W, int n, vector<vector<int>> matrix)
+int knapsack(vector<int> wt, vector<int> val, int W, int n, vector<vector<int>> memoization_matrix)
 {
     if (n == 0 || W == 0)
-        return matrix[n][W] = 0;
+        return memoization_matrix[n][W] = 0;
 
-    if (matrix[n][W] != -1)
-        return matrix[n][W];
+    if (memoization_matrix[n][W] != -1)
+        return memoization_matrix[n][W];
 
     if (wt[n - 1] <= W)
-        return matrix[n][W] = max(val[n - 1] + knapsack(wt, val, W - wt[n - 1], n - 1, matrix),
-                                  knapsack(wt, val, W, n - 1, matrix));
+        return memoization_matrix[n][W] = max(val[n - 1] + knapsack(wt, val, W - wt[n - 1], n - 1, memoization_matrix),
+                                              knapsack(wt, val, W, n - 1, memoization_matrix));
 
     else if (wt[n - 1] > W)
-        return matrix[n][W] = knapsack(wt, val, W, n - 1, matrix);
+        return memoization_matrix[n][W] = knapsack(wt, val, W, n - 1, memoization_matrix);
 }
 
 int main(int argc, char const *argv[])
@@ -44,14 +44,21 @@ int main(int argc, char const *argv[])
     int default_value = -1;
 
     // instantiate vector object of type std::vector<int>
-    std::vector<std::vector<int>> matrix;
+    std::vector<std::vector<int>> memoization_matrix;
 
     // resize the vector to M elements of type std::vector<int>,
     // each having size N and given default value
-    matrix.resize(num_of_items + 1, std::vector<int>(weight_array.size() + 1, default_value));
+    memoization_matrix.resize(num_of_items + 1, std::vector<int>(bag_capacity + 1, default_value));
+
+    for (int index = 0; index < num_of_items; index++)
+    {
+        memoization_matrix[index][0] = 0;
+        memoization_matrix[0][index] = 0;
+    }
+
     /////////////////////////////////////////////////////////////////////////////////
 
-    int answer = knapsack(weight_array, value_array, bag_capacity, num_of_items, matrix);
+    int answer = knapsack(weight_array, value_array, bag_capacity, num_of_items, memoization_matrix);
     cout << answer;
 
     return 0;
