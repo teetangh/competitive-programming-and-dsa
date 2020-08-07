@@ -3,17 +3,17 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-// void print_MOM(int **memoization_matrix, int array_size, int required_sum)
-// {
-//     cout << "Current Memoization Matrix Status" << endl;
-//     for (int i = 0; i < array_size + 1; i++)
-//     {
-//         for (int j = 0; j < required_sum + 1; j++)
-//             cout << setw(2) << memoization_matrix[i][j];
-//         cout << endl;
-//     }
-//     cout << endl;
-// }
+void print_MOM(int **memoization_matrix, int array_size, int required_sum)
+{
+    cout << "Current Memoization Matrix Status" << endl;
+    for (int i = 0; i < array_size + 1; i++)
+    {
+        for (int j = 0; j < required_sum + 1; j++)
+            cout << setw(2) << memoization_matrix[i][j];
+        cout << endl;
+    }
+    cout << endl;
+}
 
 int minimum_subset_difference(vector<int> elements_array, int array_size)
 {
@@ -45,7 +45,7 @@ int minimum_subset_difference(vector<int> elements_array, int array_size)
         }
     }
 
-    // print_MOM(memoization_matrix, array_size, elements_array_sum);
+    print_MOM(memoization_matrix, array_size, elements_array_sum);
 
     vector<int> S1_array;
     for (int j = 0; j < (elements_array_sum) / 2; j++)
@@ -55,9 +55,9 @@ int minimum_subset_difference(vector<int> elements_array, int array_size)
             S1_array.push_back(j);
     }
 
-    // for (auto &ele : S1_array)
-    //     cout << ele << " ";
-    // cout << endl;
+    for (auto &ele : S1_array)
+        cout << ele << " ";
+    cout << endl;
 
     int minimum_value = INT_MAX;
     for (int i = 0; i < S1_array.size(); i++)
