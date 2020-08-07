@@ -24,7 +24,7 @@ int knapsack_bottom_up(int weight_array[], int value_array[], int bag_capacity, 
     {
         for (int j = 1; i < bag_capacity + 1; i++)
         {
-            if (weight_array[i - 1] <= j)
+            if (weight_array[i - 1] <= j && (j - weight_array[i - 1]) >= 0)
                 memoization_matrix[i][j] = max(value_array[i - 1] + memoization_matrix[i - 1][j - weight_array[i - 1]], memoization_matrix[i - 1][j]);
 
             else
