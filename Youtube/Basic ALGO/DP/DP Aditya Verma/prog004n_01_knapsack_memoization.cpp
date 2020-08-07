@@ -6,7 +6,7 @@ using namespace std;
 int knapsack(vector<int> wt, vector<int> val, int W, int n, vector<vector<int>> matrix)
 {
     if (n == 0 || W == 0)
-        return 0;
+        return matrix[n][W] = 0;
 
     if (matrix[n][W] != -1)
         return matrix[n][W];
@@ -48,7 +48,7 @@ int main(int argc, char const *argv[])
 
     // resize the vector to M elements of type std::vector<int>,
     // each having size N and given default value
-    matrix.resize(num_of_items, std::vector<int>(weight_array.size(), default_value));
+    matrix.resize(num_of_items + 1, std::vector<int>(weight_array.size() + 1, default_value));
     /////////////////////////////////////////////////////////////////////////////////
 
     int answer = knapsack(weight_array, value_array, bag_capacity, num_of_items, matrix);
