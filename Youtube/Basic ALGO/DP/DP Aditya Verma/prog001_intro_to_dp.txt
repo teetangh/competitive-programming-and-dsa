@@ -1,7 +1,7 @@
 DP = enhanced REcusion
 
 Two Types:
-1. Top-Down : Recursion
+1. Top-Down : Recursion + Memoization
 2. Bottom-up : Iterative
 
 Dp -> overlapping subproblems
