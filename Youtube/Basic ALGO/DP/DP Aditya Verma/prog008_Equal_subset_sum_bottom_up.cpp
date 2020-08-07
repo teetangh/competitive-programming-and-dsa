@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
 
     int elements_array_sum = accumulate(elements_array.begin(), elements_array.end(), 0);
     if (elements_array_sum % 2 != 0)
-        cout << false;
+        cout << " The Entire Array Sum is odd " << false;
 
     else
     {
