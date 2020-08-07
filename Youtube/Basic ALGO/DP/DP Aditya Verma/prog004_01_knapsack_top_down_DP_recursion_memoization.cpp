@@ -3,19 +3,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int knapsack_top_down(vector<int> wt, vector<int> val, int W, int n, vector<vector<int>> memoization_matrix)
+int knapsack_top_down(vector<int> weight_array, vector<int> value_array, int bag_capacity, int num_of_items, vector<vector<int>> memoization_matrix)
 {
-    if (n == 0 || W == 0)
-        return memoization_matrix[n][W] = 0;
+    if (num_of_items == 0 || bag_capacity == 0)
+        return memoization_matrix[num_of_items][bag_capacity] = 0;
 
-    if (memoization_matrix[n][W] != -1)
-        return memoization_matrix[n][W];
+    if (memoization_matrix[num_of_items][bag_capacity] != -1)
+        return memoization_matrix[num_of_items][bag_capacity];
 
-    if (wt[n - 1] <= W)
-        return memoization_matrix[n][W] = max(val[n - 1] + knapsack_top_down(wt, val, W - wt[n - 1], n - 1, memoization_matrix), knapsack_top_down(wt, val, W, n - 1, memoization_matrix));
+    if (weight_array[num_of_items - 1] <= bag_capacity)
+        return memoization_matrix[num_of_items][bag_capacity] =
+                   max(value_array[num_of_items - 1] + knapsack_top_down(weight_array, value_array, bag_capacity - weight_array[num_of_items - 1], num_of_items - 1, memoization_matrix),
+                       knapsack_top_down(weight_array, value_array, bag_capacity, num_of_items - 1, memoization_matrix));
 
-    else if (wt[n - 1] > W)
-        return memoization_matrix[n][W] = knapsack_top_down(wt, val, W, n - 1, memoization_matrix);
+    else if (weight_array[num_of_items - 1] > bag_capacity)
+        return memoization_matrix[num_of_items][bag_capacity] = knapsack_top_down(weight_array, value_array, bag_capacity, num_of_items - 1, memoization_matrix);
 }
 
 int main(int argc, char const *argv[])

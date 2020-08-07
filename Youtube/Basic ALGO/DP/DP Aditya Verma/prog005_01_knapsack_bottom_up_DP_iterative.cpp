@@ -2,6 +2,27 @@
 #include <stdlib.h>
 using namespace std;
 
+int knapsack(int weight_array[], int value_array[], int bag_capacity, int num_of_items)
+{
+
+    int **memoization_matrix = new int *[num_of_items + 1];
+    for (int i = 0; i < num_of_items + 1; ++i)
+        memoization_matrix[i] = new int[bag_capacity + 1];
+
+    for (int i = 0; i < num_of_items + 1; i++)
+    {
+        for (int j = 0; j < bag_capacity + 1; j++)
+        {
+            if (i == 0 || j == 0)
+                memoization_matrix[i][j] = 0;
+        }
+    }
+
+    for (int i = 0; i < num_of_items + 1; i++)
+        delete[] memoization_matrix[i];
+    delete[] memoization_matrix;
+}
+
 int main(int argc, char const *argv[])
 {
 #ifndef ONLINE_JUDGE
@@ -24,25 +45,8 @@ int main(int argc, char const *argv[])
         value_array[i] = curr_item_value;
     }
 
-    int **memoization_matrix = new int *[num_of_items + 1];
-    for (int i = 0; i < num_of_items + 1; ++i)
-        memoization_matrix[i] = new int[bag_capacity + 1];
-
-    for (int i = 0; i < num_of_items + 1; i++)
-    {
-        for (int j = 0; j < bag_capacity + 1; j++)
-        {
-            if (i == 0 || j == 0)
-                memoization_matrix[i][j] = 0;
-        }
-    }
-
-    int answer = knapsack(weight_array, value_array, bag_capacity, num_of_items, memoization_matrix);
+    int answer = knapsack(weight_array, value_array, bag_capacity, num_of_items);
     cout << answer;
-
-    for (int i = 0; i < num_of_items + 1; i++)
-        delete[] memoization_matrix[i];
-    delete[] memoization_matrix;
 
     return 0;
 }
