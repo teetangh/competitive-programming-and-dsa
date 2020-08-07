@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int knapsack(vector<int> wt, vector<int> val, int W, int n, vector<vector<int>> memoization_matrix)
+int knapsack_top_down(vector<int> wt, vector<int> val, int W, int n, vector<vector<int>> memoization_matrix)
 {
     if (n == 0 || W == 0)
         return memoization_matrix[n][W] = 0;
@@ -12,11 +12,10 @@ int knapsack(vector<int> wt, vector<int> val, int W, int n, vector<vector<int>> 
         return memoization_matrix[n][W];
 
     if (wt[n - 1] <= W)
-        return memoization_matrix[n][W] = max(val[n - 1] + knapsack(wt, val, W - wt[n - 1], n - 1, memoization_matrix),
-                                              knapsack(wt, val, W, n - 1, memoization_matrix));
+        return memoization_matrix[n][W] = max(val[n - 1] + knapsack_top_down(wt, val, W - wt[n - 1], n - 1, memoization_matrix), knapsack_top_down(wt, val, W, n - 1, memoization_matrix));
 
     else if (wt[n - 1] > W)
-        return memoization_matrix[n][W] = knapsack(wt, val, W, n - 1, memoization_matrix);
+        return memoization_matrix[n][W] = knapsack_top_down(wt, val, W, n - 1, memoization_matrix);
 }
 
 int main(int argc, char const *argv[])
@@ -58,7 +57,7 @@ int main(int argc, char const *argv[])
 
     /////////////////////////////////////////////////////////////////////////////////
 
-    int answer = knapsack(weight_array, value_array, bag_capacity, num_of_items, memoization_matrix);
+    int answer = knapsack_top_down(weight_array, value_array, bag_capacity, num_of_items, memoization_matrix);
     cout << answer;
 
     return 0;
