@@ -3,17 +3,17 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-void print_MOM(int **memoization_matrix, int array_size, int required_sum)
-{
-    cout << "Current Memoization Matrix Status" << endl;
-    for (int i = 0; i < array_size + 1; i++)
-    {
-        for (int j = 0; j < required_sum + 1; j++)
-            cout << setw(2) << memoization_matrix[i][j];
-        cout << endl;
-    }
-    cout << endl;
-}
+// void print_MOM(int **memoization_matrix, int array_size, int required_sum)
+// {
+//     cout << "Current Memoization Matrix Status" << endl;
+//     for (int i = 0; i < array_size + 1; i++)
+//     {
+//         for (int j = 0; j < required_sum + 1; j++)
+//             cout << setw(2) << memoization_matrix[i][j];
+//         cout << endl;
+//     }
+//     cout << endl;
+// }
 
 int minimum_subset_difference(vector<int> elements_array, int array_size)
 {
@@ -38,26 +38,29 @@ int minimum_subset_difference(vector<int> elements_array, int array_size)
     {
         for (int j = 1; j < elements_array_sum + 1; j++)
         {
-            if (elements_array[i - 1] <= elements_array_sum)
+            // CAUTION
+            // CHECK FOR OUT OF BOUND INDEX ERROR IN MEMOIZATION MATRIX
+            // USING 2ND CODITION IN IF STATEMENT BELOW
+            if (elements_array[i - 1] <= elements_array_sum && j - elements_array[i - 1] >= 0)
                 memoization_matrix[i][j] = memoization_matrix[i - 1][j - elements_array[i - 1]] || memoization_matrix[i - 1][j];
             else
                 memoization_matrix[i][j] = memoization_matrix[i - 1][j];
         }
     }
 
-    print_MOM(memoization_matrix, array_size, elements_array_sum);
+    // print_MOM(memoization_matrix, array_size, elements_array_sum);
 
     vector<int> S1_array;
-    for (int j = 0; j < (elements_array_sum) / 2; j++)
+    for (int j = 0; j <= (elements_array_sum) / 2; j++)
     {
         // S1_array.push_back(memoization_matrix[array_size][j]);
         if (memoization_matrix[array_size][j] == true)
             S1_array.push_back(j);
     }
 
-    for (auto &ele : S1_array)
-        cout << ele << " ";
-    cout << endl;
+    // for (auto &ele : S1_array)
+    //     cout << ele << " ";
+    // cout << endl;
 
     int minimum_value = INT_MAX;
     for (int i = 0; i < S1_array.size(); i++)
@@ -88,7 +91,18 @@ int main(int argc, char const *argv[])
         cin >> elements_array[i];
 
     int answer = minimum_subset_difference(elements_array, array_size);
-    cout << answer;
+    cout << endl
+         << answer;
 
     return 0;
 }
+
+// Sample IO 1
+// 6
+// 3 1 4 2 2 1 
+// 1
+
+// Sample IO 2
+// 4
+// 1 5 6 11
+// 1
