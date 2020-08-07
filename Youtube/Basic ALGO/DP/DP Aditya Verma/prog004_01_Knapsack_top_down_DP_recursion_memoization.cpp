@@ -51,10 +51,14 @@ int main(int argc, char const *argv[])
     // each having size N and given default value
     memoization_matrix.resize(num_of_items + 1, std::vector<int>(bag_capacity + 1, default_value));
 
-    for (int index = 0; index < num_of_items; index++)
+    // Initialising the vector's 1st row and 1st column to 0 for the Knapsack Problem
+    for (int i = 0; i < num_of_items + 1; i++)
     {
-        memoization_matrix[index][0] = 0;
-        memoization_matrix[0][index] = 0;
+        for (int j = 0; j < bag_capacity + 1; j++)
+        {
+            if (i == 0 || j == 0)
+                memoization_matrix[i][j] = 0;
+        }
     }
 
     /////////////////////////////////////////////////////////////////////////////////
@@ -64,3 +68,12 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+// // Sample IO
+// 4 60
+
+// 20 40
+// 10 100
+// 40 50
+// 30 60
+
+// 200
