@@ -1,0 +1,26 @@
+DP = enhanced REcusion
+
+Two Types:
+1. Top-Down : Recursion
+2. Bottom-up : Iterative
+
+Dp -> overlapping subproblems
+
+Examples
+1. 0-1 Knapsack
+2. Unbounded Knapsack
+3. Fibonacci
+4. LCS
+5. LIS
+6. Kadane's Algorithm
+7. Matrix Chain Multiplication
+8. DP on Trees
+9. DP on grid
+10. Others
+
+
+Dp (Top-Down): Recursion + stroage
+
+Tricks to Identify DP Probem
+1.Choice
+2.Optimal   

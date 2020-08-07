@@ -1,0 +1,16 @@
+NOTES
+=================================================
+Similar Problems to 0-1 Knapsack Problems
+
+1. Subset Sum
+2. Equal Sum Partition
+3. Count of Subset Sum
+4. Minimum Subset Sum Difference
+5. Target Sum
+6. # of Subset with given difference
+
+Knapsack Problem
+===============================================
+1. Fractional Knapsack (Greedy)
+2. 0-1 Knapsack (DP)
+3. Unbounded Knapsack (DP)
