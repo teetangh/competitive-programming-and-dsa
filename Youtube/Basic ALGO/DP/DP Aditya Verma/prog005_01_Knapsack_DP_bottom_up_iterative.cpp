@@ -5,24 +5,44 @@
 
 using namespace std;
 
+void print_MOM(vector<vector<int>> tabulation_matrix, int array_size, int required_sum)
+{
+    cout << "Current Tabulation Matrix Status" << endl;
+    for (int i = 0; i < array_size + 1; i++)
+    {
+        for (int j = 0; j < required_sum + 1; j++)
+            cout << setw(3) << tabulation_matrix[i][j];
+        cout << endl;
+    }
+    cout << endl;
+}
+
 int knapsack_bottom_up(vector<int> weight_array, vector<int> value_array, int bag_capacity, int num_of_items)
 {
     int default_value = 0;
     vector<vector<int>> tabulation_matrix;
     tabulation_matrix.resize(num_of_items + 1, vector<int>(bag_capacity + 1, default_value));
 
-    for (int i = 0; i < num_of_items + 1; i++)
-    {
-        for (int j = 0; j < bag_capacity + 1; j++)
-        {
-            if (weight_array[num_of_items - 1] <= bag_capacity)
-                tabulation_matrix[i][j] = max((value_array[num_of_items - 1] + tabulation_matrix[num_of_items - 1][bag_capacity - weight_array[num_of_items - 1]]),
-                                               tabulation_matrix[num_of_items - 1][bag_capacity]);
+    // for (auto &ele : weight_array)
+    //     cout << setw(3) << ele;
+    // cout << endl;
 
+    // for (auto &ele : value_array)
+    //     cout << setw(3) << ele;
+    // cout << endl;
+
+    for (int i = 1; i < num_of_items + 1; i++)
+    {
+        for (int j = 1; j < bag_capacity + 1; j++)
+        {
+            if ((weight_array[i - 1] <= bag_capacity) && (j - weight_array[i - 1] >= 0))
+                tabulation_matrix[i][j] = max((value_array[i - 1] + tabulation_matrix[i - 1][j - weight_array[i - 1]]), tabulation_matrix[i - 1][j]);
             else
-                tabulation_matrix[i][j] = tabulation_matrix[num_of_items - 1][bag_capacity];
+                tabulation_matrix[i][j] = tabulation_matrix[i - 1][j];
         }
     }
+
+    print_MOM(tabulation_matrix, num_of_items, bag_capacity);
 
     int answer = tabulation_matrix[num_of_items][bag_capacity];
 

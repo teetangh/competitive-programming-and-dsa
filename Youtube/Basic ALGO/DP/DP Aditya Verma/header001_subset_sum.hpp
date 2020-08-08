@@ -7,11 +7,11 @@ using namespace std;
 //////////////////////////////////////////// FUNCTIONS ///////////////////////////////////////////
 void print_MOM(bool **tabulation_matrix, int array_size, int required_sum)
 {
-    cout << "Current Memoization Matrix Status" << endl;
+    cout << "Current Tabulation Matrix Status" << endl;
     for (int i = 0; i < array_size + 1; i++)
     {
         for (int j = 0; j < required_sum + 1; j++)
-            cout << setw(2) << tabulation_matrix[i][j];
+            cout << setw(3) << tabulation_matrix[i][j];
         cout << endl;
     }
     cout << endl;
