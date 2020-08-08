@@ -1,1 +1,1 @@
-Count of Subsets: 1
+240

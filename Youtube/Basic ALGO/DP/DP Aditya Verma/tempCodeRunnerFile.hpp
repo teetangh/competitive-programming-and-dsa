@@ -1,1 +1,0 @@
-j - elements_array[i - 1]

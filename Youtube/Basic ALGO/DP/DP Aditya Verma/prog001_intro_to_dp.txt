@@ -1,8 +1,8 @@
 DP = enhanced REcusion
 
 Two Types:
-1. Top-Down : Recursion + Memoization
-2. Bottom-up : Iterative
+1. Top-Down : Recursion + Memoization [Memoization Matrix]
+2. Bottom-up : Iterative [Tabulation Matrix]
 
 Dp -> overlapping subproblems
 
