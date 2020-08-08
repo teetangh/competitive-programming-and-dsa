@@ -26,7 +26,6 @@ int main(int argc, char const *argv[])
     int answer = longest_common_subsequence(X, Y, X.length(), Y.length());
     cout << answer;
     return 0;
-    return 0;
 }
 
 // // Sample IO
