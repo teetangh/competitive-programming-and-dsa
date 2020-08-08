@@ -21,15 +21,11 @@ int main(int argc, char const *argv[])
     freopen("xinput1.txt", "r", stdin);
     freopen("xoutput1.txt", "w", stdout);
 #endif
-
     string X, Y;
     cin >> X >> Y;
-    int m = X.length();
-    int n = Y.length();
-
-    int answer = longest_common_subsequence(X, Y, m, n);
+    int answer = longest_common_subsequence(X, Y, X.length(), Y.length());
     cout << answer;
-
+    return 0;
     return 0;
 }
 
