@@ -16,7 +16,9 @@ int knapsack_bottom_up(vector<int> weight_array, vector<int> value_array, int ba
         for (int j = 1; j < bag_capacity + 1; j++)
         {
             if ((weight_array[i - 1] <= bag_capacity) && (j - weight_array[i - 1] >= 0))
-                tabulation_matrix[i][j] = max((value_array[i - 1] + tabulation_matrix[i - 1][j - weight_array[i - 1]]), tabulation_matrix[i - 1][j]);
+                tabulation_matrix[i][j] = max(
+                    (value_array[i - 1] + tabulation_matrix[i - 1][j - weight_array[i - 1]]),
+                    (tabulation_matrix[i - 1][j]));
             else
                 tabulation_matrix[i][j] = tabulation_matrix[i - 1][j];
         }
@@ -49,3 +51,17 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+// // Sample IO
+// 3 5
+
+// 1 6
+// 2 10
+// 3 12
+
+// Current Tabulation Matrix Status
+//   0  0  0  0  0  0
+//   0  6  6  6  6  6
+//   0  6 10 16 16 16
+//   0  6 10 16 18 22
+
+// 22
