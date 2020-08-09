@@ -2,7 +2,7 @@ Longest Common Subsequence
 ==============================
 1.Largest Common Substring
 2. Print LCS
-3.Shortest Common Substring
+3.Shortest Common SuperSequence
 4.Print SCS
 5. Minimum # of insertion and deletions
 6.Largest Repeating Subsequence
