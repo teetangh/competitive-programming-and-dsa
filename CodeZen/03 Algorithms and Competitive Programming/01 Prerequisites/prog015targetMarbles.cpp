@@ -9,21 +9,22 @@ void print_continuous_subset(vector<int> marble_values, int target)
     left = right = 0;
 
     int current_sum = marble_values[0];
-    while (current_sum < target && right <= marble_values.size() - 1)
-    {
-        if (current_sum == target)
-            break;
-        right++;
-        current_sum += marble_values[right];
-    }
 
-    while (current_sum < target && left <= marble_values.size() - 1)
+    while (left < marble_values.size() && right < marble_values.size())
     {
         if (current_sum == target)
             break;
-        int old_left = left;
-        left++;
-        current_sum -= marble_values[old_left];
+        else if (current_sum < target)
+        {
+            right++;
+            current_sum += marble_values[right];
+        }
+        else
+        {
+            int old_left = left;
+            left++;
+            current_sum -= marble_values[old_left];
+        }
     }
 
     if (current_sum == target)
@@ -59,3 +60,11 @@ int main()
     print_continuous_subset(marble_values, target);
     return 0;
 }
+
+// // Sample IO
+// 8 600 
+// 319 349 959 637 178 750 322 278
+
+
+// true
+// 322 278 
