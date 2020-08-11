@@ -51,7 +51,7 @@ int main()
 
     vector<int> marble_values(marbles);
     int n;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < marbles; i++)
     {
         cin >> n;
         marble_values[i] = n;
@@ -61,10 +61,17 @@ int main()
     return 0;
 }
 
-// // Sample IO
+// // Sample IO 1
 // 8 600 
 // 319 349 959 637 178 750 322 278
 
 
 // true
 // 322 278 
+
+// // Sample IO 2
+// 5 5
+// 1 5 3 2 4
+
+// true
+// 5 
