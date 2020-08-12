@@ -1,10 +1,11 @@
 #include <iostream>
-#include <bits/stdc++.h>
+#include <iomanip>
 #include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int longest_common_subsequence(string X, string Y)
+pair<int, int> min_num_of_insertions_deletions(string X, string Y)
 {
     int default_value = 0;
     vector<vector<int>> tabulation_matrix;
@@ -21,25 +22,30 @@ int longest_common_subsequence(string X, string Y)
         }
     }
 
-    return tabulation_matrix[X.length()][Y.length()];
+    int longest_common_subsequence_length = tabulation_matrix[X.length()][Y.length()];
+
+    int deletions = X.length() - longest_common_subsequence_length;
+    int insertions = Y.length() - longest_common_subsequence_length;
+
+    return std::make_pair(deletions, insertions);
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
 #ifndef ONLINE_JUDGE
     freopen("xinput1.txt", "r", stdin);
     freopen("xoutput1.txt", "w", stdout);
 #endif
-    string X, Y;
-    cin >> X >> Y;
-    int answer = longest_common_subsequence(X, Y);
-    cout << answer;
-    return 0;
+
+    int test_cases;
+    cin >> test_cases;
+    // cout << test_cases;
+
+    while (test_cases--)
+    {
+        string X, Y;
+        cin >> X >> Y;
+        cout << min_num_of_insertions_deletions(X, Y).first << " "
+             << min_num_of_insertions_deletions(X, Y).second;
+    }
 }
-
-// // Sample IO
-// batman
-
-// aman
-
-// 4

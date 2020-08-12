@@ -46,7 +46,7 @@ string print_shortest_common_supersequence(string X, string Y)
 
     reverse(longest_common_subsequence_string.begin(), longest_common_subsequence_string.end());
     std::string final_result = X + Y;
-
+    
     // final_result.erase(final_result.find(longest_common_subsequence_string), longest_common_subsequence_length);
 
     j = 0;
@@ -78,3 +78,16 @@ int main()
         cout << print_shortest_common_supersequence(X, Y) << endl;
     }
 }
+// // Sample IO
+// 2
+// geek eke
+// AGGTAB GXTXAYB
+
+// e
+// e
+// geekk
+// G
+// T
+// A
+// B
+// AGGTABXXY

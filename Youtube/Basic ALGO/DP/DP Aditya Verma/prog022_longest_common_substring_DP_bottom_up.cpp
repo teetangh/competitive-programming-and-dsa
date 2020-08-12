@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int longest_common_subsequence(string X, string Y, int m, int n)
+int longest_common_subsequence(string X, string Y)
 {
     int default_value = 0;
     vector<vector<int>> tabulation_matrix;
@@ -32,7 +32,7 @@ int main(int argc, char const *argv[])
 #endif
     string X, Y;
     cin >> X >> Y;
-    int answer = longest_common_subsequence(X, Y, X.length(), Y.length());
+    int answer = longest_common_subsequence(X, Y);
     cout << answer;
     return 0;
 }
