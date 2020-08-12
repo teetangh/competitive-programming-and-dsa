@@ -9,8 +9,8 @@ using namespace std;
 int main()
 {
 #ifndef ONLINE_JUDGE
-    freopen("xinput.txt", "r", stdin);
-    freopen("xoutput.txt", "w", stdout);
+    freopen("xinput1.txt", "r", stdin);
+    freopen("xoutput1.txt", "w", stdout);
 #endif
 
     int test_cases;
@@ -21,6 +21,15 @@ int main()
     {
         string X;
         cin >> X;
-        cout <<
+
+        string X_reverse(X);
+        reverse(X.begin(), X.end());
+
+        cout << print_longest_common_subsequence(X, X_reverse);
     }
 }
+// Sample IO
+// 1
+// agbcba
+
+// 5 abcba
