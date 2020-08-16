@@ -31,9 +31,7 @@ vector<vector<int>> permute(vector<int> &nums)
 string helperFunction(vector<int> &nums)
 {
     auto result = permute(nums);
-
-    vector<bool> result_factor3(result[0].size());
-
+    vector<bool> result_factor3(result.size());
     for (int i = 0; i < result.size(); i++)
     {
         bool factor3_this_string = false;
@@ -41,7 +39,7 @@ string helperFunction(vector<int> &nums)
         {
             for (int k = j + 1; k < result[i].size(); k++)
             {
-                if ((result[i][j] + result[i][k]) % 3 == 0)
+                if (((result[i][j] + result[i][k]) % 3 == 0) && abs(j - k) == 1)
                 {
                     factor3_this_string = true;
                     break;
@@ -50,15 +48,8 @@ string helperFunction(vector<int> &nums)
             if (factor3_this_string == true)
                 break;
         }
-        result_factor3.push_back(factor3_this_string);
+        result_factor3[i] = (factor3_this_string);
     }
-
-    for (int i = 0; i < result_factor3.size(); i++)
-    {
-        cout << result_factor3[i] << " ";
-    }
-    cout << endl;
-
     for (int i = 0; i < result_factor3.size(); i++)
     {
         if (result_factor3[i] == false)
@@ -68,10 +59,6 @@ string helperFunction(vector<int> &nums)
 }
 int main()
 {
-#ifndef ONLINE_JUDGE
-    freopen("xinput.txt", "r", stdin);
-    freopen("xoutput.txt", "w", stdout);
-#endif
 
     int test_cases;
     cin >> test_cases;
