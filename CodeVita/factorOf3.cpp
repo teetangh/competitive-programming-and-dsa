@@ -11,17 +11,33 @@ string printFactor(vector<int> arr)
     {
         for (int j = i + 1; j < arr.size(); j++)
         {
-            if ((arr[i] + arr[j]) % 3 == 0 && abs(i - j) != 1)
+            if (((arr[i] + arr[j]) % 3 == 0))
             {
-                return "no";
+                int prev_k = arr[0];
+                for (int k = 1; (k < arr.size() - 1); k++)
+                {
+                    if (k == i || k == j)
+                    {
+                        continue;
+                    }
+                    if (arr[prev_k] != arr[k])
+                        return "Yes";
+                    prev_k = k;
+                }
             }
+            return "No";
         }
     }
-    return "yes";
+    return "Yes";
 }
 
 int main()
 {
+#ifndef ONLINE_JUDGE
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
+#endif
+
     int test_cases;
     cin >> test_cases;
 
@@ -39,3 +55,18 @@ int main()
 
     return 0;
 }
+// // Sample IO
+// 4
+// 4
+// 1 2 3 3
+// 4
+// 1 2 3 4
+// 4
+// 3 6 1 9
+// 3
+// 2 7 10
+
+// Yes
+// Yes
+// Yes
+// No
