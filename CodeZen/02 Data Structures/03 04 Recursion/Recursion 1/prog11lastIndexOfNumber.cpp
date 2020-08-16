@@ -7,11 +7,8 @@ using namespace std;
 int lastIndex(int input[], int size, int x)
 {
     // for (int i = 0; i < size; i++)
-    // {
     //     cout << input[i];
-    // }
-
-    cout << endl;
+    // cout << endl;
 
     int answer;
     if (size == 0)
@@ -36,15 +33,24 @@ int lastIndex(int input[], int size, int x)
         }
     }
 }
+int lastIndexSimpler(int input[], int size, int x)
+{
+    int answer;
+    if (size == 0)
+        return -1;
 
-// int lastIndex(int input[], int size, int x) {
-//     if(size == 0 )
-//         return -1;
-//     else if (input [ size - 1] == x)
-//         return (size -1);
-//     else
-//         return lastIndex(input , size -1 , x);
-// }
+    else
+    {
+        answer = lastIndexSimpler(input + 1, size - 1, x);
+        if (input[0] == x && answer == -1)
+            return 0;
+
+        if (input[0] != x && answer == -1)
+            return -1;
+
+        return answer + 1;
+    }
+}
 
 int main()
 {
@@ -62,5 +68,5 @@ int main()
 
     cin >> x;
 
-    cout << lastIndex(input, n, x) << endl;
+    cout << lastIndexSimpler(input, n, x) << endl;
 }
