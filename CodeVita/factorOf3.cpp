@@ -13,11 +13,11 @@ string printFactor(vector<int> arr)
         {
             if ((arr[i] + arr[j]) % 3 == 0)
             {
-                return "yes";
+                return "no";
             }
         }
     }
-    return "no";
+    return "yes";
 }
 
 int main()
