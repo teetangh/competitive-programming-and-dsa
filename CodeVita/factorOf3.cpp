@@ -1,34 +1,61 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <cmath>
 #include <bits/stdc++.h>
 
 using namespace std;
 
-string printFactor(vector<int> arr)
+int subset(vector<int> input, int n, vector<vector<int>> output)
 {
-    for (int i = 0; i < arr.size() - 1; i++)
+    if (n <= 0)
     {
-        for (int j = i + 1; j < arr.size(); j++)
-        {
-            if (((arr[i] + arr[j]) % 3 == 0))
-            {
-                int prev_k = arr[0];
-                for (int k = 1; (k < arr.size() - 1); k++)
-                {
-                    if (k == i || k == j)
-                    {
-                        continue;
-                    }
-                    if (arr[prev_k] != arr[k])
-                        return "Yes";
-                    prev_k = k;
-                }
-            }
-            return "No";
-        }
+        output[0][0] = 0;
+        return 1;
     }
-    return "Yes";
+
+    else
+    {
+        int smallOutputSize = subset(vector<int>(input.begin() + 1, input.end()), n - 1, output);
+        int i, j;
+        for (i = 0; i < smallOutputSize; i++)
+        {
+            output[i + smallOutputSize][0] = output[i][0] + 1;
+            output[i + smallOutputSize][1] = input[0];
+
+            for (j = 0; j < output[smallOutputSize + i][0]; j++)
+            {
+                output[smallOutputSize + i][j + 2] = output[i][j + 1];
+            }
+        }
+
+        return 2 * smallOutputSize;
+    }
+}
+
+void subsetCaller()
+{
+    int length;
+    cin >> length;
+    std::vector<int> input(length);
+
+    for (int i = 0; i < length; ++i)
+        cin >> input[i];
+
+    int default_value = 0;
+    vector<vector<int>> output;
+    output.resize(pow(2, length), vector<int>(length, default_value));
+
+    int size = subset(input, length, output);
+
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 1; j <= output[i][0] && output[i][0] == input.size(); j++)
+        {
+            cout << output[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
 
 int main()
@@ -41,32 +68,10 @@ int main()
     int test_cases;
     cin >> test_cases;
 
-    int n;
     while (test_cases--)
     {
-        cin >> n;
-        vector<int> arr(n);
-        for (int i = 0; i < n; i++)
-            cin >> arr[i];
-
-        cout << printFactor(arr) << endl;
-        arr.clear();
+        subsetCaller();
     }
 
     return 0;
 }
-// // Sample IO
-// 4
-// 4
-// 1 2 3 3
-// 4
-// 1 2 3 4
-// 4
-// 3 6 1 9
-// 3
-// 2 7 10
-
-// Yes
-// Yes
-// Yes
-// No
