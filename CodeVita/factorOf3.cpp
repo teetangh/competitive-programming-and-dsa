@@ -6,58 +6,66 @@
 
 using namespace std;
 
-int subset(vector<int> input, int n, vector<vector<int>> output)
+vector<vector<int>> permute(vector<int> &nums)
 {
-    if (n <= 0)
+    if (nums.size() <= 1)
+        return {nums};
+
+    vector<vector<int>> result;
+    for (int i = 0; i < nums.size(); i++)
     {
-        output[0][0] = 0;
-        return 1;
+        vector<int> v(nums.begin(), nums.end());
+        v.erase(v.begin() + i);
+        auto res = permute(v);
+
+        for (int j = 0; j < res.size(); j++)
+        {
+            vector<int> _v = res[j];
+            _v.insert(_v.begin(), nums[i]);
+            result.push_back(_v);
+        }
     }
 
-    else
-    {
-        int smallOutputSize = subset(vector<int>(input.begin() + 1, input.end()), n - 1, output);
-        int i, j;
-        for (i = 0; i < smallOutputSize; i++)
-        {
-            output[i + smallOutputSize][0] = output[i][0] + 1;
-            output[i + smallOutputSize][1] = input[0];
+    return result;
+}
+string helperFunction(vector<int> &nums)
+{
+    auto result = permute(nums);
 
-            for (j = 0; j < output[smallOutputSize + i][0]; j++)
+    vector<bool> result_factor3(result[0].size());
+
+    for (int i = 0; i < result.size(); i++)
+    {
+        bool factor3_this_string = false;
+        for (int j = 0; j < result[i].size() - 1; j++)
+        {
+            for (int k = j + 1; k < result[i].size(); k++)
             {
-                output[smallOutputSize + i][j + 2] = output[i][j + 1];
+                if ((result[i][j] + result[i][k]) % 3 == 0)
+                {
+                    factor3_this_string = true;
+                    break;
+                }
             }
+            if (factor3_this_string == true)
+                break;
         }
-
-        return 2 * smallOutputSize;
+        result_factor3.push_back(factor3_this_string);
     }
-}
 
-void subsetCaller()
-{
-    int length;
-    cin >> length;
-    std::vector<int> input(length);
-
-    for (int i = 0; i < length; ++i)
-        cin >> input[i];
-
-    int default_value = 0;
-    vector<vector<int>> output;
-    output.resize(pow(2, length), vector<int>(length, default_value));
-
-    int size = subset(input, length, output);
-
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < result_factor3.size(); i++)
     {
-        for (int j = 1; j <= output[i][0] && output[i][0] == input.size(); j++)
-        {
-            cout << output[i][j] << " ";
-        }
-        cout << endl;
+        cout << result_factor3[i] << " ";
     }
-}
+    cout << endl;
 
+    for (int i = 0; i < result_factor3.size(); i++)
+    {
+        if (result_factor3[i] == false)
+            return "Yes";
+    }
+    return "No";
+}
 int main()
 {
 #ifndef ONLINE_JUDGE
@@ -70,7 +78,15 @@ int main()
 
     while (test_cases--)
     {
-        subsetCaller();
+        int size;
+        cin >> size;
+        vector<int> nums(size);
+        for (int i = 0; i < size; i++)
+            cin >> nums[i];
+
+        auto output = helperFunction(nums);
+        cout << output << endl;
+        nums.clear();
     }
 
     return 0;
