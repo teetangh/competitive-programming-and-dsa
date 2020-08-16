@@ -6,7 +6,7 @@ int binarySearch(int input[], int size, int element)
 {
     if (size == 0)
         return -1;
-    // Write your code here
+
     int lb = 0;
     int ub = size - 1;
     int mid = (lb + ub) / 2;
@@ -26,8 +26,6 @@ int binarySearch(int input[], int size, int element)
 
         return mid + 1 + ans;
     }
-    else
-        return -1;
 }
 
 // // input - input array
