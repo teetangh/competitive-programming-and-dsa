@@ -11,7 +11,7 @@ string printFactor(vector<int> arr)
     {
         for (int j = i + 1; j < arr.size(); j++)
         {
-            if ((arr[i] + arr[j]) % 3 == 0)
+            if ((arr[i] + arr[j]) % 3 == 0 && abs(i - j) != 1)
             {
                 return "no";
             }
@@ -22,11 +22,6 @@ string printFactor(vector<int> arr)
 
 int main()
 {
-#ifndef ONLINE_JUDGE
-    freopen("xinput.txt", "r", stdin);
-    freopen("xoutput.txt", "w", stdout);
-#endif
-
     int test_cases;
     cin >> test_cases;
 
