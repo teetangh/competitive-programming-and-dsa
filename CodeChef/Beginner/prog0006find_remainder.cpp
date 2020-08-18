@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+#ifndef ONLINE_JUDGE
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
+#endif
+    
+    int test_cases;
+    cin >> test_cases;
+
+    while (test_cases--)
+    {
+        
+    }
+    
+
+    return 0;
+}
+
