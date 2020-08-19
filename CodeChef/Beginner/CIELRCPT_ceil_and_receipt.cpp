@@ -6,13 +6,24 @@ using namespace std;
 
 int minimum_num_of_menus(int price)
 {
-    if (price <= 2048)
+
+    if ((price != 0) && (price & (price - 1) == 0) && price <= 2048)
+        return 1;
+    else
     {
-        if ((price != 0) && (price & (price - 1) == 0))
-            return 1;
-        else
+        int i = 11;
+        int menu_count = 0;
+        while (price > 0)
         {
+            if (price >= pow(2, i))
+            {
+                menu_count++;
+                price -= pow(2, i);
+                i++;
+            }
+            i--;
         }
+        return menu_count;
     }
 }
 
