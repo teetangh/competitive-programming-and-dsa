@@ -45,3 +45,14 @@ int main()
         cout << minimum_num_of_menus(price) << endl;
     }
 }
+// Sample Input
+// 4
+// 10
+// 256
+// 255
+// 4096
+// Sample Output
+// 2
+// 1
+// 8
+// 2
