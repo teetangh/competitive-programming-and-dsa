@@ -1,9 +1,17 @@
 #include <iostream>
 #include <iomanip>
-#include <string>
 #include <bits/stdc++.h>
 
 using namespace std;
+
+int factorial(int n)
+{
+    if (n == 0 || n == 1)
+        return 1;
+
+    else
+        return n * factorial(n - 1);
+}
 
 int main()
 {
@@ -11,26 +19,27 @@ int main()
     freopen("xinput.txt", "r", stdin);
     freopen("xoutput.txt", "w", stdout);
 #endif
-    
+
     int test_cases;
     cin >> test_cases;
+    // cout << test_cases;
 
+    int n;
     while (test_cases--)
     {
-        
+        cin >> n;
+        cout << factorial(n) << endl;
     }
-    
-
-    return 0;
 }
 
 // Input
 // 3 
-// 1 2
-// 100 200
-// 40 15
+// 3 
+// 4
+// 5
 
 // Output
-// 1
-// 100
-// 10
+
+// 6
+// 24
+// 120
