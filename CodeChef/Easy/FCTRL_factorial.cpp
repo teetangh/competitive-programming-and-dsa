@@ -12,7 +12,42 @@
 
 using namespace std;
 
-int count_zeros_at_factorial_end2(int num)
+int factorial_trailing_zeroes3(int num)
+{
+    int counter2 = 0;
+    int counter5 = 0;
+    int counter10 = 0;
+
+    int safe_i;
+    for (int i = 1; i <= num; ++i)
+    {
+        safe_i = i;
+
+        while (i % 10 == 0)
+        {
+            counter10++;
+            i = i / 10;
+        }
+
+        while (i % 2 == 0)
+        {
+            counter2++;
+            i = i / 2;
+        }
+
+        while (i % 5 == 0)
+        {
+            counter5++;
+            i = i / 5;
+        }
+
+        i = safe_i;
+    }
+
+    return counter10 + min(counter2, counter5);
+}
+
+int factorial_trailing_zeroes2(int num)
 {
     int counter2 = 0;
     int counter5 = 0;
@@ -35,7 +70,7 @@ int count_zeros_at_factorial_end2(int num)
     return counter10 + min(counter2, counter5);
 }
 
-int count_of_zeroes(std::map<int, int> my_map, int i)
+int factorial_trailing_zeroes1(std::map<int, int> my_map, int i)
 {
     int save_num = i;
     int factor_2 = 0;
@@ -69,16 +104,6 @@ int count_of_zeroes(std::map<int, int> my_map, int i)
     return current_count_of_zeroes;
 }
 
-int count_zeros_at_factorial_end(int num)
-{
-
-    std::map<int, int> my_map;
-    int total_count_of_zeroes = 0;
-    for (int i = 2; i <= num; i++)
-        total_count_of_zeroes += count_of_zeroes(my_map, i);
-    return total_count_of_zeroes;
-}
-
 int main()
 {
 
@@ -98,6 +123,6 @@ int main()
     while (test_cases--)
     {
         cin >> n;
-        cout << count_zeros_at_factorial_end2(n) << endl;
+        cout << factorial_trailing_zeroes3(n) << endl;
     }
 }
