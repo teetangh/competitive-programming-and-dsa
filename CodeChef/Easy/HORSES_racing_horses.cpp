@@ -37,3 +37,11 @@ int main()
 
     return 0;
 }
+// Example:
+// Input:
+// 1
+// 5
+// 4 9 1 32 13
+
+// Output:
+// 3
