@@ -66,6 +66,7 @@ int main()
         string s;
         cin >> s;
         list<int> output = permutation_palindrome(s);
+        // cout << output << endl;
         for (auto &ele : output)
             cout << ele << " ";
         cout << endl;
