@@ -20,11 +20,11 @@ Node *deleteNode(Node *head, int i)
             if (temp == NULL)
                 return head;
         }
-        Node *old = temp->next;
-        if (old != NULL)
+        Node *to_be_deleted = temp->next;
+        if (to_be_deleted != NULL)
         {
             temp->next = temp->next->next;
-            delete old;
+            delete to_be_deleted;
         }
         return head;
     }
