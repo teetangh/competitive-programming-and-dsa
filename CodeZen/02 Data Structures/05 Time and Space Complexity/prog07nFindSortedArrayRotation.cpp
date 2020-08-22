@@ -5,22 +5,23 @@ using namespace std;
 // arr - input array
 // n - size of array
 
-// arr - input array
-// n - size of array
-
 int arrayRotateCheck(int arr[], int n)
 {
     if (n == 0 || n == 1)
         return 0;
 
-    int count = 1;
+    int count = 0;
     int i = 0;
-    while (arr[i] <= arr[i + 1] && i < n)
+    while (arr[i] < arr[i + 1] && i <= n)
     {
         count++;
         i++;
     }
-    return count;
+
+    if (i == n - 1)
+        return 0;
+    else
+        return count + 1;
 }
 
 int main()
