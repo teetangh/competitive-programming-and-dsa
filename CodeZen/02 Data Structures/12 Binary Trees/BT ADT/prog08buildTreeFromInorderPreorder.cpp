@@ -46,6 +46,12 @@ BinaryTreeNode<int> *buildTree(int *in, int *pre, int size)
     return buildTreeHelper(in, pre, 0, size - 1, 0, size - 1);
 }
 
+BinaryTreeNode<int> *buildTreeCustomized(int *preorder, int preLenght, int *inorder, int inLength)
+{
+    // Write your code here
+    return buildTreeHelper(inorder, preorder, 0, inLength - 1, 0, preLenght - 1);
+}
+
 int main(int argc, char const *argv[])
 {
     int in[] = {4, 2, 5, 1, 8, 6, 9, 3, 7};
