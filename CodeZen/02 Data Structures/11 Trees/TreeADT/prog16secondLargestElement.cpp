@@ -1,6 +1,6 @@
-#include "..\include\CNTree.hpp"
 #include <iostream>
 #include <bits/stdc++.h>
+#include "../include/CNTree.hpp"
 using namespace std;
 
 TreeNode<int> *maxTreeNode(TreeNode<int> *root1, TreeNode<int> *root2)

@@ -68,7 +68,7 @@ void printLevelATNewLine(TreeNode<int> *root)
                 break;
             }
             cout << endl;
-            q.push(NULL);
+            // q.push(NULL);/
             continue;
         }
         cout << first->data << " ";

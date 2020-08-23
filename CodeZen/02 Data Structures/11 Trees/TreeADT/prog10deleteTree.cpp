@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include "..\include\CNTree.hpp"
+#include "../include/CNTree.hpp"
 using namespace std;
 
 void deleteTree(TreeNode<int> *root)

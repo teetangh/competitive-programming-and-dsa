@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include "..\include\CNTree.hpp"
+#include "../include/CNTree.hpp"
 using namespace std;
 
 bool containsX(TreeNode<int> *root, int x)

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <bits/stdc++.h>
+#include "../include/CNTree.hpp"
 using namespace std;
-#include "..\include\CNTree.hpp"
 
 void replaceWithDepthValueHelper(pair<TreeNode<int> *, int> root)
 {

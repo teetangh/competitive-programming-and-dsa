@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include "..\include\TreeNode.hpp"
+#include "../include/TreeNode.hpp"
 using namespace std;
 
 TreeNode<int> *takeInputLevelWise()

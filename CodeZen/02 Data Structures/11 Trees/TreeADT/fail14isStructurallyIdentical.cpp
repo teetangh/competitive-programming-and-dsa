@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include "..\include\CNTree.hpp"
+#include "../include/CNTree.hpp"
 using namespace std;
 
 bool isIdentical(TreeNode<int> *root1, TreeNode<int> *root2)

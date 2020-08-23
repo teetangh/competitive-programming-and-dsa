@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include "..\include\FINALTree.hpp"
+#include "../include/FINALTree.hpp"
 using namespace std;
 
 void preorder(TreeNode<int> *root)

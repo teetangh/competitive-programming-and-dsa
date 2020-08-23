@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include "..\include\FINALTree.hpp"
+#include "../include/FINALTree.hpp"
 using namespace std;
 
 void printAtLevelK(TreeNode<int> *root, int k)

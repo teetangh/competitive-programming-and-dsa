@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include "..\include\FINALTree.hpp"
+#include "../include/FINALTree.hpp"
 using namespace std;
 
 int numNodes(TreeNode<int> *root)
