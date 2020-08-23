@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "DynamicStackUsingArray.cpp"
+#include "../include/DynamicStackUsingArray.hpp"
 
 int main()
 {

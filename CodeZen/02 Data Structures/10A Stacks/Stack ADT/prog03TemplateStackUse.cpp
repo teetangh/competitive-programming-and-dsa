@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "TemplateStack.cpp"
+#include "../include/TemplateStack.hpp"
 
 int main()
 {

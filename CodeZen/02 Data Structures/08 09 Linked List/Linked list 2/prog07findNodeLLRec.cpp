@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "../include/FinalLinkedList.hpp"
+#include "../include/FINALLinkedList.hpp"
 
 int indexOfNRecursive(Node *head, int n)
 {

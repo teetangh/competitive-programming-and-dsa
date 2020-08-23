@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "StackUsingArray.cpp"
+#include "../include/StackUsingArray.hpp"
 
 int main()
 {
