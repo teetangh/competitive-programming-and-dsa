@@ -1,7 +1,7 @@
 #include <iostream>
 // #include <bits/stdc++.h>
 #include <vector>
-#include "..\include\BinarySearchTree.hpp"
+#include "../include/BinarySearchTree.hpp"
 using namespace std;
 
 int main(int argc, char const *argv[])
@@ -14,12 +14,12 @@ int main(int argc, char const *argv[])
     b.insertData(3);
     b.insertData(15);
 
-    cout << "\nAFTER INSERTION\n";
+    cout << "/nAFTER INSERTION/n";
     b.printTree();
 
     b.deleteData(10);
     b.deleteData(100);
-    cout << "\nAFTER DELETION\n";
+    cout << "/nAFTER DELETION/n";
     b.printTree();
 
     return 0;

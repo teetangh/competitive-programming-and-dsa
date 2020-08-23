@@ -1,7 +1,7 @@
 #include <iostream>
 // #include <bits/stdc++.h>
 #include <vector>
-#include "..\include\FINALBinaryTree.hpp"
+#include "../include/FINALBinaryTree.hpp"
 using namespace std;
 
 vector<int> *getRootToNodePath(BinaryTreeNode<int> *root, int data)
