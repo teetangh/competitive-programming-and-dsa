@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include "..\include\CNBinaryTree.hpp"
+#include "../include/CNBinaryTree.hpp"
 using namespace std;
 
 bool isNodePresent(BinaryTreeNode<int> *root, int x)

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include "..\include\FINALBinaryTree.hpp"
+#include "../include/FINALBinaryTree.hpp"
 using namespace std;
 
 void inOrder(BinaryTreeNode<int> *root)

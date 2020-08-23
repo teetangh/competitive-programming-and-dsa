@@ -1,6 +1,6 @@
 #include <iostream>
 // #include <bits/stdc++.h>
-#include "..\include\FINALBinaryTree.hpp"
+#include "../include/FINALBinaryTree.hpp"
 using namespace std;
 // ASsumin no duplicates in the tree
 BinaryTreeNode<int> *buildTreeHelper(int *in, int *pre, int inS, int inE, int preS, int preE)

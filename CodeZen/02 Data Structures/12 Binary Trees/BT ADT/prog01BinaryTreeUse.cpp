@@ -1,6 +1,6 @@
 #include <iostream>
 #include <queue>
-#include "..\include\BinaryTreeNode.hpp"
+#include "../include/BinaryTreeNode.hpp"
 using namespace std;
 
 BinaryTreeNode<int> *takeInputLevelWise()
