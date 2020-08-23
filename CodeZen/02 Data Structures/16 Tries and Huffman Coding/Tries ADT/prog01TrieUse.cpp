@@ -1,4 +1,4 @@
-#include "..\include\FINALTrie.hpp"
+#include "../include/FINALTrie.hpp"
 #include <iostream>
 #include <string>
 using namespace std;
