@@ -4,27 +4,26 @@ using namespace std;
 // #include "solution.h"
 
 #include <bits/stdc++.h>
+
 void rotate(int *input, int d, int n)
 {
-    queue<int> my_queue;
-    //Write your code here
+    list<int> my_list;
     for (int i = 0; i < n; i++)
-        my_queue.push(input[i]);
+        my_list.push_back(input[i]);
 
     for (int i = 0; i < d; i++)
     {
-        auto temp = my_queue.front();
-        my_queue.pop();
-        my_queue.push(temp);
+        auto temp = my_list.front();
+        my_list.pop_front();
+        my_list.push_back(temp);
     }
 
-    int i = 0;
-    for (auto it = my_queue.front(); it != my_queue.back(); ++it)
+    for (int i = 0; i < n; i++)
     {
-        input[i] = (int)*it;
-        i++;
+        auto temp2 = my_list.front();
+        input[i] = temp2;
+        my_list.pop_front();
     }
-    // cout << "\n";
 }
 
 int main()
