@@ -28,7 +28,7 @@ lli min_distance(vector<lli> stalls_vec, lli cows)
         for (auto &ele : cows_stalls_vec)
             ele.second = false;
 
-        cows_stalls_vec[0].second = true;
+        cows_stalls_vec[0].second = true; 
         cows_stalls_vec[cows_stalls_vec.size() - 1].second = true;
         lli cows_counter = cows - 2;
 
