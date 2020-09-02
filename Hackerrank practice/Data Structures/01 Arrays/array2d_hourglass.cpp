@@ -10,7 +10,7 @@ int hourglassSum(vector<vector<int>> arr)
     for (int i = 1; i < arr.size() - 1; i++)
     {
         int current_sum = 0;
-        for (int j = 0; j < arr[0].size() - 1; j++)
+        for (int j = 1; j < arr[0].size() - 1; j++)
         {
             current_sum = arr[i - 1][j - 1] + arr[i - 1][j] + arr[i - 1][j + 1] + arr[i][j] +
                           arr[i + 1][j - 1] + arr[i + 1][j] + arr[i + 1][j + 1];
