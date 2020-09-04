@@ -3,6 +3,24 @@ using namespace std;
 // #include "solution.h"
 
 #include <bits/stdc++.h>
+
+
+// Direct Formula
+// O(n) Time | O(1) space
+int DuplicateNumber3(int arr[], int size)
+{
+
+}
+
+// Sorting the Array
+// O(NlogN) Time | O(1) space
+int DuplicateNumber2(int arr[], int size)
+{
+
+}
+
+
+// Using Map to store the frequencies
 int DuplicateNumber(int arr[], int size)
 {
 

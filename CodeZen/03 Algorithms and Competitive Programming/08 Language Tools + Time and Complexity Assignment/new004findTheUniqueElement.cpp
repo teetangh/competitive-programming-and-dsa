@@ -7,6 +7,20 @@ using namespace std;
 // size - size of array
 #include <bits/stdc++.h>
 
+// Using the EXOR Operation
+// 
+int FindUnique4(int arr[], int size)
+{
+}
+
+// Sorting the Array
+// 
+int FindUnique4(int arr[], int size)
+{
+}
+
+// Maintaing a map
+// 
 int FindUnique2(int arr[], int size)
 {
 
@@ -23,10 +37,9 @@ int FindUnique2(int arr[], int size)
 
     return -1;
 }
-// arr - input array
-// size - size of array
-#include <bits/stdc++.h>
 
+// Traversing the Array
+// 
 int FindUnique(int arr[], int size)
 {
 

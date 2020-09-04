@@ -5,6 +5,23 @@ using namespace std;
 
 #include <bits/stdc++.h>
 
+// Reversing Total Array
+// Then Reversing the first (n - d) elements and the following d elements separately.
+// O()
+void rotate3(int *input, int d, int n)
+{
+ 
+}
+
+// Rotating the array all at once
+// O(n) Time | O(1) space
+void rotate2(int *input, int d, int n)
+{
+ 
+}
+
+//  Rotating the array one by one
+// O(dn) Time | O(1) space
 void rotate(int *input, int d, int n)
 {
     list<int> my_list;
