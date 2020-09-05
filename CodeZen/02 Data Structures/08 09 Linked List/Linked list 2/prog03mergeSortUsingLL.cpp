@@ -102,9 +102,9 @@ node *mergeSort(node *head)
 }
 int main()
 {
-    node *head1 = takeinput();
-    node *head2 = takeinput();
-    node *head3 = mergeTwoLLs(head1, head2);
-    print(head3);
+    node* head=takeinput();
+    head= mergeSort(head);
+    print(head);
     return 0;
 }
+
