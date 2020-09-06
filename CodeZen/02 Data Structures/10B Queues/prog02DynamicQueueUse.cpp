@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    QueueUsingArray<int> q(5);
+    DynamicQueueUsingArray<int> q(5);
 
     q.enqueue(10);
     q.enqueue(20);

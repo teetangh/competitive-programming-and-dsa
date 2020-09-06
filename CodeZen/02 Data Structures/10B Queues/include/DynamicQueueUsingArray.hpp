@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 template <typename T>
-class QueueUsingArray
+class DynamicQueueUsingArray
 {
 private:
     T *data;
@@ -13,7 +13,7 @@ private:
     int capacity;
 
 public:
-    QueueUsingArray(int s)
+    DynamicQueueUsingArray(int s)
     {
         data = new T[s];
         nextIndex = 0;
@@ -89,5 +89,5 @@ public:
         return ans;
     }
 
-    // ~QueueUsingArray();
+    // ~DynamicQueueUsingArray();
 };
