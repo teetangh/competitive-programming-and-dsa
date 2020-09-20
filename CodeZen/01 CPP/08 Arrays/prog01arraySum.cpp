@@ -19,3 +19,8 @@ int main()
 
     cout << sum;
 }
+// Sample Input :
+// 3
+// 9 8 9
+// Sample Output :
+// 26

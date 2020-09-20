@@ -18,3 +18,21 @@ int linearSearch(int arr[], int n, int val)
 
     return -1;
 }
+// Sample Input 1:
+// 1
+// 7
+// 2 13 4 1 3 6 28
+// 3
+// Sample Output 1:
+// 4
+// Sample Input 2:
+// 2
+// 7
+// 2 13 4 1 3 6 28
+// 9
+// 5
+// 7 8 5 9 5      
+// 5
+// Sample Output 2:
+// -1
+// 2

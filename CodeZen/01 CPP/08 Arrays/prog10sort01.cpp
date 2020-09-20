@@ -8,12 +8,6 @@ using namespace std;
 
 void SortZeroesAndOne(int arr[], int n)
 {
-    /* Don't write main().
-     * Don't read input, it is passed as function argument.
-     * Update in the given array itself. Don't return or print anything.
-     * Taking input and printing output is handled automatically.
-     */
-
     int temp;
     int ptr = 0;
     for (int i = 0; i < n; i++)
@@ -45,3 +39,18 @@ int main()
         cout << input[i] << " ";
     return 0;
 }
+// Sample Input 1:
+// 1
+// 7
+// 0 1 1 0 1 0 1
+// Sample Output 1:
+// 0 0 0 1 1 1 1
+// Sample Input 2:
+// 2
+// 8
+// 1 0 1 1 0 1 0 1
+// 5
+// 0 1 0 1 0
+// Sample Output 2:
+// 0 0 0 1 1 1 1 1
+// 0 0 0 1 1

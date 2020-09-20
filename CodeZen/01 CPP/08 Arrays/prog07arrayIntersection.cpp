@@ -10,11 +10,6 @@ using namespace std;
 
 void intersection(int input1[], int input2[], int size1, int size2)
 {
-    /* Don't write main().
-     * Don't read input, it is passed as function argument.
-     * Print the output and don't return it.
-     * Taking input is handled automatically.
-     */
     for (int i = 0; i < size1; i++)
     {
 
@@ -51,3 +46,26 @@ int main()
 
     return 0;
 }
+// Sample Input 1 :
+// 2
+// 6
+// 2 6 8 5 4 3
+// 4
+// 2 3 4 7 
+// 2
+// 10 10
+// 1
+// 10
+// Sample Output 1 :
+// 2 4 3
+// 10
+// Sample Input 2 :
+// 1
+// 4
+// 2 6 1 2
+// 5
+// 1 2 3 4 2
+// Sample Output 2 :
+// 2 1 2
+// Explanation for Sample Output 2 :
+// Since, both input arrays have two '2's, the intersection of the arrays also have two '2's. The first '2' of first array matches with the first '2' of the second array. Similarly, the second '2' of the first array matches with the second '2' if the second array.

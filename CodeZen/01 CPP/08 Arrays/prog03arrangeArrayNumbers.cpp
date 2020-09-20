@@ -48,3 +48,15 @@ int main()
     }
     delete arr;
 }
+// Sample Input 1 :
+// 1
+// 6
+// Sample Output 1 :
+// 1 3 5 6 4 2
+// Sample Input 2 :
+// 2
+// 9
+// 3
+// Sample Output 2 :
+// 1 3 5 7 9 8 6 4 2
+// 1 3 2
