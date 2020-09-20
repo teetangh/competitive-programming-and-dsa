@@ -28,3 +28,21 @@ int main()
             cout << j << endl;
     }
 }
+// Sample Input 1:
+// 9
+// Sample Output 1:
+// 2
+// 3
+// 5
+// 7
+// Sample Input 2:
+// 20
+// Sample Output 2:
+// 2
+// 3
+// 5
+// 7
+// 11
+// 13
+// 17
+// 19

@@ -15,3 +15,11 @@ int main()
         count++;
     }
 }
+// Sample Input 1 :
+// 10
+// Sample Output 1 :
+// 5 11 14 17 23 26 29 35 38 41
+// Sample Input 2 :
+// 4
+// Sample Output 2 :
+// 5 11 14 17

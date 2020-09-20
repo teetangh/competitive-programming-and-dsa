@@ -20,3 +20,11 @@ int main()
 
     cout << decimal;
 }
+// Sample Input 1 :
+// 1100
+// Sample Output 1 :
+// 12
+// Sample Input 2 :
+// 111
+// Sample Output 2 :
+// 7

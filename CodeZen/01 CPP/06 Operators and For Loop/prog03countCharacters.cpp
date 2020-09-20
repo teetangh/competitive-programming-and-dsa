@@ -26,3 +26,7 @@ int main()
 
     cout << letterCount << " " << numCount << " " << spaceCount;
 }
+// Sample Input :
+// abc def4 5$
+// Sample Output :
+// 6 2 2

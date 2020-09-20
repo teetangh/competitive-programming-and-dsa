@@ -28,3 +28,11 @@ int main()
 
     cout << revbin;
 }
+// Sample Input 1 :
+// 12
+// Sample Output 1 :
+// 1100
+// Sample Input 2 :
+// 7
+// Sample Output 2 :
+// 111

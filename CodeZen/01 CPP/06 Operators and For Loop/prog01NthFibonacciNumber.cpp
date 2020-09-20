@@ -20,3 +20,11 @@ int main()
     }
     cout << prev;
 }
+// Sample Input 1:
+// 4
+// Sample Output 2:
+// 3 
+// Sample Input 1:
+// 6
+// Sample Output 2:
+// 8
