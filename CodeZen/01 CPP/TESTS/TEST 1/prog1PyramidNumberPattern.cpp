@@ -24,3 +24,11 @@ int main()
         cout << endl;
     }
 }
+// Sample Input :
+// 5
+// Sample Output :
+//     1
+//    212
+//   32123
+//  4321234
+// 543212345

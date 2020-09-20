@@ -34,3 +34,15 @@ int main()
 
     cout << big2;
 }
+// Sample Input 1:
+//  4
+//  3 9 0 9
+// Sample Output 1:
+//  3
+// Sample Input 2 :
+//  2
+//  4 4
+// Sample Output 2:
+//  -2147483648
+// Sample Output Explanation:
+// Since both the elements are equal here, hence second largest element is INT_MIN i.e. ( -2^31 )
