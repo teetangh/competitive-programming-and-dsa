@@ -23,3 +23,24 @@ int main()
     printPatt(n);
     return 0;
 }
+// Sample Input 1:
+// 8
+// Sample Output 1:
+// H
+// GH
+// FGH
+// EFGH
+// DEFGH
+// CDEFGH
+// BCDEFGH
+// ABCDEFGH
+// Sample Input 2:
+// 7
+// Sample Output 2:
+// G
+// FG
+// EFG
+// DEFG
+// CDEFG
+// BCDEFG
+// ABCDEFG

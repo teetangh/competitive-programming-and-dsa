@@ -24,3 +24,11 @@ int main()
     cout << evenSum << " " << oddSum;
     return 0;
 }
+// Sample Input 1:
+// 1234
+// Sample Output 1:
+// 6 4
+// Sample Input 2:
+// 552245
+// Sample Output 2:
+// 8 15

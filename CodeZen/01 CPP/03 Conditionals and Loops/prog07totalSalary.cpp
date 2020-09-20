@@ -27,3 +27,11 @@ int main()
 
     return 0;
 }
+// Sample Input 1 :
+// 10000 A
+// Sample Output 1 :
+// 17600
+// Sample Input 2 :
+// 4567 B
+// Sample Output 2 :
+// 8762

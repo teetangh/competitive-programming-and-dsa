@@ -13,3 +13,21 @@ int main()
     else
         cout << "-1";
 }
+// Input format :
+// Single Character
+// Output format :
+// 1 or 0 or -1
+// Constraints :
+// Input can be any character
+// Sample Input 1 :
+// v
+// Sample Output 1 :
+// 0
+// Sample Input 2 :
+// V
+// Sample Output 2 :
+// 1
+// Sample Input 3 :
+// #
+// Sample Output 3 :
+// -1

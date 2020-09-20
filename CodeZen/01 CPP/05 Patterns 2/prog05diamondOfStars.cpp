@@ -35,3 +35,17 @@ int main()
     printPatt(n);
     return 0;
 }
+// Sample Input 1:
+// 5
+// Sample Output 1:
+//   *
+//  ***
+// *****
+//  ***
+//   *
+// Sample Input 2:
+// 3
+// Sample Output 2:
+//   *
+//  ***
+//   *

@@ -22,3 +22,11 @@ int main()
         cout << endl;
     }
 }
+// Sample Input :
+// 5
+// Sample Output :
+//     1
+//    23
+//   345
+//  4567
+// 56789

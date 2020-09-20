@@ -19,3 +19,16 @@ int main()
         cout << endl;
     }
 }
+// Sample Input 1 :
+// 3
+// Sample Output 1 :
+//    *
+//   *** 
+//  *****
+// Sample Input 2 :
+// 4
+// Sample Output 2 :
+//     *
+//    *** 
+//   *****
+//  *******

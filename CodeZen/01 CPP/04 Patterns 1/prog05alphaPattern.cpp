@@ -17,3 +17,22 @@ int main()
         cout << endl;
     }
 }
+// Sample Input 1:
+// 7
+// Sample Output 1:
+// A
+// BB
+// CCC
+// DDDD
+// EEEEE
+// FFFFFF
+// GGGGGGG
+// Sample Input 2:
+// 6
+// Sample Output 2:
+// A
+// BB
+// CCC
+// DDDD
+// EEEEE
+// FFFFFF

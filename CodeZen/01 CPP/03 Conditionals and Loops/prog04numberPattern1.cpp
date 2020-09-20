@@ -17,3 +17,9 @@ int main()
         cout << endl;
     }
 }
+// Sample Input 1 :
+// 3
+// Sample Output 1 :
+// 1
+// 23
+// 345
