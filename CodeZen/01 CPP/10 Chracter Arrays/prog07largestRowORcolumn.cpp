@@ -78,3 +78,25 @@ int main()
     }
     findLargest(input, row, col);
 }
+
+// Sample Input 1 :
+// 1
+// 2 2 
+// 1 1 
+// 1 1
+// Sample Output 1 :
+// row 0 2
+// Sample Input 2 :
+// 2
+// 3 3
+// 3 6 9 
+// 1 4 7 
+// 2 8 9
+// 4 2
+// 1 2
+// 90 100
+// 3 40
+// -10 200
+// Sample Output 2 :
+// column 2 25
+// column 1 342

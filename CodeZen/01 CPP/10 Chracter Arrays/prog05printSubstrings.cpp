@@ -41,3 +41,18 @@ int main()
 
     printSubstrings(str);
 }
+// Sample Input 1 :
+// xyz
+// Sample Output 1 :
+// x
+// xy
+// xyz
+// y
+// yz
+// z
+// Sample Input 2 :
+// ab
+// Sample Output 2 :
+// a
+// b
+// ab

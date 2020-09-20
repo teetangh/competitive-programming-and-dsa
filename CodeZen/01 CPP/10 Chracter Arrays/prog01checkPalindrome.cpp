@@ -44,3 +44,11 @@ int main()
         cout << "false" << endl;
     }
 }
+// Sample Input 1 :
+// abcdcba
+// Sample Output 1 :
+// true 
+// Sample Input 1 :
+// abcd
+// Sample Output 1 :
+// false

@@ -55,3 +55,13 @@ int main()
         cout << "false";
     }
 }
+// Sample Input 1 :
+// abcde
+// baedc
+// Sample Output 1 :
+// true
+// Sample Input 2 :
+// abc
+// cbd
+// Sample Output 2 :
+// false

@@ -39,3 +39,11 @@ int main()
     removeConsecutiveDuplicates(input);
     cout << input << endl;
 }
+// Sample Input 1:
+// aabccbaa
+// Sample Output 1:
+// abcba
+// Sample Input 2:
+// xxyyzxx
+// Sample Output 2:
+// xyzx

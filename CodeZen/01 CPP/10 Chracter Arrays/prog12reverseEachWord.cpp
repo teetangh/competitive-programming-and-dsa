@@ -49,3 +49,11 @@ int main()
     reverseEachWord(input);
     cout << input << endl;
 }
+// Sample Input 1:
+// Welcome to Coding Ninjas
+// Sample Output 1:
+// emocleW ot gnidoC sajniN
+// Sample Input 2:
+// Give proper names to variables and functions
+// Sample Output 2:
+// eviG reporp seman ot selbairav dna snoitcnuf

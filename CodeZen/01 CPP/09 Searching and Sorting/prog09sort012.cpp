@@ -135,3 +135,18 @@ int main()
         cout << arr_first[i] << " ";
     return 0;
 }
+// Sample Input 1:
+// 1
+// 7
+// 0 1 2 0 2 0 1
+// Sample Output 1:
+// 0 0 0 1 1 2 2 
+// Sample Input 2:
+// 2
+// 5
+// 2 2 0 1 1
+// 7
+// 0 1 2 0 1 2 0
+// Sample Output 2:
+// 0 1 1 2 2 
+// 0 0 0 1 1 2 2

@@ -28,4 +28,12 @@ int main()
 
     for (int j = 0; j < n; j++)
         cout << colsum[j] << " ";
-}
+// }
+// Sample Input :
+// 4 2
+// 1 2
+// 3 4
+// 5 6
+// 7 8
+// Sample Output :
+// 16 20

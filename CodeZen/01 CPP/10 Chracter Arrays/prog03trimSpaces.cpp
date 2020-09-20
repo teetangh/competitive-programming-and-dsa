@@ -54,3 +54,7 @@ int main()
     trimSpaces(input);
     cout << input << endl;
 }
+// Sample Input :
+// abc def g hi
+// Sample Output :
+// abcdefghi

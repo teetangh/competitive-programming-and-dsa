@@ -43,3 +43,21 @@ int main()
         cout << input[i] << " ";
     return 0;
 }
+// Sample Input 1:
+// 1
+// 7
+// 1 2 3 4 5 6 7
+// 2
+// Sample Output 1:
+// 3 4 5 6 7 1 2
+// Sample Input 2:
+// 2
+// 7
+// 1 2 3 4 5 6 7
+// 0
+// 4
+// 1 2 3 4
+// 2
+// Sample Output 2:
+// 1 2 3 4 5 6 7
+// 3 4 1 2

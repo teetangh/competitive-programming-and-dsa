@@ -62,3 +62,11 @@ int main()
     cin.getline(input, 1000);
     cout << highestOccurringChar(input) << endl;
 }
+// Sample Input 1:
+// abdefgbabfba
+// Sample Output 1:
+// b
+// Sample Input 2:
+// xy
+// Sample Output 2:
+// x

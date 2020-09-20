@@ -26,3 +26,13 @@ int main()
     removeAllOccurrencesOfChar(input, c);
     cout << input << endl;
 }
+// Sample Input 1:
+// welcome to coding ninjas
+// o
+// Sample Output 1:
+// welcme t cding ninjas
+// Sample Input 2:
+// Think of edge cases before submitting solutions
+// x
+// Sample Output 2:
+// Think of edge cases before submitting solutions

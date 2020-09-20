@@ -66,3 +66,11 @@ int main()
     stringCompression(input);
     cout << input << endl;
 }
+// Sample Input 1 :
+// aaabbccdsa
+// Sample Output 1 :
+// a3b2c2dsa
+// Sample Input 2 :
+// aaabbcddeeeee
+// Sample Output 2 :
+// a3b2cd2e5

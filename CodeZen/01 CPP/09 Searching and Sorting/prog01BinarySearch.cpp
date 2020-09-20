@@ -37,3 +37,19 @@ int main()
     cout << BinarySearch(input, size, val);
     return 0;
 }
+// Sample Input 1:
+// 7
+// 1 3 7 9 11 12 45
+// 1
+// 3
+// Sample Output 1:
+// 1
+// Sample Input 2:
+// 7
+// 1 2 3 4 5 6 7
+// 2
+// 9
+// 7
+// Sample Output 2:
+// -1
+// 6
