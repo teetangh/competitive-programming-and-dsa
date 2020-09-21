@@ -24,3 +24,9 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+// Output
+// 0x7ffe8e8f29d0
+// abc
+// abc
+// a
+// a�)���

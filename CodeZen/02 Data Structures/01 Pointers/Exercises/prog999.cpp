@@ -28,3 +28,11 @@ int main()
     cout << f(c, b, a);
     return 0;
 }
+// x is7
+// y is7
+// z is5
+// py is0x7fffe1db02f4
+// ppz is0x7fffe1db02f8
+// *py is7
+// **ppz is7
+// 19

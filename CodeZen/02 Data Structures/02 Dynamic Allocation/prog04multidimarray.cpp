@@ -40,3 +40,11 @@ int main()
     // Deleting the array of the arrays
     delete[] p;
 }
+// // Sample IO
+// 4
+// 1 2 3 4 5 6 7 8 9 10
+//  OUTPUT IS 
+// 1 
+// 2 3 
+// 4 5 6 
+// 7 8 9 10 

@@ -14,3 +14,6 @@ int main()
     // 3. Cannot be changed by others later
     cout << PI * r * r << endl;
 }
+// // Sample IO
+// 5
+// 78.55

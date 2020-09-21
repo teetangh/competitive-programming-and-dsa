@@ -31,3 +31,9 @@ int main(int argc, char const *argv[])
     cout << *p << endl;
     return 0;
 }
+// // Output
+// 10
+// 0x7fff553c338c
+// 0x7fff553c338c
+// 10
+// 11

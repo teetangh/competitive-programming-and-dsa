@@ -49,3 +49,12 @@ int main(int argc, char const *argv[])
     int *k2 = f2();
     return 0;
 }
+// Output
+// A
+
+// 0x7ffebcf5d914
+// A
+// 65
+// A
+
+// A

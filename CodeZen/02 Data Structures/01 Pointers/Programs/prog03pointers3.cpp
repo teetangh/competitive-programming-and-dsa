@@ -22,3 +22,11 @@ int main()
     cout << q << endl;
     cout << *q << endl;
 }
+// // Output
+// 21846
+// 21847
+// 0x7fff4806a7d0
+// 1
+// 0x7fff4806a7d0
+// 2
+// Segmentation fault (core dumped)

@@ -54,3 +54,12 @@ int main()
     temp = new int[100];
     delete[] p;
 }
+// // Sample IO
+// 10
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// MAX IS 10

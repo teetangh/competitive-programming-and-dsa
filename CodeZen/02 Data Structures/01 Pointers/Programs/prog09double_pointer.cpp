@@ -39,3 +39,12 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+// // Output
+// 0x7fffb2da2018
+// 0x7fffb2da2018
+// 0x7fffb2da2014
+// 0x7fffb2da2014
+// 0x7fffb2da2014
+// 10
+// 10
+// 10

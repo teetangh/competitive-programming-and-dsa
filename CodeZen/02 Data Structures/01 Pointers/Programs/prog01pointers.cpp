@@ -19,3 +19,9 @@ int main()
     double *df = &d;
     cout << df << endl;
 }
+// Output
+// 0x7ffc942ce010
+// 0x7ffc942ce010
+// 10
+// 0x7ffc942ce014
+// 0x7ffc942ce018

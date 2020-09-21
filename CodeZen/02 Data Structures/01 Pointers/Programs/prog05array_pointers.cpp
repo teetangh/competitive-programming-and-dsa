@@ -37,3 +37,18 @@ int main()
     // a = a + 1;  // INVALID
     p = a + 1;  //VALID
 }
+// // Output
+// 0x7ffe5336ea30
+// 0x7ffe5336ea30
+// 5
+// 10
+// 0x7ffe5336ea60
+// 0x7ffe5336ea60
+// 0x7ffe5336ea60
+// 0x7ffe5336ea20
+// 0x7ffe5336ea30
+// 0x7ffe5336ea30
+// 0x7ffe5336ea30
+// 0x7ffe5336ea28
+// 40
+// 8

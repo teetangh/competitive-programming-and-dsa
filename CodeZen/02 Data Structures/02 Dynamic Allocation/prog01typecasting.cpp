@@ -23,3 +23,13 @@ int main()
     // cout << *(pc + 2) << endl;
     // cout << *(pc + 3) << endl;
 }
+
+// // Output
+// A
+
+// 0x7ffebcf5d914
+// A
+// 65
+// A
+
+// A

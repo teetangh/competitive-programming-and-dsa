@@ -24,3 +24,11 @@ int main()
     dp++;
     cout << dp;
 }
+// // Output
+// 0x7ffca21eff9c
+// 0x7ffca21effa0
+// 0x7ffca21effa8
+// 0x7ffca21effa0
+// 0x7ffca21effa4
+// 0x7ffca21effa0
+// 0x7ffca21effa0

@@ -20,3 +20,9 @@ int main(int argc, char const *argv[])
     cout << sum(a, 10) << " is the sum of 10 elements  " << endl;
     cout << sum(a, 5) << " is the sum of 5 elements  " << endl;
 }
+// // Output
+// SIZE OF a in MAIN 40
+// SIZE OF a in FUNCTION 8
+// 55 is the sum of 10 elements  
+// SIZE OF a in FUNCTION 8
+// 15 is the sum of 5 elements  
