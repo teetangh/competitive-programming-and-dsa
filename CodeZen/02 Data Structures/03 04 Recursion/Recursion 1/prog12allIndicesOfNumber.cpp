@@ -11,9 +11,7 @@ int allIndexes(int input[], int size, int x, int output[])
     int ans = allIndexes(input + 1, size - 1, x, output);
 
     for (int i = 0; i < ans; i++)
-    {
         output[i] += 1;
-    }
 
     if (input[0] == x)
     {
