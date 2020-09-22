@@ -94,9 +94,12 @@ void placeNQueens(int n)
     placeNQueensHelper(board, 1, 0, 0);
 }
 
-
 int main()
 {
+#ifndef ONLINE_JUDGE
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
+#endif
 
     int n;
     cin >> n;
