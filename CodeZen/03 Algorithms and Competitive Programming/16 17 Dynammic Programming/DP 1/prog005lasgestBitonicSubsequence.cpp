@@ -62,3 +62,20 @@ int main()
     cout << longestBitonicSubarray(input, n);
     return 0;
 }
+// Sample Input 1:
+// 6
+// 15 20 20 6 4 2
+// Sample Output 1:
+// 5
+// Sample Output 1 Explanation:
+// Here, longest Bitonic subsequence is {15, 20, 6, 4, 2} which has length = 5.
+// Sample Input 2:
+// 2
+// 1 5
+// Sample Output 2:
+// 2
+// Sample Input 3:
+// 2
+// 5 1
+// Sample Output 3:
+// 2
