@@ -10,7 +10,7 @@ void printSolution(vector<vector<bool>> board)
         for (int j = 0; j < board[i].size(); j++)
             cout << board[i][j] << " ";
     }
-    cout << endl;
+    cout << "\n";
 }
 
 bool canPlaceQueen(vector<vector<bool>> board, int row, int col)
@@ -30,26 +30,33 @@ bool canPlaceQueen(vector<vector<bool>> board, int row, int col)
             return false;
     }
 
-    for (int i = 0; i < board.size(); i++)
+    for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--)
     {
-        for (int j = 0; j < board[i].size(); j++)
+        if (board[i][j] == true)
         {
-            if (((col - j) / (row - i) != 1) && ((col - j) / (row - i) != -1))
-                continue;
-            if (board[i][j] == true)
-                return false;
+            return false;
+        }
+    }
+
+    for (int i = row - 1, j = col + 1; i >= 0 && j < board.size(); i--, j++)
+    {
+        if (board[i][j] == true)
+        {
+            return false;
         }
     }
     return true;
 }
 
-void placeNQueensHelper(vector<vector<bool>> board, int level, int prev_row, int prev_col)
+void placeNQueensHelper(vector<vector<bool>> board, int level)
 {
-    if (level < 0)
-        return;
+    // printSolution(board);
 
-    if (prev_row >= board.size() || prev_col > board[prev_row].size())
-        return;
+    // if (level < 0)
+    //     return;
+
+    // if (prev_row >= board.size() || prev_col > board[prev_row].size())
+    //     return;
 
     if (level >= board.size())
     {
@@ -57,27 +64,30 @@ void placeNQueensHelper(vector<vector<bool>> board, int level, int prev_row, int
         return;
     }
 
-    bool placedThisLevel = false;
+    // bool placedThisLevel = false;
     for (int j = 0; j < board[level].size(); j++)
     {
         if (canPlaceQueen(board, level, j))
         {
             board[level][j] = true;
-            placedThisLevel = true;
+            // placedThisLevel = true;
 
-            prev_row = level;
-            prev_col = j;
-            break;
+            // prev_row = level;
+            // prev_col = j;
+            placeNQueensHelper(board, level + 1);
+
+            board[level][j] = false;
         }
     }
 
-    if (placedThisLevel == true)
-        placeNQueensHelper(board, level + 1, prev_row, prev_col);
-    else
-    {
-        board[prev_row][prev_col] = false;
-        placeNQueensHelper(board, level - 1, prev_row, prev_col + 1);
-    }
+    // if (placedThisLevel == true)
+    //     placeNQueensHelper(board, level + 1, prev_row, prev_col);
+    // else
+    // {
+    //     board[prev_row][prev_col] = false;
+    //     placeNQueensHelper(board, level - 1, prev_row, prev_col + 1);
+    // }
+    return;
 }
 
 void placeNQueens(int n)
@@ -90,18 +100,5 @@ void placeNQueens(int n)
     vector<vector<bool>> board;
     board.resize(n, vector<bool>(n, default_value));
 
-    board[0][0] = true;
-    placeNQueensHelper(board, 1, 0, 0);
-}
-
-int main()
-{
-#ifndef ONLINE_JUDGE
-    freopen("xinput.txt", "r", stdin);
-    freopen("xoutput.txt", "w", stdout);
-#endif
-
-    int n;
-    cin >> n;
-    placeNQueens(n);
+    placeNQueensHelper(board, 0);
 }
