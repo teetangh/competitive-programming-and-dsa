@@ -1,18 +1,6 @@
 #include <iostream>
-#include <iomanip>
 #include <bits/stdc++.h>
-
 using namespace std;
-
-#define fastio                        \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);                    \
-    cout.tie(NULL)
-
-// typedefs
-typedef long long ll;
-typedef long long int lli;
-
 int matrixChainMultiplicationHelper(vector<int> &nums, int i, int j)
 {
     if (i >= j)
@@ -31,7 +19,6 @@ int matrixChainMultiplicationHelper(vector<int> &nums, int i, int j)
 
     return minimumCost;
 }
-
 int matrixChainMultiplication(vector<int> &nums)
 {
     return matrixChainMultiplicationHelper(nums, 1, nums.size() - 1);
