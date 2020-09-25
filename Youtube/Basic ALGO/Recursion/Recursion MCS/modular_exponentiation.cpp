@@ -24,19 +24,11 @@ int main(int argc, char const *argv[])
     int test_cases;
     cin >> test_cases;
     int x, n, M;
-    queue<int> mq;
     while (test_cases--)
     {
         cin >> x >> n >> M;
-        mq.push(modular_exponentiation(x, n, M));
+        cout << modular_exponentiation(x, n, M) << endl;
     }
-    while (!mq.empty())
-    {
-        int temp = mq.front();
-        mq.pop();
-        cout << temp << endl;
-    }
-    return 0;
 }
 // // Sample IO
 // 2
