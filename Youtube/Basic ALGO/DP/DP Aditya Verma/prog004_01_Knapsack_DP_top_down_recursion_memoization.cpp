@@ -23,8 +23,8 @@ int knapsack_top_down(vector<int> weight_array, vector<int> value_array, int bag
 int main(int argc, char const *argv[])
 {
 #ifndef ONLINE_JUDGE
-    freopen("xinput1.txt", "r", stdin);
-    freopen("xoutput1.txt", "w", stdout);
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
 #endif
 
     int num_of_items, bag_capacity;

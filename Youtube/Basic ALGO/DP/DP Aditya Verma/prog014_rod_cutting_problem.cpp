@@ -30,8 +30,8 @@ int rod_cutting_dp(vector<int> piece_length_array, vector<int> price_length_arra
 int main(int argc, char const *argv[])
 {
 #ifndef ONLINE_JUDGE
-    freopen("xinput1.txt", "r", stdin);
-    freopen("xoutput1.txt", "w", stdout);
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
 #endif
 
     int types_of_pieces, rod_length;

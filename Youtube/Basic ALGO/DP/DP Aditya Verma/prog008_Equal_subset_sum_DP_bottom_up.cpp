@@ -6,8 +6,8 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
 #ifndef ONLINE_JUDGE
-    freopen("xinput1.txt", "r", stdin);
-    freopen("xoutput1.txt", "w", stdout);
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
 #endif
 
     int array_size, required_sum;

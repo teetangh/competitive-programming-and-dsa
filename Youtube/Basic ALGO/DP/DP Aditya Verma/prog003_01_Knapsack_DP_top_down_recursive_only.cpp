@@ -31,8 +31,8 @@ int knapsack(vector<int> wt, vector<int> val, int W, int n)
 int main(int argc, char const *argv[])
 {
 #ifndef ONLINE_JUDGE
-    freopen("xinput1.txt", "r", stdin);
-    freopen("xoutput1.txt", "w", stdout);
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
 #endif
 
     int num_of_items, bag_capacity;
