@@ -16,6 +16,11 @@ int modular_exponentiation(int x, int n, int M)
 
 int main(int argc, char const *argv[])
 {
+#ifndef ONLINE_JUDGE
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
+#endif
+
     int test_cases;
     cin >> test_cases;
     int x, n, M;
@@ -33,3 +38,10 @@ int main(int argc, char const *argv[])
     }
     return 0;
 }
+// // Sample IO
+// 2
+// 2 2 10
+// 7 3 10
+
+// 4
+// 3

@@ -19,28 +19,25 @@ int basic_exponentiation(int x, int n)
 int main()
 {
 #ifndef ONLINE_JUDGE
-    // for getting input from input.txt
-    freopen("input1.txt", "r", stdin);
-    // for writing output to output.txt
-    freopen("output1.txt", "w", stdout);
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
 #endif
 
     int test_cases;
     cin >> test_cases;
-    // cout << test_cases;
-
-    queue<int> mq;
-
     int x, n;
+
     while (test_cases--)
     {
         cin >> x >> n;
-        mq.push(basic_exponentiation(x, n));
+        cout << basic_exponentiation(x, n) << endl;
     }
-    while (!mq.empty())
-    {
-        int temp = mq.front();
-        mq.pop();
-        cout << temp << endl;
-    }
+    return 0;
 }
+// // Sample IO
+// 2
+// 2 2 
+// 7 3 
+
+// 4
+// 343
