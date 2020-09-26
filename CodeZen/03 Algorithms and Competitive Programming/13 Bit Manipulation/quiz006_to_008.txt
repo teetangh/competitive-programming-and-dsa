@@ -1,0 +1,8 @@
+Which bitwise operator is suitable for turning off a particular bit in a number?
+& operator
+
+Which bitwise operator is suitable for turning on a particular bit in a number?
+| operator
+
+Which bitwise operator is suitable for checking whether a particular bit is on or off?
+& | ^ operator
