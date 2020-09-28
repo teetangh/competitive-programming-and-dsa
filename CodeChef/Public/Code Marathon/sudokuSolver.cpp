@@ -90,21 +90,21 @@ bool fillPosition(vector<vector<int>> &board, int i, int j)
 
 bool solveSudokuHelper(vector<vector<int>> &board)
 {
-    cout << "============================================" << endl;
-    printSolution(board);
-    cout << "============================================" << endl;
+    // cout << "============================================" << endl;
+    // printSolution(board);
+    // cout << "============================================" << endl;
 
     for (int i = 0; i < 9; i++)
     {
         for (int j = 0; j < 9; j++)
         {
-            cout << "i" << i << "j" << j << endl;
+            // cout << "i" << i << "j" << j << endl;
             if (board[i][j] == 0)
             {
                 bool flagFilled = false;
                 for (int k = 1; k <= 9; k++)
                 {
-                    cout << "k" << k << endl;
+                    // cout << "k" << k << endl;
                     board[i][j] = k;
                     bool res = fillPosition(board, i, j);
                     if (res == false)
