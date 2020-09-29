@@ -8,34 +8,85 @@ void printSolution(vector<vector<char>> board)
     for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < N; j++)
-        {
             cout << board[i][j];
-        }
         cout << endl;
     }
 }
-
+///////////////////////////////////////////////////////////////// Vertical Filling//////////////////////////////////////////////////////////////////////////
 bool isValidVertical(vector<vector<char>> &board, int i, int j, string currentWord)
 {
     for (int x = 0; x < currentWord.size(); x++)
     {
+        if (i + x >= N)
+            return false;
         if (board[i + x][j] != '-' && board[i + x][j] != currentWord[x])
             return false;
     }
 
-    if (board[i + currentWord.size()][j] == '-')
-        return false;
+    return true;
+}
+
+void setVertical(vector<vector<char>> &board, int i, int j, string currentWord, vector<bool> &filledCharactersMap)
+{
+    for (int x = 0; x < currentWord.size(); x++)
+    {
+        if (board[i + x][j] != currentWord[x])
+        {
+            board[i + x][j] = currentWord[x];
+            filledCharactersMap[x] = true;
+        }
+    }
+}
+
+void resetVertical(vector<vector<char>> &board, int i, int j, vector<bool> &filledCharactersMap)
+{
+    for (int x = 0; x < filledCharactersMap.size(); x++)
+    {
+        if (filledCharactersMap[i] == true)
+        {
+            board[i + x][j] = '-';
+            filledCharactersMap[x] = false;
+        }
+    }
+}
+///////////////////////////////////////////////////////////////// Horizontal Filling//////////////////////////////////////////////////////////////////////////
+bool isValidHorizontal(vector<vector<char>> &board, int i, int j, string currentWord)
+{
+    for (int y = 0; y < currentWord.size(); y++)
+    {
+        if (j + y >= N)
+            return false;
+        if (board[i][j + y] != '-' && board[i][j + y] != currentWord[y])
+            return false;
+    }
 
     return true;
 }
 
-void setVertical(vector<vector<char>> &board, int i, int j, string currentWord)
+void setHorizontal(vector<vector<char>> &board, int i, int j, string currentWord, vector<bool> &filledCharactersMap)
 {
+    for (int y = 0; y < currentWord.size(); y++)
+    {
+        if (board[i][j + y] != currentWord[y])
+        {
+            board[i][j + y] = currentWord[y];
+            filledCharactersMap[y] = true;
+        }
+    }
 }
 
-void resetVertical(vector<vector<char>> &board, int i, int j)
+void resetHorizontal(vector<vector<char>> &board, int i, int j, vector<bool> &filledCharactersMap)
 {
+    for (int y = 0; y < filledCharactersMap.size(); y++)
+    {
+        if (filledCharactersMap[i] == true)
+        {
+            board[i][j + y] = '-';
+            filledCharactersMap[y] = false;
+        }
+    }
 }
+///////////////////////////////////////////////////////////////// Solving the Crossword //////////////////////////////////////////////////////////////////////////
 
 bool solveCrosswordHelper(vector<vector<char>> &board, vector<pair<string, bool>> &wordsList)
 {
@@ -44,16 +95,34 @@ bool solveCrosswordHelper(vector<vector<char>> &board, vector<pair<string, bool>
     {
         for (int j = 0; j < N; j++)
         {
-            if (board[i][j] == '-')
+            if (board[i][j] == '-' || (board[i][j] >= 'a' && board[i][j] <= 'z'))
             {
+                bool flagFilled = false;
                 for (auto &ele : wordsList)
                 {
                     if (ele.second == true)
                         continue;
-                    bool flagVertical = isValidVertical(board, i, j, ele.first);
-                    if (flagVertical == true)
-                        setVertical(board, i, j, ele.first);
+
+                    else if (isValidVertical(board, i, j, ele.first))
+                    {
+                        vector<bool> filledCharactersMap(ele.first.size(), false);
+                        setVertical(board, i, j, ele.first, filledCharactersMap);
+                        ele.second = true;
+                        flagFilled = true;
+                        bool answerVertical = solveCrosswordHelper(board, wordsList);
+                        if (answerVertical)
+                            return answerVertical;
+                        else
+                        {
+                            resetVertical(board, i, j, filledCharactersMap);
+                            ele.second = false;
+                            flagFilled = false;
+                        }
+                    }
                 }
+
+                if (flagFilled = false)
+                    return false;
             }
         }
     }
@@ -71,6 +140,10 @@ void solveCrossword(vector<vector<char>> &board, vector<pair<string, bool>> &wor
 
 int main()
 {
+#ifndef ONLINE_JUDGE
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
+#endif
     vector<vector<char>> board;
     board.resize(N, vector<char>(N, '+'));
 
@@ -81,11 +154,8 @@ int main()
     for (int i = 0; i < N; i++)
     {
         cin >> s;
-
         for (int j = 0; j < N; j++)
-        {
-            board[i][j] = s[i] - '0';
-        }
+            board[i][j] = s[j];
     }
 
     string words;
@@ -94,9 +164,9 @@ int main()
     string currentWord = "";
     vector<pair<string, bool>> wordsList;
 
-    for (int i = 0; i < words.length(); i++)
+    for (int i = 0; i < words.length() + 1; i++)
     {
-        if (words[i] != ';')
+        if (words[i] != ';' && words[i] != '\0')
             currentWord += words[i];
         else
         {
@@ -104,5 +174,8 @@ int main()
             currentWord.clear();
         }
     }
+
+    solveCrossword(board, wordsList);
+
     return 0;
 }
