@@ -90,13 +90,16 @@ void resetHorizontal(vector<vector<char>> &board, int i, int j, vector<bool> &fi
 
 bool solveCrosswordHelper(vector<vector<char>> &board, vector<pair<string, bool>> &wordsList)
 {
+    // printSolution(board);
 
     for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < N; j++)
         {
-            if (board[i][j] == '-' || (board[i][j] >= 'a' && board[i][j] <= 'z'))
+            // cout << 'i' << i << 'j' << j << endl;
+            if (board[i][j] == '-' || (board[i][j] >= 'A' && board[i][j] <= 'Z'))
             {
+                // cout << "entered" << board[i][j] << endl;
                 bool flagFilled = false;
                 for (auto &ele : wordsList)
                 {
@@ -119,10 +122,33 @@ bool solveCrosswordHelper(vector<vector<char>> &board, vector<pair<string, bool>
                             flagFilled = false;
                         }
                     }
+
+                    else if (isValidHorizontal(board, i, j, ele.first))
+                    {
+                        vector<bool> filledCharactersMap(ele.first.size(), false);
+                        setHorizontal(board, i, j, ele.first, filledCharactersMap);
+                        ele.second = true;
+                        flagFilled = true;
+                        bool answerHorizontal = solveCrosswordHelper(board, wordsList);
+                        if (answerHorizontal)
+                            return answerHorizontal;
+                        else
+                        {
+                            resetHorizontal(board, i, j, filledCharactersMap);
+                            ele.second = false;
+                            flagFilled = false;
+                        }
+                    }
                 }
 
                 if (flagFilled = false)
                     return false;
+
+                // for (auto &ele : wordsList)
+                // {
+                //     if (ele.second == false)
+                //         return false;
+                // }
             }
         }
     }
@@ -140,10 +166,7 @@ void solveCrossword(vector<vector<char>> &board, vector<pair<string, bool>> &wor
 
 int main()
 {
-#ifndef ONLINE_JUDGE
-    freopen("xinput.txt", "r", stdin);
-    freopen("xoutput.txt", "w", stdout);
-#endif
+
     vector<vector<char>> board;
     board.resize(N, vector<char>(N, '+'));
 
