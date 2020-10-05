@@ -34,12 +34,6 @@ public:
                 cumulativeSum = 0;
             }
         }
-
-        // kadane_triplet object;
-        // object.currentUp = maxStartIndex;
-        // object.currentDown = maxEndIndex;
-        // object.currentSum = maxSum;
-
         this->currentUp = maxStartIndex;
         this->currentDown = maxEndIndex;
         this->currentSum = maxSum;
@@ -50,29 +44,25 @@ public:
 
 int maximum_sum_rectangle_optimized(vector<vector<int>> matrix)
 {
-    // int currentSubArraySum = 0;
-
     int maxUp = 0;
     int maxDown = 0;
     int maxLeft = 0;
     int maxRight = 0;
 
     int maxSubArraySum = INT_MIN;
-
     kadane_triplet object;
 
-    for (int left = 0; left < matrix.size(); left++)
+    for (int left = 0; left < matrix[0].size(); left++)
     {
         vector<int> nums(matrix.size(), 0);
-
         // std::copy(matrix[left].begin(), matrix[left].end(), nums);
 
-        for (int right = left; right < matrix.size(); right++)
+        for (int right = left; right < matrix[0].size(); right++)
         {
             // std::transform(nums.begin(), nums.end(), matrix[left].begin() + right, nums.begin(), std::plus<int>());
-
             for (int x = 0; x < matrix.size(); x++)
                 nums[x] += matrix[x][right];
+
             // cout << "=======================";
             // cout << endl;
             // for (auto &ele : nums)
@@ -81,11 +71,9 @@ int maximum_sum_rectangle_optimized(vector<vector<int>> matrix)
             // cout << "=======================";
 
             object = object.kadanes_algo_maximmum_sum_subarray(nums);
-
             // cout << "=======================";
             // cout << object.currentUp << " " << object.currentDown << " " << object.currentSum << " " << maxSubArraySum << " " << endl;
             // cout << "=======================";
-
             if (object.currentSum >= maxSubArraySum)
             {
                 maxUp = object.currentUp;
@@ -125,7 +113,6 @@ int main()
 
     return 0;
 }
-
 // // Sample IO
 // 4 5
 // 1 2 -1 -4 -20
