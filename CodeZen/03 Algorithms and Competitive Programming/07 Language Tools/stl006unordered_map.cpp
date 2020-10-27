@@ -13,18 +13,18 @@ int main()
 #endif
 
     int arr[] = {1, 2, 3, 4, 5, 6, 5};
-    unordered_map<int, int> mp;
+    unordered_map<int, int> ump;
 
     for (int i = 0; i < 7; i++)
-        mp[arr[i]] = mp[arr[i]] + 1; //  mp[arr[i]]++
+        ump[arr[i]] = ump[arr[i]] + 1; //  ump[arr[i]]++
 
     unordered_map<int, int>::iterator it;
-    for (it = mp.begin(); it != mp.end(); it++)
+    for (it = ump.begin(); it != ump.end(); it++)
         cout << it->first << " :" << it->second << endl;
 
     cout << endl;
-    mp.erase(1);
+    ump.erase(1);
     // unordered_map<int, int>::iterator it;
-    for (it = mp.begin(); it != mp.end(); it++)
+    for (it = ump.begin(); it != ump.end(); it++)
         cout << it->first << " :" << it->second << endl;
 }
