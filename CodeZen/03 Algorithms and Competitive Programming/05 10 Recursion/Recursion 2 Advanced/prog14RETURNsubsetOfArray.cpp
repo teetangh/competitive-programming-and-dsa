@@ -26,9 +26,9 @@ int subset(int input[], int n, int output[][20])
             output[i + smallOutputSize][1] = input[0];         //at the beginning therefore size is first increased by 1 then
             //input[0] is stored as first element
             //tempCounter = 0;
-            for (j = 0; j < output[smallOutputSize + i][0]; j++)
+            for (j = 0; j < output[i + smallOutputSize][0]; j++)
             {
-                output[smallOutputSize + i][j + 2] = output[i][j + 1];
+                output[i + smallOutputSize][j + 2] = output[i][j + 1];
             }
         }
 
