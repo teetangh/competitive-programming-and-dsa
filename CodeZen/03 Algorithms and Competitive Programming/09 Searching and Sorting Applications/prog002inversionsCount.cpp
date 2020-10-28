@@ -3,6 +3,7 @@
 #include <algorithm>
 using namespace std;
 
+
 long long getInversions(long long *arr, int n)
 {
     if (n <= 1)

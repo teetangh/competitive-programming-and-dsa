@@ -3,6 +3,11 @@
 
 using namespace std;
 
+// Defines
+#define endl '\n'
+#define fastio ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
+// typedefs
+typedef long long ll;
 typedef long long int lli;
 
 bool check_distance(vector<lli> positions, vector<lli> &cows_positions, lli index, lli mid)
