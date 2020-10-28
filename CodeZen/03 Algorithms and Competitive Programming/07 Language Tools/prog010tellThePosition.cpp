@@ -12,6 +12,11 @@ void display_rankings(map<int, vector<string>> mp)
 }
 int main()
 {
+#ifndef ONLINE_JUDGE
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
+#endif
+
     int test_cases;
     cin >> test_cases;
 
