@@ -1,0 +1,75 @@
+//////////////////////////////////////////////////////DP1//////////////////////////////////////////////////////
+
+Hasan and Trip
+
+https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/algorithm/hasan-and-trip-1/
+
+
+Vanya and GCD Array
+
+https://www.hackerearth.com/practice/algorithms/dynamic-programming/2-dimensional/practice-problems/algorithm/vanya-and-gcd-array/
+
+
+
+Roy and Coin Boxes
+
+https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/practice-problems/algorithm/roy-and-coin-boxes-1/
+
+
+Jon Snow and his favourite number
+
+https://codeforces.com/problemset/problem/768/C
+
+
+Alyona and Spreadsheet
+
+https://codeforces.com/problemset/problem/777/C
+
+
+Angry Children
+
+https://www.hackerrank.com/challenges/angry-children-2/problem
+
+
+//////////////////////////////////////////////////////DP2//////////////////////////////////////////////////////
+PARTY - Party Schedule
+
+https://www.spoj.com/problems/PARTY/
+
+
+MAIN72 - Subset sum
+
+https://www.spoj.com/problems/MAIN72/
+
+
+MISERMAN - Wise And Miser
+
+https://www.spoj.com/problems/MISERMAN/
+
+
+Trader Profit
+
+https://www.hackerrank.com/contests/gs-codesprint/challenges/trader-profit
+
+Charlie and Pilots
+
+https://www.spoj.com/problems/MPILOT/
+
+SQRBR - Square Brackets
+
+https://www.spoj.com/problems/SQRBR/
+
+Distinct Subsequences
+
+https://leetcode.com/problems/distinct-subsequences/
+
+Smallest Super-Sequence
+
+https://www.geeksforgeeks.org/shortest-common-supersequence/
+
+Shortest Uncommon Subsequence
+
+https://www.geeksforgeeks.org/shortest-uncommon-subsequence/
+
+
+
