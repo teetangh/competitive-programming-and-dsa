@@ -6,7 +6,9 @@
 using namespace std;
 
 // Defines
+#define FOR(i, a, b) for (int i = a; i <= b; i++)
 #define REP(i, n) for (int i = 1; i <= n; i++)
+#define INF 1000000000
 #define mod 1000000007
 #define pb push_back
 #define ff first
@@ -15,10 +17,7 @@ using namespace std;
 #define vi vector<int>
 #define vpii vector<pair<int, int>>
 #define endl '\n'
-#define fastio                        \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);                    \
-    cout.tie(NULL)
+#define fastio ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
 
 // typedefs
 typedef long long ll;
@@ -42,6 +41,8 @@ int main()
     freopen("xinput.txt", "r", stdin);
     freopen("xoutput.txt", "w", stdout);
 #endif
+
+    fastio;
 
     int v, e, a, b;
     cin >> v >> e;
