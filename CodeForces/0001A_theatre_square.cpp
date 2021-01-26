@@ -22,8 +22,15 @@ int main()
     freopen("xoutput.txt", "w", stdout); // for writing output to xoutput.txt
 #endif
 
-    int n, m, a;
+    fastio;
+
+    lli n, m, a;
     cin >> n >> m >> a;
 
-    cout << ((n / a )+ 1) * ((m / a)  + 1) << endl;
+    lli length, breadth;
+
+    length = (n % a == 0) ? (n / a) : ((n / a) + 1);
+    breadth = (m % a == 0) ? (m / a) : ((m / a) + 1);
+
+    cout << (length * breadth) << endl;
 }
