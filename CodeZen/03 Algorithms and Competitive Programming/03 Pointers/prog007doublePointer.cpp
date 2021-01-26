@@ -26,7 +26,6 @@ int main()
 #endif
     int i = 10;
     int *p = &i;
-
     int **p2 = &p;
 
     // Address Variables

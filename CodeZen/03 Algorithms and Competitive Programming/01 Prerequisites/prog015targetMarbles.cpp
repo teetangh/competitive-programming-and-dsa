@@ -24,6 +24,9 @@ void print_continuous_subset(vector<int> marble_values, int target)
             int old_left = left;
             left++;
             current_sum -= marble_values[old_left];
+
+            // current_sum -= marble_values[left];
+            //  left++;
         }
     }
 
@@ -62,16 +65,15 @@ int main()
 }
 
 // // Sample IO 1
-// 8 600 
+// 8 600
 // 319 349 959 637 178 750 322 278
 
-
 // true
-// 322 278 
+// 322 278
 
 // // Sample IO 2
 // 5 5
 // 1 5 3 2 4
 
 // true
-// 5 
+// 5
