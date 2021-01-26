@@ -5,10 +5,9 @@
 using namespace std;
 
 // Defines
-#define fastio                        \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);                    \
-    cout.tie(NULL)
+// Defines
+#define endl '\n'
+#define fastio ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
 
 // typedefs
 typedef long long ll;
