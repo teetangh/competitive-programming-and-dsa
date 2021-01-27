@@ -1,15 +1,14 @@
+// Includes
 #include <iostream>
 #include <iomanip>
+#include <string>
 #include <bits/stdc++.h>
-
-#define fastio                        \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);                    \
-    cout.tie(NULL)
-
 using namespace std;
 
-#include <bits/stdc++.h>
+// Defines
+#define endl '\n'
+#define fastio ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
+
 string uniqueChar(char *str)
 {
     map<char, int> mp;
@@ -28,8 +27,8 @@ string uniqueChar(char *str)
 int main()
 {
 #ifndef ONLINE_JUDGE
-    freopen("xinput.txt", "r", stdin);
-    freopen("xoutput.txt", "w", stdout);
+    freopen("xinput.txt", "r", stdin);   // for getting input from xinput.txt
+    freopen("xoutput.txt", "w", stdout); // for writing output to xoutput.txt
 #endif
 
     fastio;
