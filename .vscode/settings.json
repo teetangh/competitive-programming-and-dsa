@@ -70,5 +70,9 @@
     "typeindex": "cpp",
     "typeinfo": "cpp",
     "valarray": "cpp"
-  }
+  },
+  "python.autoComplete.extraPaths": [
+    "/home/kaustav/ros1melodic_ws/ros1melodic_moveit_ws/devel/lib/python2.7/dist-packages",
+    "/opt/ros/melodic/lib/python2.7/dist-packages"
+  ]
 }
