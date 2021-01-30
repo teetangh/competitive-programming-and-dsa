@@ -1,13 +1,11 @@
-12
-insert 0 5
-insert 1 10
-insert 0 6
-print
-remove 6
-append 9
-append 1
-sort
-print
-pop
-reverse
-print
+7
+4
+1 3
+2 5
+1 2
+5 6
+4
+1
+7
+4
+2
