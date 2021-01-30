@@ -21,8 +21,8 @@ int main()
     int N, M;
     cin >> N >> M;
 
-    vector<int> start_days(N);
-    vector<int> end_days(N);
+    vector<int> start_days(1 + N, 0);
+    vector<int> end_days(1 + N, 0);
     int start, end;
     for (int i = 0; i < M; i++)
     {
@@ -57,7 +57,7 @@ int main()
     //     cout << "DEBUG exact_boxes " << ele << endl;
 
     atleast_boxes[Q] = exact_boxes[Q];
-    for (int i = Q - 1; i >= 0; i--)
+    for (int i = Q - 1; i > 0; i--)
         atleast_boxes[i] = exact_boxes[i] + atleast_boxes[i + 1];
 
     // for (auto &ele : atleast_boxes)
