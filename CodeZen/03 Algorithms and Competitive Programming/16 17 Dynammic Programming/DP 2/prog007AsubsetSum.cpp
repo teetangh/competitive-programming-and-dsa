@@ -6,7 +6,7 @@ using namespace std;
 #define endl '\n'
 #define fastio ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
 
-bool subsetSum(int *val, int n, int sum)
+bool isSubsetPresent(int *val, int n, int sum)
 {
     bool **dp = new bool *[n + 1];
     for (int i = 0; i <= n; i++)
@@ -25,7 +25,7 @@ bool subsetSum(int *val, int n, int sum)
             dp[i][j] = dp[i - 1][j];
 
             if (j >= val[i - 1])
-                dp[i][j] = dp[i - 1][j] || dp[i][j - val[i - 1]];
+                dp[i][j] = dp[i - 1][j] || dp[i - 1][j - val[i - 1]];
         }
     }
 
@@ -48,9 +48,26 @@ int main()
 
     fastio;
 
-    int val[] = {1, 3, 5, 7, 9};
-    int sum = 12;
+    int n, sum;
+    cin >> n;
 
-    cout << subsetSum(val, 5, sum) << endl;
-    return 0;
+    int *arr = new int[n];
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    cin >> sum;
+
+    if (isSubsetPresent(arr, n, sum))
+    {
+        cout << "Yes";
+    }
+    else
+    {
+        cout << "No";
+    }
+
+    delete[] arr;
 }
