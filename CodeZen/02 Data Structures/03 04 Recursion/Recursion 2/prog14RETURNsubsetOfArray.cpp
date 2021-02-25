@@ -12,11 +12,6 @@ int subset(int input[], int n, int output[][20])
 
     else
     {
-        // int smallIntegerLength = n - 1;
-        // int *smallInteger = new int[smallIntegerLength];
-        // for (int i = 0; input[i] != '\0'; i++)
-        //     smallInteger[i] = input[i];
-        // smallInteger[smallIntegerLength - 1] = '\0';
 
         int smallOutputSize = subset(input + 1, n - 1, output); //recursion call
         int i, j;
@@ -26,52 +21,15 @@ int subset(int input[], int n, int output[][20])
             output[i + smallOutputSize][1] = input[0];         //at the beginning therefore size is first increased by 1 then
             //input[0] is stored as first element
             //tempCounter = 0;
-            for (j = 0; j < output[smallOutputSize + i][0]; j++)
+            for (j = 0; j < output[i + smallOutputSize][0]; j++)
             {
-                output[smallOutputSize + i][j + 2] = output[i][j + 1];
+                output[i + smallOutputSize][j + 2] = output[i][j + 1];
             }
         }
 
         return 2 * smallOutputSize;
     }
 }
-
-// int subset(int input[], int n, int output[][20])
-// {
-//     if (n == 0)
-//     {
-//         output[0][0] = 0;
-//         output[0][1] = ' ';
-//         // output[1][0] = '\0';
-//         return 1;
-//     }
-
-//     else
-//     {
-//         int smallIntegerLength = n - 1;
-//         int *smallInteger = new int[smallIntegerLength];
-//         for (int i = 0; input[i] != '\0'; i++)
-//             smallInteger[i] = input[i];
-//         smallInteger[smallIntegerLength - 1] = '\0';
-
-//         int smallOutputSize = subset(smallInteger, smallIntegerLength, output);
-
-//         int i, j, tempCounter;
-//         for (i = 0; i < smallOutputSize; i++)
-//         {
-//             tempCounter = 0;
-//             for (j = 1; smallInteger[j] != '\0'; j++)
-//             {
-//                 tempCounter++;
-//                 output[i][j] = smallInteger[j];
-//             }
-//             output[i][j] = '\0';
-//             output[i][0] = tempCounter;
-//         }
-
-//         return 2 * smallOutputSize;
-//     }
-// }
 
 int main()
 {
