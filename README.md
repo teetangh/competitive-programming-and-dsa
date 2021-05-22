@@ -4,7 +4,7 @@ This repository contains my various implementations of Data Structures and Algor
 
 It also contains various my solutions to problems asked in various Competitive Coding Sites, Events and Platforms.
 
-# ⭕⭕⭕⭕SUMMARY OF FILE NAMING CONVENTIONS
+# Summary Of File Naming Conventions
 
 ```
 prog001xyz = only one file (NO CONFLICTS)
@@ -26,7 +26,7 @@ solve_problem_efficient()
 solve_problem_optimised()
 ```
 
-# Index Updated Fri Jan 29 19:49:12 IST 2021
+# Index Last Updated on Sat 22 May 18:53:29 IST 2021
 
 ```
 .
@@ -643,6 +643,9 @@ solve_problem_optimised()
 │   │   │   │   ├── new012samAndSubstrings_BU.cpp
 │   │   │   │   ├── new012samAndSubstrings.cpp
 │   │   │   │   ├── new015boredom.cpp
+│   │   │   │   ├── new022royAndCoinBoxes.cpp
+│   │   │   │   ├── new023jonSnowAndHIsFavoriteNumber.cpp
+│   │   │   │   ├── new025angryChildren.cpp
 │   │   │   │   ├── prog001fibonacci_TD_BU.cpp
 │   │   │   │   ├── prog002alphaCodes_TD_BU.cpp
 │   │   │   │   ├── prog003alphaCodesWithZeroes_BU.cpp
@@ -663,20 +666,54 @@ solve_problem_optimised()
 │   │   │   │   ├── prog014findMaxSquareWithAllZeros_BU.cpp
 │   │   │   │   ├── prog015countBSTs_TD.cpp
 │   │   │   │   ├── prog017minimumNumberOfChocolates_BU.cpp
+│   │   │   │   ├── prog019hasanAndTrip.cpp
 │   │   │   │   ├── prog020vanyaAndGCD.cpp
 │   │   │   │   ├── prog021adjacentBitCount.cpp
+│   │   │   │   ├── prog024alyonaAndSpreadsheet.cpp
 │   │   │   │   ├── xinput.txt
 │   │   │   │   └── xoutput.txt
 │   │   │   └── DP 2
+│   │   │       ├── new007BsubsetSumSpaceOptimized.cpp
+│   │   │       ├── new011AsquareBrackets.cpp
+│   │   │       ├── new011BsquareBrackets.cpp
+│   │   │       ├── new012distinctSubsequences.cpp
 │   │   │       ├── prog001longestCommonSubsequence.cpp
 │   │   │       ├── prog002longestCommonSubsequenceStrings.cpp
 │   │   │       ├── prog003editDistance_TD.cpp
 │   │   │       ├── prog004balikaVadhu_TD.cpp
-│   │   │       ├── prog005knapsack_TD.cpp
+│   │   │       ├── prog005A_knapsack_TD.cpp
+│   │   │       ├── prog005B_knapsack_BU.cpp
+│   │   │       ├── prog006party_problem.cpp
+│   │   │       ├── prog007AsubsetSum.cpp
+│   │   │       ├── prog008miserMan.cpp
+│   │   │       ├── prog009traderPorfit.cpp
+│   │   │       ├── prog010charlieAndPilots.cpp
 │   │   │       ├── xinput.txt
 │   │   │       └── xoutput.txt
-│   │   └── 24 Tries
-│   │       └── new001trieXORpair.cpp
+│   │   ├── 18 Greedy Techniques
+│   │   │   ├── new004fractionalKnapsack.cpp
+│   │   │   ├── prog001minAbsoluteDifferenceInArray.cpp
+│   │   │   ├── prog002NikunjAndDonuts.cpp
+│   │   │   ├── prog003activitySelection.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   ├── 19 Segment Trees
+│   │   │   ├── include
+│   │   │   │   └── segmentTree.hpp
+│   │   │   ├── prog001segmentTreeOperations.cpp
+│   │   │   ├── prog002rangeMinimumQuery.cpp
+│   │   │   ├── prog003maximumPairSum.cpp
+│   │   │   ├── prog004lazyPropagationUse.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   ├── 24 Tries
+│   │   │   └── new001trieXORpair.cpp
+│   │   └── Graphs
+│   │       └── 01 Graphs Part 1
+│   │           ├── prog001DFS_BFS_connected_undirected.cpp
+│   │           ├── prog002DFS_BFS_disconnected_undirected.cpp
+│   │           ├── xinput.txt
+│   │           └── xoutput.txt
 │   ├── Doubts
 │   │   ├── heap doubt.jpg
 │   │   ├── pic1.png
@@ -698,22 +735,27 @@ solve_problem_optimised()
 ├── data_type_ranges.jpeg
 ├── data_types_sizes.png
 ├── DP_CN.txt
+├── FINAL450.xlsx
 ├── GeeksForGeeks
 │   ├── Algorithms
-│   │   └── DP
-│   │       ├── longest_common_subsequence.cpp
-│   │       ├── max_sum_rectangles.cpp
-│   │       ├── minimum_number_of_coins.cpp
-│   │       ├── NEW_nCr2.cpp
-│   │       ├── NEW_nCr.cpp
-│   │       ├── reach_given_coins.cpp
-│   │       ├── xinput.txt
-│   │       └── xoutput.txt
+│   │   ├── DP
+│   │   │   ├── longest_common_subsequence.cpp
+│   │   │   ├── max_sum_rectangles.cpp
+│   │   │   ├── minimum_number_of_coins.cpp
+│   │   │   ├── NEW_nCr2.cpp
+│   │   │   ├── NEW_nCr.cpp
+│   │   │   ├── reach_given_coins.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   └── Searching-Sorting
+│   │       ├── 0033_Search_rotated_sorted_array.cpp
+│   │       └── 0105_middle_of_three.cpp
 │   ├── Data Structures
 │   │   ├── Arrays
-│   │   │   ├── leaders_in_array.cpp
-│   │   │   ├── missing_number_in_array.cpp
-│   │   │   └── rotate_array.cpp
+│   │   │   ├── 0006_reverse_array_string.cpp
+│   │   │   ├── 0012n_rotate_array.cpp
+│   │   │   ├── 0107n_missing_number_in_array.cpp
+│   │   │   └── leaders_in_array.cpp
 │   │   └── Searching and Soring
 │   │       └── binary_search_recursive.cpp
 │   ├── Programme Cpp GFG
@@ -730,9 +772,18 @@ solve_problem_optimised()
 │           └── xoutput.txt
 ├── Hackerrank practice
 │   ├── Alogrithms
-│   │   ├── DP
+│   │   ├── 01 Warmup
+│   │   │   ├── diagonal_difference.cpp
+│   │   │   ├── plus_minus.cpp
+│   │   │   ├── simple_array_sum.cpp
+│   │   │   ├── solve_me_first.cpp
+│   │   │   └── staircase.cpp
+│   │   ├── 08 DP
 │   │   │   └── construct_the_array_BU.cpp
-│   │   └── Greedy
+│   │   ├── 09 Greedy
+│   │   └── 10 Bit Manipulation
+│   │       ├── great_xor.cpp
+│   │       └── lonely_integer.cpp
 │   ├── Data Structures
 │   │   ├── 01 Arrays
 │   │   │   ├── array1d_reverse.cpp
@@ -752,21 +803,38 @@ solve_problem_optimised()
 │   │       ├── print_reverse_LL.cpp
 │   │       └── print_singly_linked_list.cpp
 │   ├── Programming Langauges
-│   │   └── CPP
-│   │       ├── 0001_Hello_world.cpp
-│   │       └── 0002_Basic_Data_types.cpp
+│   │   ├── Cpp
+│   │   │   └── 01 Introduction
+│   │   │       ├── Basic_Data_types.cpp
+│   │   │       └── Hello_world.cpp
+│   │   └── Python
+│   │       ├── 01 Introduction
+│   │       │   ├── arithmetic_operators.py
+│   │       │   ├── function.py
+│   │       │   ├── hello_world.py
+│   │       │   ├── loops.py
+│   │       │   ├── print_function.py
+│   │       │   └── python_division.py
+│   │       └── 02 Basic Data Types
+│   │           ├── finding_percentage.py
+│   │           ├── lists.py
+│   │           ├── nested_list.py
+│   │           ├── runner_up_score.py
+│   │           ├── xinput.txt
+│   │           └── xoutput.txt
 │   └── Solution.java
 ├── LeetCode
-│   ├── 0001_Two_sum.cpp
-│   ├── 46h_Permutations.cpp
 │   ├── Algorithms
+│   │   ├── Backtracking
+│   │   │   └── 0046h_Permutations.cpp
 │   │   └── DP
-│   │       └── min_score_triangulation.cpp
+│   │       └── 1039_min_score_triangulation.cpp
 │   ├── Data Structures
 │   │   ├── Arrays
-│   │   │   └── Kadanes_Algo_max_sum_subarray.cpp
+│   │   │   ├── 0001_Two_sum.cpp
+│   │   │   └── 0053_Kadanes_Algo_max_sum_subarray.cpp
 │   │   └── Trees
-│   │       └── is_valid_BST.cpp
+│   │       └── 098_is_valid_BST.cpp
 │   ├── xinput.txt
 │   └── xoutput.txt
 ├── README.md
@@ -799,6 +867,7 @@ solve_problem_optimised()
 │   ├── 4300_Rectangles.cpp
 │   ├── 7974_whats_next.cpp
 │   ├── input1.txt
+│   ├── MPILOT_pilots.cpp
 │   ├── output1.txt
 │   └── test.cpp
 ├── temp
@@ -820,7 +889,7 @@ solve_problem_optimised()
 │   └── Working
 │       ├── xinput.txt
 │       └── xoutput.txt
-└── Youtube
+└── Youtube-learning
     ├── Basic ALGO
     │   ├── Backtracking_Branch_Bound
     │   ├── Divide_and_Conquer
@@ -875,8 +944,18 @@ solve_problem_optimised()
     │   │       ├── xinput.txt
     │   │       └── xoutput.txt
     │   └── Searching and Sorting
-    │       └── Searching
-    │           └── iterative_binary_search.cpp
+    │       ├── Searching
+    │       │   └── iterative_binary_search.cpp
+    │       └── Sorting
+    │           ├── failBFS.c
+    │           ├── Jenny Sorting Algorithms
+    │           │   ├── bubbleSort.c
+    │           │   ├── heapANDheapSort.c
+    │           │   ├── insertionSort.c
+    │           │   ├── mergeSort.c
+    │           │   ├── quickSort.c
+    │           │   └── selectionSort.c
+    │           └── shelllSort.c
     ├── Basic DS
     │   ├── Arrays
     │   ├── Graphs
@@ -908,7 +987,7 @@ solve_problem_optimised()
     │   │   ├── Network Flow Algorithms
     │   │   └── Number Theory
     │   └── Others
-    └── practice
+    └── random-practice
         ├── CNC DP
         │   ├── 01staircase.cpp
         │   ├── 02staircase2.cpp
@@ -976,5 +1055,5 @@ solve_problem_optimised()
         ├── xinput.txt
         └── xoutput.txt
 
-171 directories, 774 files
+186 directories, 838 files
 ```
