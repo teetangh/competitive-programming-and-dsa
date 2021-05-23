@@ -28,8 +28,8 @@ int calculate_factorial(std::map<int, int> factorial_table , int num )
 int main()
 {
 #ifndef ONLINE_JUDGE
-	freopen("input1.txt", "r" , stdin);
-	freopen("output1.txt", "w", stdout);
+	freopen("xinput.txt", "r" , stdin);
+	freopen("xoutput.txt", "w", stdout);
 #endif
 
 	int test_cases;

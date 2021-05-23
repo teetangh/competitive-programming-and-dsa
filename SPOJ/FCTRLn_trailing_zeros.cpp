@@ -91,9 +91,9 @@ int main()
 {
 #ifndef ONLINE_JUDGE
 	// for getting input from input.txt
-	freopen("input1.txt", "r", stdin);
+	freopen("xinput.txt", "r", stdin);
 	// for writing output to output.txt
-	freopen("output1.txt", "w", stdout);
+	freopen("xoutput.txt", "w", stdout);
 #endif
 
 	int test_cases;

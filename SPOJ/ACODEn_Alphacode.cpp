@@ -15,8 +15,8 @@ int calculate_num_of_decodings(int input)
 int main()
 {
 #ifndef ONLINE_JUDGE
-    freopen("input1.txt", "r", stdin);
-    freopen("output1.txt", "w", stdout);
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
 #endif
 
     int input;

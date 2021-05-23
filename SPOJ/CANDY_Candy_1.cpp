@@ -65,8 +65,8 @@ queue<int> calculate_min_moves(vector<vector<int>> my_vec)
 int main(int argc, char const *argv[])
 {
 #ifndef ONLINE_JUDGE
-	freopen("input1.txt", "r", stdin);
-	freopen("output1.txt", "w", stdout);
+	freopen("xinput.txt", "r", stdin);
+	freopen("xoutput.txt", "w", stdout);
 #endif
 
 	int block_size;

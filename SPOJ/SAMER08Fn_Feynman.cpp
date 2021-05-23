@@ -5,8 +5,8 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
 #ifndef ONLINE_JUDDGE
-	freopen("input1.txt" , "r" , stdin);
-	freopen("output1.txt" , "w" , stdout);
+	freopen("xinput.txt" , "r" , stdin);
+	freopen("xoutput.txt" , "w" , stdout);
 #endif
 
 	queue<int> mq;

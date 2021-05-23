@@ -59,8 +59,8 @@ string processed_string(pair<int, string> pis)
 int main(int argc, char const *argv[])
 {
 #ifndef ONLINE_JUDGE
-    freopen("input1.txt", "r", stdin);
-    freopen("output1.txt", "w", stdout);
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
 #endif
     int current_strings_columns;
     string current_input_string;
