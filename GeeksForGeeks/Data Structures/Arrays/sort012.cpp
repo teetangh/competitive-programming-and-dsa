@@ -9,34 +9,34 @@ public:
     void sort012(int arr[], int n)
     {
         // coode here
-        int i = 0;
-        int j = 0;
-        int k = n - 1;
+        int low = 0;
+        int mid = 0;
+        int high = n - 1;
 
-        while (j <= k)
+        while (mid <= high)
         {
 
-            // if (arr[i] == 2 && arr[k] == 0 ) swap(arr[i] , arr[k]);
-            // else if (arr[j] == 0 && (arr[k] == 1 || arr[k] == 2 ) ) swap(arr[i] , arr[j]);
-            // else if (arr[j] == 2 && (arr[k] == 0 || arr[k] == 1 ) ) swap(arr[j] , arr[k]);
+            // if (arr[low] == 2 && arr[high] == 0 ) swap(arr[low] , arr[high]);
+            // else if (arr[mid] == 0 && (arr[high] == 1 || arr[high] == 2 ) ) swap(arr[low] , arr[mid]);
+            // else if (arr[mid] == 2 && (arr[high] == 0 || arr[high] == 1 ) ) swap(arr[mid] , arr[high]);
 
-            // if(arr[i] == 0 ) i++;
-            // // if(arr[j] == 1) j++;
-            // if(arr[k] == 2) k--;
+            // if(arr[low] == 0 ) low++;
+            // // if(arr[mid] == 1) mid++;
+            // if(arr[high] == 2) high--;
 
-            if (arr[j] == 0)
+            if (arr[mid] == 0)
             {
-                swap(arr[i], arr[j]);
-                i++;
-                j++;
+                swap(arr[low], arr[mid]);
+                low++;
+                mid++;
             }
-            else if (arr[j] == 2)
+            else if (arr[mid] == 2)
             {
-                swap(arr[j], arr[k]);
-                k--;
+                swap(arr[mid], arr[high]);
+                high--;
             }
             else
-                j++;
+                mid++;
         }
     }
 };
