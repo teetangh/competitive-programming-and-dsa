@@ -15,7 +15,8 @@ public:
     {
         // code here
         int pairCount = 0;
-        int *hashMap = (int *)calloc(10001, sizeof(int));
+        // int *hashMap = (int *)calloc(10001, sizeof(int));
+        unordered_map<int, int> hashMap;
 
         for (int i = 0; i < n; i++)
         {
