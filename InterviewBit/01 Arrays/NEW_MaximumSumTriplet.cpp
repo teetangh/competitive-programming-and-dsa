@@ -87,11 +87,11 @@ int solve(vector<int> &A)
                 maxLeft = max(A[k], maxLeft);
             }
         }
-        if (!added)
-            currentSum = INT_MIN;
-        else
+        if (added)
             currentSum += maxLeft;
-
+        else
+            continue;
+            
         added = false;
         int maxRight = INT_MIN;
         for (int i = 0; i < j; i++)
@@ -102,11 +102,11 @@ int solve(vector<int> &A)
                 maxRight = max(A[i], maxRight);
             }
         }
-        if (!added)
-            currentSum = INT_MIN;
-        else
+        if (added)
             currentSum += maxRight;
-
+        else
+            continue;
+            
         if (currentSum > maxSum)
             maxSum = currentSum;
     }
