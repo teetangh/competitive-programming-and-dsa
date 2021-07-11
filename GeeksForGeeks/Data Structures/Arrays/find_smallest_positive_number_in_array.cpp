@@ -33,7 +33,7 @@ public:
             else if (arr[i] != smallestInteger && arr[i] != smallestInteger - 1)
                 return smallestInteger;
         }
-        return arr[n - 1] + 1;
+        return smallestInteger;
     }
 };
 

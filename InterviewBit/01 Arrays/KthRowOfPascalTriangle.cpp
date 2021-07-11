@@ -56,3 +56,15 @@ int main()
         cout << endl;
     }
 }
+
+// // Sample IO
+// 7
+// 0 1 2 3 4 5 6
+
+// 0 of size 1 : 1 
+// 1 of size 2 : 1 1 
+// 2 of size 3 : 1 2 1 
+// 3 of size 4 : 1 3 3 1 
+// 4 of size 5 : 1 4 6 4 1 
+// 5 of size 6 : 1 5 10 10 5 1 
+// 6 of size 7 : 1 6 15 20 15 6 1 
