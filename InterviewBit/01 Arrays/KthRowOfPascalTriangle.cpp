@@ -22,18 +22,12 @@ vector<int> getRow(int A)
     std::vector<int> v = getRow(A - 1);
 
     vector<int> tempVector(v);
-    // tempVector.pop_back();
 
-    for (int i = 1; i < v.size() - 1;)
-    {
-        if(v.size() % 2 != 0)
-        {
-            tempVector[i] = v[i] 
-        }
-        else{
+    // tempVector.insert(tempVector.begin() + 1, v[0] + v[1]);
 
-        }
-    }
+    for (int i = 1; i < v.size(); i++)
+        tempVector[i] = v[i] + v[i - 1];
+    tempVector.insert(tempVector.end(), 1);
 
     return tempVector;
 }
@@ -62,4 +56,3 @@ int main()
         cout << endl;
     }
 }
-    
