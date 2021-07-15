@@ -1,10 +1,7 @@
 #include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-#include <vector>
-// #include "Solution.h"
 
-#include <queue>
-#include <stack>
 vector<int> mergeKSortedArrays(vector<vector<int> *> input)
 {
     priority_queue<int> pq;
