@@ -2,67 +2,88 @@
 #include <iostream>
 #include "../include/CNLinkedList.hpp"
 
-node *returnReverseLinkedList(node *head)
-{
-    // Will Lose original Linked List
-    if (head == NULL)
-        return NULL;
-    else if (head != NULL && head->next == NULL)
-        return head;
+// node *returnReverseLinkedList(node *head)
+// {
+//     // Will Lose original Linked List
+//     if (head == NULL)
+//         return NULL;
+//     else if (head != NULL && head->next == NULL)
+//         return head;
 
-    node *prev = NULL;
+//     node *prev = NULL;
+//     node *curr = head;
+//     node *tempNext = head->next;
+
+//     while (tempNext != NULL)
+//     {
+//         curr->next = prev;
+//         prev = curr;
+//         curr = tempNext;
+//         tempNext = tempNext->next;
+//     }
+
+//     curr->next = prev;
+//     return curr;
+// }
+// node *createReversedLinkedList(node *head)
+// {
+//     if (head == NULL)
+//         return NULL;
+//     else if (head != NULL && head->next == NULL)
+//         return head;
+//     else
+//     {
+//         node *temp = head;
+
+//         node *newHead = NULL;
+//         node *newTail = NULL;
+
+//         while (temp != NULL)
+//         {
+//             node *newNode = new node(temp->data);
+//             if (newHead == NULL)
+//             {
+//                 newHead = newNode;
+//                 newTail = newNode;
+//             }
+//             else
+//             {
+//                 newTail->next = newNode;
+//                 newTail = newNode;
+//             }
+//             temp = temp->next;
+//         }
+//         return returnReverseLinkedList(newHead);
+//     }
+// }
+
+node *reverseLinkedListIterative(node *head)
+{
     node *curr = head;
-    node *tempNext = head->next;
+    node *prev = NULL;
+    node *Next = NULL;
 
-    while (tempNext != NULL)
+    while (curr != NULL)
     {
+        Next = curr->next;
         curr->next = prev;
+
         prev = curr;
-        curr = tempNext;
-        tempNext = tempNext->next;
+        curr = Next;
     }
 
-    curr->next = prev;
-    return curr;
-}
-node *createReversedLinkedList(node *head)
-{
-    if (head == NULL)
-        return NULL;
-    else if (head != NULL && head->next == NULL)
-        return head;
-    else
-    {
-        node *temp = head;
-
-        node *newHead = NULL;
-        node *newTail = NULL;
-
-        while (temp != NULL)
-        {
-            node *newNode = new node(temp->data);
-            if (newHead == NULL)
-            {
-                newHead = newNode;
-                newTail = newNode;
-            }
-            else
-            {
-                newTail->next = newNode;
-                newTail = newNode;
-            }
-            temp = temp->next;
-        }
-        return returnReverseLinkedList(newHead);
-    }
+    head = prev;
+    return head;
 }
 
 bool check_palindrome(node *head)
 {
     node *original = head;
-    node *reverse = createReversedLinkedList(head);
+    // node *reverse = createReversedLinkedList(head);
+    node *reverse = reverseLinkedListIterative(head);
+    print(reverse);
 
-    while (original->next != NULL || reverse->next != NULL)
+    while (original->next != NULL && reverse->next != NULL)
     {
         if (original->data != reverse->data)
             return false;

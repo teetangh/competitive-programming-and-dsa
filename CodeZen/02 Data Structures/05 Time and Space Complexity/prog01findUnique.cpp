@@ -1,27 +1,39 @@
 #include <iostream>
 #include <algorithm>
 // #include "solution.h"
+
 using namespace std;
+
 // arr - input array
 // size - size of array
 
 int FindUnique(int arr[], int size)
 {
-    for (int i = 0; i < size; i++)
-    {
-        bool unique = true;
-        for (int j = i + 1; j < size; j++)
-        {
-            if (arr[i] == arr[j])
-            {
-                unique = false;
-                break;
-            }
-        }
-        if (unique == true)
-            return arr[i];
-    }
+    int result = arr[0];
+    for (int i = 1; i < size; i++)
+        result ^= arr[i];
+    return result;
 }
+
+// // Slower but works
+// int FindUnique(int arr[], int size)
+// {
+//     for (int i = 0; i < size; i++)
+//     {
+//         bool unique = true;
+//         for (int j = i + 1; j < size; j++)
+//         {
+//             if (arr[i] == arr[j])
+//             {
+//                 unique = false;
+//                 break;
+//             }
+//         }
+//         if (unique == true)
+//             return arr[i];
+//     }
+// }
+
 int main()
 {
 

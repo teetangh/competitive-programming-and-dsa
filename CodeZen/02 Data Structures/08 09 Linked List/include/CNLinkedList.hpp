@@ -1,5 +1,8 @@
 //Find midpoint of a Linked List
 #include <iostream>
+using namespace std;
+// #include "solution.h"
+
 class node
 {
 public:
@@ -12,8 +15,6 @@ public:
     }
 };
 
-using namespace std;
-// #include "solution.h"
 node *takeinput()
 {
     int data;

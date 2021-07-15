@@ -91,7 +91,7 @@ public:
             pNew.degCoeff[i] -= P.degCoeff[i];
         // for (int i = 0; i < pNew.capacity; i++)
         // {
-        //     pNew.degCoeff[i] = this->degCoeff[i] + P.degCoeff[i];
+        //     pNew.degCoeff[i] = this->degCoeff[i] - P.degCoeff[i];
         // }
         return pNew;
     }

@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
     Student s1; // Default Constructor called
 
     Student s2(101);     // Parameterized Constructor 1 called
-    Student s3(20, 102); // Parameterized Constructor 1 called\
+    Student s3(20, 102); // Parameterized Constructor 1 called
 
     Student s4(s3);      // Copy Constructor
 
