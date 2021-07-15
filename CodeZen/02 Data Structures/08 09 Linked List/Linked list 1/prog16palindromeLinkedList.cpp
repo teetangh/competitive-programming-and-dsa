@@ -78,10 +78,14 @@ node *reverseLinkedListIterative(node *head)
 
 bool check_palindrome(node *head)
 {
+    if (head == NULL)
+        return true;
+
     node *original = head;
+
     // node *reverse = createReversedLinkedList(head);
     node *reverse = reverseLinkedListIterative(head);
-    print(reverse);
+    // print(reverse);
 
     while (original->next != NULL && reverse->next != NULL)
     {
