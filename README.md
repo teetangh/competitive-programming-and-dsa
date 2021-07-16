@@ -1,22 +1,23 @@
-# Competitive-Coding
+# Competitive-Programming
 
 This repository contains my various implementations of Data Structures and Algorithms as well as some foundational C++ practice programs.
 
 It also contains various my solutions to problems asked in various Competitive Coding Sites, Events and Platforms.
 
-# Summary Of File Naming Conventions
+# File Naming Convention Summarised
 
 ```
-prog001xyz = only one file (NO CONFLICTS)
-prog001n_xyz = new
+prog001xyz = only one file (NO CONFLICTS) and accepted
+prog001n_xyz / new001_xyz = (Not yet Attempted/Accpeted/Submitted)
 prog001TLE_xyz = TLE
-prog001WA_xyz = WRong Answer
+prog001WA_xyz = Wrong Answer
 
 prog001h_xyz = helped
 prog001a_xyz,prog001b_xyz,prog001c_xyz,prog001d_xyz,...... = accepted versions
+
 ```
 
-actually, i looked at some of my files after 2 months, i was confused which one was complete , incomplete, TLE , WA , etc...
+Actually, i looked at some of my files after 2 months, i was confused which one was complete , incomplete, TLE , WA , etc...
 
 One more important thing is that I dont make multiple files for naive , efficient , optimised solutions,rather i make 3 separate functions like:
 
@@ -26,10 +27,9 @@ solve_problem_efficient()
 solve_problem_optimised()
 ```
 
-# Index Last Updated on Wed Jul 14 10:13:29 IST 2021
+# Index Last Updated on Fri Jul 16 15:49:19 IST 2021
 
-```
-.
+```.
 ├── ascii_table.png
 ├── Career Cup
 │   ├── intelligent_substrings.cpp
@@ -293,6 +293,7 @@ solve_problem_optimised()
 │   │   │       ├── prog17PRINTsubsetSumToK.cpp
 │   │   │       ├── prog18RETURNallCodesOfString.cpp
 │   │   │       ├── prog19PRINTallCodesOfString.cpp
+│   │   │       ├── prog21PRINTpermutationsOfString
 │   │   │       ├── prog21PRINTpermutationsOfString.cpp
 │   │   │       ├── xinput.txt
 │   │   │       └── xoutput.txt
@@ -379,6 +380,9 @@ solve_problem_optimised()
 │   │   │   │   ├── Pair.cpp
 │   │   │   │   └── PairUse.cpp
 │   │   │   └── Stack ADT
+│   │   │       ├── new08checkRedundantBrackets.cpp
+│   │   │       ├── new09stockSpan.cpp
+│   │   │       ├── new10minimumBracketReversal.cpp
 │   │   │       ├── prog01StackUse.cpp
 │   │   │       ├── prog02DynamicStackUse.cpp
 │   │   │       ├── prog03TemplateStackUse.cpp
@@ -390,10 +394,10 @@ solve_problem_optimised()
 │   │   │   ├── include
 │   │   │   │   ├── DynamicQueueUsingArray.hpp
 │   │   │   │   └── QueueUsingArray.hpp
+│   │   │   ├── new04mergeKsortedArrays.cpp
 │   │   │   ├── prog01QueueUse.cpp
 │   │   │   ├── prog02DynamicQueueUse.cpp
-│   │   │   ├── prog03reverseQueue.cpp
-│   │   │   └── prog05mergeKsortedArrays.cpp
+│   │   │   └── prog03reverseQueue.cpp
 │   │   ├── 11 Trees
 │   │   │   ├── include
 │   │   │   │   ├── CNTree.hpp
@@ -794,6 +798,7 @@ solve_problem_optimised()
 │   └── Graphs
 │       ├── BishuAndHisGirlfriend
 │       ├── ConnectedComponentsInAGraph.cpp
+│       ├── MonkAndIslands.cpp
 │       └── WA_BishuAndHisGirlfriend.cpp
 ├── Hackerrank
 │   ├── Alogrithms
@@ -1022,20 +1027,21 @@ solve_problem_optimised()
     │   │   └── xoutput.txt
     │   ├── Graphs
     │   │   ├──  Graphs Part 1 CodeNCode
-    │   │   │   ├── prog001dfs.cpp
-    │   │   │   ├── prog002cnc.cpp
-    │   │   │   ├── prog003cnc_prob.cpp
-    │   │   │   ├── prog004ssspOnTrees.cpp
-    │   │   │   ├── prog005isItTree.cpp
-    │   │   │   ├── prog006bipartititeTest.cpp
-    │   │   │   ├── prog007bipartititeTestBUGLIFE.cpp
-    │   │   │   ├── prog008cycleDetectDFS.cpp
-    │   │   │   ├── prog009InOut.cpp
-    │   │   │   ├── prog010fireSecCNC_Perm.cpp
-    │   │   │   ├── prog010longestPathInTree.cpp
-    │   │   │   ├── prog011subtreeSizeDFS.cpp
-    │   │   │   ├── prog012BFSislands.cpp
-    │   │   │   ├── prog013primePath.cpp
+    │   │   │   ├── prog02graph.cpp
+    │   │   │   ├── prog03dfs.cpp
+    │   │   │   ├── prog04connectedComponents.cpp
+    │   │   │   ├── prog05ConnectedComponentsInAGraph.cpp
+    │   │   │   ├── prog07BishuAndHisGF.cpp
+    │   │   │   ├── prog08isItATree.cpp
+    │   │   │   ├── prog09BipartiteTest.cpp
+    │   │   │   ├── prog10BugsLife.cpp
+    │   │   │   ├── prog11cycleDetection.cpp
+    │   │   │   ├── prog12InOutTimesOfNodes.cpp
+    │   │   │   ├── prog13FireEscapeRoutes.cpp
+    │   │   │   ├── prog15longestPathInTreeORdiameterOfGRaph.cpp
+    │   │   │   ├── prog16subtreeSize.cpp
+    │   │   │   ├── prog18bfs.cpp
+    │   │   │   ├── prog19primePath.cpp
     │   │   │   ├── xinput.txt
     │   │   │   └── xoutput.txt
     │   │   ├──  Graphs Part 2 CodeNCode
@@ -1044,21 +1050,7 @@ solve_problem_optimised()
     │   │   │   ├── prog003LCABinaryLifting.cpp
     │   │   │   ├── xinput.txt
     │   │   │   └── xoutput.txt
-    │   │   ├── Graphs TECH DOSE
-    │   │   └── practice
-    │   │       ├── prog02graph.cpp
-    │   │       ├── prog03dfs.cpp
-    │   │       ├── prog04connectedComponents.cpp
-    │   │       ├── prog05ConnectedComponentsInAGraph.cpp
-    │   │       ├── prog07BishuAndHisGF.cpp
-    │   │       ├── prog08isItATree.cpp
-    │   │       ├── prog09BipartiteTest.cpp
-    │   │       ├── prog10BugsLife.cpp
-    │   │       ├── prog11cycleDetection.cpp
-    │   │       ├── prog12InOutTimesOfNodes.cpp
-    │   │       ├── prog13FireEscapeRoutes.cpp
-    │   │       ├── xinput.txt
-    │   │       └── xoutput.txt
+    │   │   └── Graphs TECH DOSE
     │   ├── Linked_List
     │   ├── Queues
     │   ├── Segment Trees
@@ -1086,5 +1078,5 @@ solve_problem_optimised()
         │           └── xoutput.txt
         └── Others
 
-186 directories, 869 files
+185 directories, 862 files
 ```
