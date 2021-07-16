@@ -1,36 +1,30 @@
+// Includes
 #include <iostream>
 #include <iomanip>
+#include <string>
 #include <bits/stdc++.h>
-
 using namespace std;
 
 // Defines
-#define REP(i, n) for (int i = 1; i <= n; i++)
-#define mod 1000000007
-#define pb push_back
-#define ff first
-#define ss second
-#define pii pair<int, int>
-#define vi vector<int>
-#define vpii vector<pair<int, int>>
 #define endl '\n'
-#define fastio                        \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);                    \
-    cout.tie(NULL)
+#define fastio ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
 
-// typedefs
+// Typedefs
 typedef long long ll;
 typedef long long int lli;
+typedef unsigned long long ull;
+typedef unsigned long long int ulli;
 
-vector<int> ar[10001];
-int vis[10001], dist[10001];
+#define MAX 10001
+
+vector<int> ar[MAX];
+int vis[MAX];
+int dist[MAX];
 
 void BFS(int src)
 {
     queue<int> q;
     q.push(src);
-
     vis[src] = 1;
     dist[src] = 0;
 
@@ -39,7 +33,7 @@ void BFS(int src)
         int curr = q.front();
         q.pop();
 
-        for (auto &child : ar[curr])
+        for (auto child : ar[curr])
         {
             if (!vis[child])
             {
@@ -54,18 +48,23 @@ void BFS(int src)
 int main()
 {
 #ifndef ONLINE_JUDGE
-    freopen("xinput.txt", "r", stdin);
-    freopen("xoutput.txt", "w", stdout);
+    freopen("xinput.txt", "r", stdin);   // for getting input from xinput.txt
+    freopen("xoutput.txt", "w", stdout); // for writing output to xoutput.txt
 #endif
 
-    int t, n, m, a, b;
-    cin >> t;
+    fastio;
 
-    while (t--)
+    int tc, n, m, a, b;
+    cin >> tc;
+
+    while (tc--)
     {
         cin >> n >> m;
         for (int i = 1; i <= n; i++)
-            ar[i].clear(), vis[i] = 0;
+        {
+            ar[i].clear();
+            vis[i] = 0;
+        }
 
         while (m--)
             cin >> a >> b, ar[a].push_back(b), ar[b].push_back(a);
