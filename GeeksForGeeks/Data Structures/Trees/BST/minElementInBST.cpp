@@ -105,22 +105,10 @@ int main()
 //Function to find the minimum element in the given BST.
 int minValue(Node *root)
 {
-    // Code here
     if (root == NULL)
         return -1;
-
-    if (root->left == NULL && root->right == NULL)
-        return root->data;
-
-    int currentMin = root->data;
-
-    int leftMin = minValue(root->left);
-    if (leftMin != -1)
-        currentMin = std::min(currentMin, leftMin);
-
-    int rightMin = minValue(root->right);
-    if (rightMin != -1)
-        currentMin = std::min(currentMin, rightMin);
-
-    return currentMin;
+    auto temp = root;
+    while (temp->left != NULL)
+        temp = temp->left;
+    return temp->data;
 }
