@@ -27,10 +27,8 @@ static inline void amin(T &x, U &y)
 int main(int argc, char const *argv[])
 {
 #ifndef ONLINE_JUDGE
-    // for getting input from input.txt
-    freopen("input1.txt", "r", stdin);
-    // for writing output to output.txt
-    freopen("output1.txt", "w", stdout);
+    freopen("xinput.txt", "r", stdin);
+    freopen("xoutput.txt", "w", stdout);
 #endif
 
     vector<int> vec = {0, 1, 2, 3, 4};
