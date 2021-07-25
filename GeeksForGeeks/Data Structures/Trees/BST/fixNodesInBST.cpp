@@ -127,6 +127,7 @@ class Solution
 
         inOrder(root->left, result);
         result.push_back(root);
+        // cout << root->data << " ";
         inOrder(root->right, result);
     }
 
@@ -139,25 +140,54 @@ public:
         // add code here.
         vector<Node *> inorder;
         inOrder(root, inorder);
+        // cout << endl;
 
-        struct Node *major = NULL;
-        struct Node *minor = NULL;
+        struct Node *temp1 = NULL;
+        struct Node *temp2 = NULL;
 
-        int minorData, majorData;
+        int temp2Data, temp1Data;
         for (int i = 0; i < inorder.size(); i++)
         {
-            if (i >= 1 && (inorder[i - 1]->data > inorder[i]->data))
-                minor = inorder[i - 1];
-
-            if (i < inorder.size() - 1 && (inorder[i]->data > inorder[i + 1]->data))
-                major = inorder[i + 1];
+            if (i == 0)
+            {
+                if (inorder[i]->data > inorder[i + 1]->data)
+                {
+                    if (temp1 == NULL)
+                        temp1 = inorder[i];
+                    else
+                        temp2 = inorder[i];
+                }
+            }
+            else if (i == inorder.size() - 1)
+            {
+                if (inorder[i - 1]->data > inorder[i]->data)
+                {
+                    if (temp1 == NULL)
+                        temp1 = inorder[i];
+                    else
+                        temp2 = inorder[i];
+                }
+            }
+            else
+            {
+                if (((inorder[i - 1]->data > inorder[i]->data) ^ (inorder[i]->data > inorder[i + 1]->data)))
+                {
+                    if (temp1 == NULL)
+                        temp1 = inorder[i];
+                    else
+                        temp2 = inorder[i];
+                }
+            }
         }
 
-        minorData = minor->data;
-        majorData = major->data;
+        temp2Data = temp2->data;
+        temp1Data = temp1->data;
 
-        minor->data = majorData;
-        major->data = minorData;
+        // cout << temp1Data << " " << temp2Data << endl;
+
+        temp2->data = temp1Data;
+        temp1->data = temp2Data;
+        inOrder(root, inorder);
     }
 };
 
