@@ -1,0 +1,33 @@
+4
+
+1
+CAT
+3 3
+C A P
+A N D
+T I E
+
+4
+FOR GEEKS QUIZ GO
+3 3 
+G I Z
+U E K
+Q S E
+
+2
+db bcd
+5 2
+d d
+b f
+e c
+b c
+d c
+
+6
+dfd ded fd e dec df
+4 2
+f f
+d e
+f b
+b e
+
