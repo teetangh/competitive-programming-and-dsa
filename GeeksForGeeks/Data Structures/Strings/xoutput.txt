@@ -1,43 +1,7 @@
-C A P 
-A N D 
-T I E 
-
-CAT 
-G I Z 
-U E K 
-Q S E 
-
-G I Z 
-U E K 
-Q S E 
-
-GEEKS QUIZ 
-d d 
-b f 
-e c 
-b c 
-d c 
-
-d d 
-b f 
-e c 
-b c 
-d c 
-
-bcd db 
-f f 
-d e 
-f b 
-b e 
-
-f f 
-d e 
-f b 
-b e 
-
-f f 
-d e 
-f b 
-b e 
-
-df e fd 
+315904
+-2199978
+1
+25
+1110
+0
+203
