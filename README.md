@@ -27,10 +27,30 @@ solve_problem_efficient()
 solve_problem_optimised()
 ```
 
-# Index Last Updated on Fri Jul 16 15:49:19 IST 2021
+# Usage of Sites
 
-```.
-├── ascii_table.png
+## Contests
+
+- Codeforces
+- Codechef
+
+## DSA
+
+- GFG
+- Interview Bit
+- Hackerrank
+- Hackerearth (NA)
+- Leetcode (NA)
+
+## Competitive Programming
+
+- SPOJ
+
+# Index Last Updated on Fri Aug 13 12:26:43 IST 2021
+
+```
+.
+├── ascii*table.png
 ├── Career Cup
 │   ├── intelligent_substrings.cpp
 │   ├── xinput.txt
@@ -103,20 +123,68 @@ solve_problem_optimised()
 │   │   │   ├── sudokuSolver.cpp
 │   │   │   ├── xinput.txt
 │   │   │   └── xoutput.txt
+│   │   ├── Codentine-2021-ACM-Manipal
+│   │   │   ├── ACM15.cpp
+│   │   │   ├── ACM16.cpp
+│   │   │   ├── ACM1.cpp
+│   │   │   ├── ACM7.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
 │   │   ├── Feb Challenge 2018
 │   │   │   ├── PERMPAL_permutations_and_palindrome.cpp
 │   │   │   ├── sahil.cpp
 │   │   │   ├── xinput.txt
 │   │   │   └── xoutput.txt
 │   │   └── Zonal Computing Olympiad 2015
-│   │       ├── xinput.txt
-│   │       ├── xoutput.txt
-│   │       └── ZCO15002_variation_count.cpp
+│   │   ├── xinput.txt
+│   │   ├── xoutput.txt
+│   │   └── ZCO15002_variation_count.cpp
 │   └── Unclassified
-│       └── checkArrangement.cpp
+│   └── checkArrangement.cpp
 ├── CodeForces
+│   ├── contests
+│   │   ├── educational
+│   │   │   └── #112-div2
+│   │   │   ├── B_two_tables.cpp
+│   │   │   ├── WA_A_pizza.cpp
+│   │   │   ├── WA_C_coin_rows.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   └── regular
+│   │   ├── #735-div2
+│   │   │   ├── MLE_C_mikasa.cpp
+│   │   │   ├── TLE_B_cobb.cpp
+│   │   │   ├── WA_A_cherry.cpp
+│   │   │   ├── WA_D_diana.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   ├── #736-div2
+│   │   │   ├── A.cpp
+│   │   │   ├── MLE_C2.cpp
+│   │   │   ├── nB.cpp
+│   │   │   ├── nD.cpp
+│   │   │   ├── nE.cpp
+│   │   │   ├── TLE_C3.cpp
+│   │   │   ├── WA_C.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   └── #737-div2
+│   │   ├── nA
+│   │   ├── nA.cpp
+│   │   ├── nB.cpp
+│   │   ├── nC.cpp
+│   │   ├── nD.cpp
+│   │   ├── nE.cpp
+│   │   ├── tempCodeRunnerFile
+│   │   ├── tempCodeRunnerFile.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   └── problem-set
 │   ├── 0001A_theatre_square.cpp
+│   ├── 0004C_registration_system.cpp
 │   ├── 0050A_domino_piling.cpp
+│   ├── 0058A_chat_room.cpp
+│   ├── 0069A_young_physicist.cpp
 │   ├── 0071A_way_too_long_words.cpp
 │   ├── 0112A_petya_and_strings.cpp
 │   ├── 0118A_string_task.cpp
@@ -126,7 +194,13 @@ solve_problem_optimised()
 │   ├── 0281A_capitalization.cpp
 │   ├── 0282A_bit_plus_plus.cpp
 │   ├── 0339A_helpful_maths.cpp
+│   ├── 0368B_sereja_and_suffixes.cpp
+│   ├── 0519B_compilation_errors.cpp
+│   ├── 0546A_soldier_and_bananas.cpp
+│   ├── 0791A_bear_and_big_brother.cpp
 │   ├── 1037C_equalize.cpp
+│   ├── NEW_0122A_lucky_division.cpp
+│   ├── NEW_1520D_same_differences.cpp
 │   ├── xinput.txt
 │   └── xoutput.txt
 ├── CodeVita
@@ -213,28 +287,28 @@ solve_problem_optimised()
 │   │   │   ├── prog14highestOccurringChar.cpp
 │   │   │   └── prog15stringCompression.cpp
 │   │   └── TESTS
-│   │       ├── TEST 1
-│   │       │   ├── prog1PyramidNumberPattern.cpp
-│   │       │   ├── prog2NumberStarPattern.cpp
-│   │       │   └── prog3SecondLargest.cpp
-│   │       └── TEST 2
-│   │           ├── prog01print2DArray.cpp
-│   │           ├── prog02minLengthWord.cpp
-│   │           └── prog03leadersInArray.cpp
+│   │   ├── TEST 1
+│   │   │   ├── prog1PyramidNumberPattern.cpp
+│   │   │   ├── prog2NumberStarPattern.cpp
+│   │   │   └── prog3SecondLargest.cpp
+│   │   └── TEST 2
+│   │   ├── prog01print2DArray.cpp
+│   │   ├── prog02minLengthWord.cpp
+│   │   └── prog03leadersInArray.cpp
 │   ├── 02 Data Structures
 │   │   ├── 01 Pointers
 │   │   │   ├── Exercises
 │   │   │   │   └── prog999.cpp
 │   │   │   └── Programs
-│   │   │       ├── prog01pointers.cpp
-│   │   │       ├── prog02pointers2.cpp
-│   │   │       ├── prog03pointers3.cpp
-│   │   │       ├── prog04pointer_operator.cpp
-│   │   │       ├── prog05array_pointers.cpp
-│   │   │       ├── prog06char_array.cpp
-│   │   │       ├── prog07functions_pointers.cpp
-│   │   │       ├── prog08functions_arrays.cpp
-│   │   │       └── prog09double_pointer.cpp
+│   │   │   ├── prog01pointers.cpp
+│   │   │   ├── prog02pointers2.cpp
+│   │   │   ├── prog03pointers3.cpp
+│   │   │   ├── prog04pointer_operator.cpp
+│   │   │   ├── prog05array_pointers.cpp
+│   │   │   ├── prog06char_array.cpp
+│   │   │   ├── prog07functions_pointers.cpp
+│   │   │   ├── prog08functions_arrays.cpp
+│   │   │   └── prog09double_pointer.cpp
 │   │   ├── 02 Dynamic Allocation
 │   │   │   ├── prog01typecasting.cpp
 │   │   │   ├── prog02reference_variables.cpp
@@ -273,30 +347,29 @@ solve_problem_optimised()
 │   │   │   │   ├── prog16checkPalindrome.cpp
 │   │   │   │   └── prog17sumOfDigits.cpp
 │   │   │   └── Recursion 2
-│   │   │       ├── new20RETURNpermutationsOfString.cpp
-│   │   │       ├── prog01strings_recursion.cpp
-│   │   │       ├── prog02replaceCharacter.cpp
-│   │   │       ├── prog03removeConsecutiveDuplicates.cpp
-│   │   │       ├── prog04mergeSort.cpp
-│   │   │       ├── prog05quickSort.cpp
-│   │   │       ├── prog06strings_intro.cpp
-│   │   │       ├── prog07RETURNallSubsequences.cpp
-│   │   │       ├── prog08RETURNKeypad.cpp
-│   │   │       ├── prog09PRINTallSubsequences.cpp
-│   │   │       ├── prog10PRINTKeypad.cpp
-│   │   │       ├── prog11chackAB.cpp
-│   │   │       ├── prog12staircase.cpp
-│   │   │       ├── prog13BinarySearchRecursive.cpp
-│   │   │       ├── prog14RETURNsubsetOfArray.cpp
-│   │   │       ├── prog15PRINTsubsetOfArray.cpp
-│   │   │       ├── prog16RETURNsubsetSumToK.cpp
-│   │   │       ├── prog17PRINTsubsetSumToK.cpp
-│   │   │       ├── prog18RETURNallCodesOfString.cpp
-│   │   │       ├── prog19PRINTallCodesOfString.cpp
-│   │   │       ├── prog21PRINTpermutationsOfString
-│   │   │       ├── prog21PRINTpermutationsOfString.cpp
-│   │   │       ├── xinput.txt
-│   │   │       └── xoutput.txt
+│   │   │   ├── new20RETURNpermutationsOfString.cpp
+│   │   │   ├── prog01strings_recursion.cpp
+│   │   │   ├── prog02replaceCharacter.cpp
+│   │   │   ├── prog03removeConsecutiveDuplicates.cpp
+│   │   │   ├── prog04mergeSort.cpp
+│   │   │   ├── prog05quickSort.cpp
+│   │   │   ├── prog06strings_intro.cpp
+│   │   │   ├── prog07RETURNallSubsequences.cpp
+│   │   │   ├── prog08RETURNKeypad.cpp
+│   │   │   ├── prog09PRINTallSubsequences.cpp
+│   │   │   ├── prog10PRINTKeypad.cpp
+│   │   │   ├── prog11chackAB.cpp
+│   │   │   ├── prog12staircase.cpp
+│   │   │   ├── prog13BinarySearchRecursive.cpp
+│   │   │   ├── prog14RETURNsubsetOfArray.cpp
+│   │   │   ├── prog15PRINTsubsetOfArray.cpp
+│   │   │   ├── prog16RETURNsubsetSumToK.cpp
+│   │   │   ├── prog17PRINTsubsetSumToK.cpp
+│   │   │   ├── prog18RETURNallCodesOfString.cpp
+│   │   │   ├── prog19PRINTallCodesOfString.cpp
+│   │   │   ├── prog21PRINTpermutationsOfString.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
 │   │   ├── 05 Time and Space Complexity
 │   │   │   ├── prog01findUnique.cpp
 │   │   │   ├── prog02duplicateInArray.cpp
@@ -319,24 +392,24 @@ solve_problem_optimised()
 │   │   │   │   ├── StudentUse6.cpp
 │   │   │   │   └── StudentUse.cpp
 │   │   │   └── OOPS 2
-│   │   │       ├── DyanmicArrayUse.cpp
-│   │   │       ├── FractionNew1Use.cpp
-│   │   │       ├── FractionNew2Use2.cpp
-│   │   │       ├── FractionNew2Use3.cpp
-│   │   │       ├── FractionNew2Use.cpp
-│   │   │       ├── include
-│   │   │       │   ├── DynamicArray.hpp
-│   │   │       │   ├── FractionNew2.hpp
-│   │   │       │   ├── FractionNew.hpp
-│   │   │       │   ├── Polynomial.hpp
-│   │   │       │   ├── Student2.hpp
-│   │   │       │   ├── Student3.hpp
-│   │   │       │   └── Student.hpp
-│   │   │       ├── PolynomialUse.cpp
-│   │   │       ├── Student1Use2.cpp
-│   │   │       ├── Student1Use.cpp
-│   │   │       ├── Student2Use.cpp
-│   │   │       └── Student3use.cpp
+│   │   │   ├── DyanmicArrayUse.cpp
+│   │   │   ├── FractionNew1Use.cpp
+│   │   │   ├── FractionNew2Use2.cpp
+│   │   │   ├── FractionNew2Use3.cpp
+│   │   │   ├── FractionNew2Use.cpp
+│   │   │   ├── include
+│   │   │   │   ├── DynamicArray.hpp
+│   │   │   │   ├── FractionNew2.hpp
+│   │   │   │   ├── FractionNew.hpp
+│   │   │   │   ├── Polynomial.hpp
+│   │   │   │   ├── Student2.hpp
+│   │   │   │   ├── Student3.hpp
+│   │   │   │   └── Student.hpp
+│   │   │   ├── PolynomialUse.cpp
+│   │   │   ├── Student1Use2.cpp
+│   │   │   ├── Student1Use.cpp
+│   │   │   ├── Student2Use.cpp
+│   │   │   └── Student3use.cpp
 │   │   ├── 08 09 Linked List
 │   │   │   ├── include
 │   │   │   │   ├── CNLinkedList.hpp
@@ -360,16 +433,16 @@ solve_problem_optimised()
 │   │   │   │   ├── prog15printReverseLL.cpp
 │   │   │   │   └── prog16palindromeLinkedList.cpp
 │   │   │   └── Linked list 2
-│   │   │       ├── prog01midPointOfLL.cpp
-│   │   │       ├── prog02mergeTwoLLs.cpp
-│   │   │       ├── prog03mergeSortUsingLL.cpp
-│   │   │       ├── prog04reverseLinkedListRecursive.cpp
-│   │   │       ├── prog05CNreverseLL.cpp
-│   │   │       ├── prog06reverseLinkedListIterative.cpp
-│   │   │       ├── prog07findNodeLLRec.cpp
-│   │   │       ├── prog08arrangeOddEvenLL.cpp
-│   │   │       ├── prog09skipMdeleteN.cpp
-│   │   │       └── prog10swap2Nodes.cpp
+│   │   │   ├── prog01midPointOfLL.cpp
+│   │   │   ├── prog02mergeTwoLLs.cpp
+│   │   │   ├── prog03mergeSortUsingLL.cpp
+│   │   │   ├── prog04reverseLinkedListRecursive.cpp
+│   │   │   ├── prog05CNreverseLL.cpp
+│   │   │   ├── prog06reverseLinkedListIterative.cpp
+│   │   │   ├── prog07findNodeLLRec.cpp
+│   │   │   ├── prog08arrangeOddEvenLL.cpp
+│   │   │   ├── prog09skipMdeleteN.cpp
+│   │   │   └── prog10swap2Nodes.cpp
 │   │   ├── 10A Stacks
 │   │   │   ├── include
 │   │   │   │   ├── DynamicStackUsingArray.hpp
@@ -380,16 +453,16 @@ solve_problem_optimised()
 │   │   │   │   ├── Pair.cpp
 │   │   │   │   └── PairUse.cpp
 │   │   │   └── Stack ADT
-│   │   │       ├── new08checkRedundantBrackets.cpp
-│   │   │       ├── new09stockSpan.cpp
-│   │   │       ├── new10minimumBracketReversal.cpp
-│   │   │       ├── prog01StackUse.cpp
-│   │   │       ├── prog02DynamicStackUse.cpp
-│   │   │       ├── prog03TemplateStackUse.cpp
-│   │   │       ├── prog04StackUsingLinkedListUse.cpp
-│   │   │       ├── prog05InbuiltStack.cpp
-│   │   │       ├── prog06balancedParenthesis.cpp
-│   │   │       └── prog07reverseStack.cpp
+│   │   │   ├── new08checkRedundantBrackets.cpp
+│   │   │   ├── new09stockSpan.cpp
+│   │   │   ├── new10minimumBracketReversal.cpp
+│   │   │   ├── prog01StackUse.cpp
+│   │   │   ├── prog02DynamicStackUse.cpp
+│   │   │   ├── prog03TemplateStackUse.cpp
+│   │   │   ├── prog04StackUsingLinkedListUse.cpp
+│   │   │   ├── prog05InbuiltStack.cpp
+│   │   │   ├── prog06balancedParenthesis.cpp
+│   │   │   └── prog07reverseStack.cpp
 │   │   ├── 10B Queues
 │   │   │   ├── include
 │   │   │   │   ├── DynamicQueueUsingArray.hpp
@@ -423,7 +496,7 @@ solve_problem_optimised()
 │   │   │   │   ├── prog16secondLargestElement.cpp
 │   │   │   │   └── prog17replaceWithDepthValue.cpp
 │   │   │   └── Vectors
-│   │   │       └── vectorUse.cpp
+│   │   │   └── vectorUse.cpp
 │   │   ├── 12 Binary Trees
 │   │   │   ├── BT ADT
 │   │   │   │   ├── new02printLevelWise.cpp
@@ -437,10 +510,10 @@ solve_problem_optimised()
 │   │   │   │   ├── prog08buildTreeFromInorderPreorder.cpp
 │   │   │   │   └── prog10height_diameter_BT.cpp
 │   │   │   └── include
-│   │   │       ├── BinaryTreeNode.hpp
-│   │   │       ├── CNBinaryTree.hpp
-│   │   │       ├── FINALBinaryTree.hpp
-│   │   │       └── PracticeBT.cpp
+│   │   │   ├── BinaryTreeNode.hpp
+│   │   │   ├── CNBinaryTree.hpp
+│   │   │   ├── FINALBinaryTree.hpp
+│   │   │   └── PracticeBT.cpp
 │   │   ├── 13 BST
 │   │   │   ├── BST ADT
 │   │   │   │   ├── fail01searchBST.cpp
@@ -451,18 +524,18 @@ solve_problem_optimised()
 │   │   │   │   ├── prog06getRootToNodePath.cpp
 │   │   │   │   └── prog07BinarySearchTreeUse.cpp
 │   │   │   └── include
-│   │   │       ├── BinarySearchTree.hpp
-│   │   │       ├── BinaryTreeNode.hpp
-│   │   │       ├── CNBinaryTree.hpp
-│   │   │       ├── FINALBinaryTree.hpp
-│   │   │       └── practiceBST.cpp
+│   │   │   ├── BinarySearchTree.hpp
+│   │   │   ├── BinaryTreeNode.hpp
+│   │   │   ├── CNBinaryTree.hpp
+│   │   │   ├── FINALBinaryTree.hpp
+│   │   │   └── practiceBST.cpp
 │   │   ├── 14 Heaps & Priority Queues
 │   │   │   ├── Heaps & PQs ADT
 │   │   │   │   ├── prog01HeapUseANDheapSort.cpp
 │   │   │   │   ├── prog02maxPriorityQueue.cpp
 │   │   │   │   └── prog03inplaceHeapSort.cpp
 │   │   │   └── include
-│   │   │       └── PriorityQueue.hpp
+│   │   │   └── PriorityQueue.hpp
 │   │   ├── 15 Hash Maps
 │   │   │   ├── HashMapADT
 │   │   │   │   ├── prog01mapUse.cpp
@@ -472,13 +545,13 @@ solve_problem_optimised()
 │   │   │   │   ├── prog05PairSum0.cpp
 │   │   │   │   └── prog06iterators.cpp
 │   │   │   └── include
-│   │   │       └── ourmap.hpp
+│   │   │   └── ourmap.hpp
 │   │   └── 16 Tries and Huffman Coding
-│   │       ├── include
-│   │       │   ├── FINALTrie.hpp
-│   │       │   └── TrieNode.hpp
-│   │       └── Tries ADT
-│   │           └── prog01TrieUse.cpp
+│   │   ├── include
+│   │   │   ├── FINALTrie.hpp
+│   │   │   └── TrieNode.hpp
+│   │   └── Tries ADT
+│   │   └── prog01TrieUse.cpp
 │   ├── 03 Algorithms and Competitive Programming
 │   │   ├── 01 Prerequisites
 │   │   │   ├── prog001addTwoNumbers.cpp
@@ -539,29 +612,29 @@ solve_problem_optimised()
 │   │   │   │   ├── xinput.txt
 │   │   │   │   └── xoutput.txt
 │   │   │   └── Recursion 2 Advanced
-│   │   │       ├── new20RETURNpermutationsOfString.cpp
-│   │   │       ├── prog01strings_recursion.cpp
-│   │   │       ├── prog02replaceCharacter.cpp
-│   │   │       ├── prog03removeConsecutiveDuplicates.cpp
-│   │   │       ├── prog04mergeSort.cpp
-│   │   │       ├── prog05quickSort.cpp
-│   │   │       ├── prog06strings_intro.cpp
-│   │   │       ├── prog07RETURNallSubsequences.cpp
-│   │   │       ├── prog08RETURNKeypad.cpp
-│   │   │       ├── prog09PRINTallSubsequences.cpp
-│   │   │       ├── prog10PRINTKeypad.cpp
-│   │   │       ├── prog11chackAB.cpp
-│   │   │       ├── prog12staircase.cpp
-│   │   │       ├── prog13BinarySearchRecursive.cpp
-│   │   │       ├── prog14RETURNsubsetOfArray.cpp
-│   │   │       ├── prog15PRINTsubsetOfArray.cpp
-│   │   │       ├── prog16RETURNsubsetSumToK.cpp
-│   │   │       ├── prog17PRINTsubsetSumToK.cpp
-│   │   │       ├── prog18RETURNallCodesOfString.cpp
-│   │   │       ├── prog19PRINTallCodesOfString.cpp
-│   │   │       ├── prog21PRINTpermutationsOfString.cpp
-│   │   │       ├── xinput.txt
-│   │   │       └── xoutput.txt
+│   │   │   ├── new20RETURNpermutationsOfString.cpp
+│   │   │   ├── prog01strings_recursion.cpp
+│   │   │   ├── prog02replaceCharacter.cpp
+│   │   │   ├── prog03removeConsecutiveDuplicates.cpp
+│   │   │   ├── prog04mergeSort.cpp
+│   │   │   ├── prog05quickSort.cpp
+│   │   │   ├── prog06strings_intro.cpp
+│   │   │   ├── prog07RETURNallSubsequences.cpp
+│   │   │   ├── prog08RETURNKeypad.cpp
+│   │   │   ├── prog09PRINTallSubsequences.cpp
+│   │   │   ├── prog10PRINTKeypad.cpp
+│   │   │   ├── prog11chackAB.cpp
+│   │   │   ├── prog12staircase.cpp
+│   │   │   ├── prog13BinarySearchRecursive.cpp
+│   │   │   ├── prog14RETURNsubsetOfArray.cpp
+│   │   │   ├── prog15PRINTsubsetOfArray.cpp
+│   │   │   ├── prog16RETURNsubsetSumToK.cpp
+│   │   │   ├── prog17PRINTsubsetSumToK.cpp
+│   │   │   ├── prog18RETURNallCodesOfString.cpp
+│   │   │   ├── prog19PRINTallCodesOfString.cpp
+│   │   │   ├── prog21PRINTpermutationsOfString.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
 │   │   ├── 06 Time and Space Complexity Analysis
 │   │   │   ├── new001mergeSortTimeAnalysis.cpp
 │   │   │   └── xoutput.txt
@@ -680,23 +753,23 @@ solve_problem_optimised()
 │   │   │   │   ├── xinput.txt
 │   │   │   │   └── xoutput.txt
 │   │   │   └── DP 2
-│   │   │       ├── new007BsubsetSumSpaceOptimized.cpp
-│   │   │       ├── new011AsquareBrackets.cpp
-│   │   │       ├── new011BsquareBrackets.cpp
-│   │   │       ├── new012distinctSubsequences.cpp
-│   │   │       ├── prog001longestCommonSubsequence.cpp
-│   │   │       ├── prog002longestCommonSubsequenceStrings.cpp
-│   │   │       ├── prog003editDistance_TD.cpp
-│   │   │       ├── prog004balikaVadhu_TD.cpp
-│   │   │       ├── prog005A_knapsack_TD.cpp
-│   │   │       ├── prog005B_knapsack_BU.cpp
-│   │   │       ├── prog006party_problem.cpp
-│   │   │       ├── prog007AsubsetSum.cpp
-│   │   │       ├── prog008miserMan.cpp
-│   │   │       ├── prog009traderPorfit.cpp
-│   │   │       ├── prog010charlieAndPilots.cpp
-│   │   │       ├── xinput.txt
-│   │   │       └── xoutput.txt
+│   │   │   ├── new007BsubsetSumSpaceOptimized.cpp
+│   │   │   ├── new011AsquareBrackets.cpp
+│   │   │   ├── new011BsquareBrackets.cpp
+│   │   │   ├── new012distinctSubsequences.cpp
+│   │   │   ├── prog001longestCommonSubsequence.cpp
+│   │   │   ├── prog002longestCommonSubsequenceStrings.cpp
+│   │   │   ├── prog003editDistance_TD.cpp
+│   │   │   ├── prog004balikaVadhu_TD.cpp
+│   │   │   ├── prog005A_knapsack_TD.cpp
+│   │   │   ├── prog005B_knapsack_BU.cpp
+│   │   │   ├── prog006party_problem.cpp
+│   │   │   ├── prog007AsubsetSum.cpp
+│   │   │   ├── prog008miserMan.cpp
+│   │   │   ├── prog009traderPorfit.cpp
+│   │   │   ├── prog010charlieAndPilots.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
 │   │   ├── 18 Greedy Techniques
 │   │   │   ├── new004fractionalKnapsack.cpp
 │   │   │   ├── prog001minAbsoluteDifferenceInArray.cpp
@@ -716,11 +789,11 @@ solve_problem_optimised()
 │   │   ├── 24 Tries
 │   │   │   └── new001trieXORpair.cpp
 │   │   └── Graphs
-│   │       └── 01 Graphs Part 1
-│   │           ├── prog001DFS_BFS_connected_undirected.cpp
-│   │           ├── prog002DFS_BFS_disconnected_undirected.cpp
-│   │           ├── xinput.txt
-│   │           └── xoutput.txt
+│   │   └── 01 Graphs Part 1
+│   │   ├── prog001DFS_BFS_connected_undirected.cpp
+│   │   ├── prog002DFS_BFS_disconnected_undirected.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
 │   ├── Doubts
 │   │   ├── heap doubt.jpg
 │   │   ├── pic1.png
@@ -734,72 +807,144 @@ solve_problem_optimised()
 │   │   ├── SplitSequence.cpp
 │   │   └── trickymacro.cpp
 │   └── Very important.png
+├── Codility
+│   ├── count_operations.cpp
+│   ├── xinput.txt
+│   └── xoutput.txt
 ├── data_type_ranges.jpeg
 ├── data_types_sizes.png
 ├── DP_CN.txt
 ├── FINAL450-checklist.txt
-├── FINAL450.xlsx
 ├── GeeksForGeeks
 │   ├── Algorithms
+│   │   ├── Backtracking
+│   │   │   ├── generateParenthesisTLEiterative.cpp
+│   │   │   ├── generateParenthesisWArecursive.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   ├── Bit Magic
+│   │   │   ├── checkSetBits.cpp
+│   │   │   └── longestConsecutiveOnes.cpp
 │   │   ├── DP
-│   │   │   ├── equal_sum_partition_DP_BU.cpp
-│   │   │   ├── knapsack01_DP_TD.cpp
-│   │   │   ├── longest_common_subsequence.cpp
-│   │   │   ├── max_sum_rectangles.cpp
-│   │   │   ├── minimum_number_of_coins.cpp
-│   │   │   ├── NEW_nCr2.cpp
-│   │   │   ├── NEW_nCr.cpp
-│   │   │   ├── reach_given_coins.cpp
+│   │   │   ├── CountNstairsWithoutOrder.cpp
+│   │   │   ├── EqualSumPartition_DP_BU.cpp
+│   │   │   ├── IsSubsetSum_DP_BU.cpp
+│   │   │   ├── Knapsack01_DP_BU.cpp
+│   │   │   ├── Knapsack01_DP_TD.cpp
+│   │   │   ├── LongestCommonSubsequence.cpp
+│   │   │   ├── MaxSumRectangles.cpp
+│   │   │   ├── MinimumNumberOfCoins.cpp
+│   │   │   ├── MinimumSubsetSumDifference_DP_BU.cpp
+│   │   │   ├── NEWCountNstairsWithOrder.cpp
+│   │   │   ├── NEWNCr2.cpp
+│   │   │   ├── NEWNCr.cpp
+│   │   │   ├── ReachGivenCoins.cpp
+│   │   │   ├── RodCutting.cpp
+│   │   │   ├── WildcardPatternMatching.cpp
 │   │   │   ├── xinput.txt
 │   │   │   └── xoutput.txt
 │   │   └── Searching-Sorting
-│   │       ├── binary_search_recursive.cpp
-│   │       ├── middle_of_three.cpp
-│   │       └── search_rotated_sorted_array.cpp
+│   │   ├── BinarySearchRecursive.cpp
+│   │   ├── MiddleOfThree.cpp
+│   │   └── SearchRotatedSortedArray.cpp
 │   ├── Data Structures
 │   │   ├── Arrays
-│   │   │   ├── common_elements.cpp
-│   │   │   ├── count_pairs_with_given_sum
-│   │   │   ├── count_pairs_with_given_sum.cpp
-│   │   │   ├── find_smallest_positive_number_in_array
-│   │   │   ├── find_smallest_positive_number_in_array.cpp
-│   │   │   ├── kadane_algo_contiguous_subarray_max_sum.cpp
-│   │   │   ├── leaders_in_array.cpp
-│   │   │   ├── missing_number_in_array.cpp
-│   │   │   ├── NEW_count_pairs_with_given_sum
-│   │   │   ├── NEW_Kth_max_min_element.cpp
-│   │   │   ├── NEW_minimum_number_of_jumps.cpp
-│   │   │   ├── NEW_rotate_array.cpp
-│   │   │   ├── reverse_array_string.cpp
-│   │   │   ├── rotate_array_one_position.cpp
-│   │   │   ├── sort012.cpp
-│   │   │   ├── uinon_of_two_arrays.cpp
+│   │   │   ├── CommonElements.cpp
+│   │   │   ├── CountPairsWithGivenSum.cpp
+│   │   │   ├── duplicatesInArray.cpp
+│   │   │   ├── FindSmallestPositiveNumberInArray.cpp
+│   │   │   ├── KadaneAlgoContiguousSubarrayMaxSum.cpp
+│   │   │   ├── KlargeElements.cpp
+│   │   │   ├── LeadersInArray.cpp
+│   │   │   ├── MissingNumberInArray.cpp
+│   │   │   ├── NEW_KthMaxMinElement.cpp
+│   │   │   ├── NEW_MinimumNumberOfJumps.cpp
+│   │   │   ├── NEWRotateArray.cpp
+│   │   │   ├── numOfSubsetWithConsecutiveNumbers.cpp
+│   │   │   ├── peakInArray.cpp
+│   │   │   ├── ReverseArrayString.cpp
+│   │   │   ├── RotateArrayOnePosition.cpp
+│   │   │   ├── rotateMatrixAnti90.cpp
+│   │   │   ├── Sort012.cpp
+│   │   │   ├── UinonOfTwoArrays.cpp
+│   │   │   ├── waveArray.cpp
 │   │   │   ├── xinput.txt
 │   │   │   └── xoutput.txt
-│   │   └── Graphs
-│   │       ├── cycle_in_directed_graph
-│   │       ├── NEW_cycle_in_directed_graph.cpp
-│   │       ├── tempCodeRunnerFile.cpp
-│   │       ├── xinput.txt
-│   │       └── xoutput.txt
+│   │   ├── Graphs
+│   │   │   ├── bfs.cpp
+│   │   │   ├── bipartiteGraph.cpp
+│   │   │   ├── dfs.cpp
+│   │   │   ├── graphCycleUndirected.cpp
+│   │   │   ├── NEWCycleInDirectedGraph.cpp
+│   │   │   ├── NEWtopologicalSort.cpp
+│   │   │   ├── printAdjacencyList.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   ├── Linked Lists
+│   │   │   ├── countNodesOfLinkedList.cpp
+│   │   │   ├── deleteNodeWithoutHeadPointer.cpp
+│   │   │   ├── detectLoopInLinkedList.cpp
+│   │   │   ├── findLengthOfLoop.cpp
+│   │   │   ├── linkedListInsertion.cpp
+│   │   │   ├── merge2SortedLists.cpp
+│   │   │   ├── midPointOfLinkedList.cpp
+│   │   │   ├── NEW_NthNodeFromTheEnd.cpp
+│   │   │   ├── palindromeLinkedList.cpp
+│   │   │   ├── reverseLinkedList.cpp
+│   │   │   ├── rotateLinkedList.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   ├── Strings
+│   │   │   ├── implementAtoI.cpp
+│   │   │   ├── maxFrequencyOfWord.cpp
+│   │   │   ├── multiplyStrings.cpp
+│   │   │   ├── removeDuplicates.cpp
+│   │   │   ├── wordBoggle.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   └── Trees
+│   │   ├── Binary Trees
+│   │   │   ├── boundaryTraversal.cpp
+│   │   │   ├── BTtoCDLL.cpp
+│   │   │   ├── constructBinaryTreeFromParentArray.cpp
+│   │   │   ├── countLeaves.cpp
+│   │   │   ├── diagonalTraversal.cpp
+│   │   │   ├── diameterBT.cpp
+│   │   │   ├── heightOfTree.cpp
+│   │   │   ├── isIdentical.cpp
+│   │   │   ├── LCAofBT.cpp
+│   │   │   ├── leftViewOfBinaryTree.cpp
+│   │   │   ├── maxSumFromAnyNode.cpp
+│   │   │   ├── minMaxElementInTree.cpp
+│   │   │   ├── sumTree.cpp
+│   │   │   ├── topViewOfBT.cpp
+│   │   │   ├── TraversalInorderRecursive.cpp
+│   │   │   └── TraversalLevelOrderIterative.cpp
+│   │   └── BST
+│   │   ├── checkForBST.cpp
+│   │   ├── fixNodesInBST.cpp
+│   │   ├── LCAofBST.cpp
+│   │   ├── minElementInBST.cpp
+│   │   ├── NEW_deleteNodesGEthanK.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
 │   ├── Programme Cpp GFG
-│   │   └── efficient_cpp_gfg.cpp
+│   │   └── EfficientCppGfg.cpp
 │   ├── Programme STL GFG
 │   │   ├── sortPair.cpp
 │   │   └── spliceAndMerge.cpp
 │   └── Public
-│       └── Manipal Contest
-│           ├── 1n1.cpp
-│           ├── 1n2.cpp
-│           ├── 2.cpp
-│           ├── xinput.txt
-│           └── xoutput.txt
+│   └── Manipal Contest
+│   ├── 1n1.cpp
+│   ├── 1n2.cpp
+│   ├── 2.cpp
+│   ├── xinput.txt
+│   └── xoutput.txt
 ├── HackerEarth
 │   └── Graphs
-│       ├── BishuAndHisGirlfriend
-│       ├── ConnectedComponentsInAGraph.cpp
-│       ├── MonkAndIslands.cpp
-│       └── WA_BishuAndHisGirlfriend.cpp
+│   ├── ConnectedComponentsInAGraph.cpp
+│   ├── MonkAndIslands.cpp
+│   └── WA_BishuAndHisGirlfriend.cpp
 ├── Hackerrank
 │   ├── Alogrithms
 │   │   ├── 01 Warmup
@@ -812,8 +957,8 @@ solve_problem_optimised()
 │   │   │   └── construct_the_array_BU.cpp
 │   │   ├── 09 Greedy
 │   │   └── 10 Bit Manipulation
-│   │       ├── great_xor.cpp
-│   │       └── lonely_integer.cpp
+│   │   ├── great_xor.cpp
+│   │   └── lonely_integer.cpp
 │   ├── Data Structures
 │   │   ├── 01 Arrays
 │   │   │   ├── array1d_reverse.cpp
@@ -825,38 +970,37 @@ solve_problem_optimised()
 │   │   │   ├── xinput.txt
 │   │   │   └── xoutput.txt
 │   │   └── 02 Linked List
-│   │       ├── compare_linked_list.cpp
-│   │       ├── delete__node.cpp
-│   │       ├── insert_node_at_head.cpp
-│   │       ├── insert_node_at_position.cpp
-│   │       ├── insert_node_at_tail.cpp
-│   │       ├── print_reverse_LL.cpp
-│   │       └── print_singly_linked_list.cpp
+│   │   ├── compare_linked_list.cpp
+│   │   ├── delete\_\_node.cpp
+│   │   ├── insert_node_at_head.cpp
+│   │   ├── insert_node_at_position.cpp
+│   │   ├── insert_node_at_tail.cpp
+│   │   ├── print_reverse_LL.cpp
+│   │   └── print_singly_linked_list.cpp
 │   ├── Programming Langauges
 │   │   ├── Cpp
 │   │   │   └── 01 Introduction
-│   │   │       ├── Basic_Data_types.cpp
-│   │   │       └── Hello_world.cpp
+│   │   │   ├── Basic_Data_types.cpp
+│   │   │   └── Hello_world.cpp
 │   │   └── Python
-│   │       ├── 01 Introduction
-│   │       │   ├── arithmetic_operators.py
-│   │       │   ├── function.py
-│   │       │   ├── hello_world.py
-│   │       │   ├── loops.py
-│   │       │   ├── print_function.py
-│   │       │   └── python_division.py
-│   │       └── 02 Basic Data Types
-│   │           ├── finding_percentage.py
-│   │           ├── lists.py
-│   │           ├── nested_list.py
-│   │           ├── runner_up_score.py
-│   │           ├── xinput.txt
-│   │           └── xoutput.txt
+│   │   ├── 01 Introduction
+│   │   │   ├── arithmetic_operators.py
+│   │   │   ├── function.py
+│   │   │   ├── hello_world.py
+│   │   │   ├── loops.py
+│   │   │   ├── print_function.py
+│   │   │   └── python_division.py
+│   │   └── 02 Basic Data Types
+│   │   ├── finding_percentage.py
+│   │   ├── lists.py
+│   │   ├── nested_list.py
+│   │   ├── runner_up_score.py
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
 │   └── Solution.java
 ├── InterviewBit
 │   ├── 01 Arrays
 │   │   ├── FindDuplicateInArray.cpp
-│   │   ├── KthRowOfPascalTriangle
 │   │   ├── KthRowOfPascalTriangle.cpp
 │   │   ├── MaximumAbsoluteDifference.cpp
 │   │   ├── MinimumLightsToActivate.cpp
@@ -868,21 +1012,41 @@ solve_problem_optimised()
 │   │   ├── xinput.txt
 │   │   └── xoutput.txt
 │   ├── 02 Math
-│   │   ├── ExcelColumnTitle
+│   │   ├── allFactors.cpp
+│   │   ├── binaryRepresentation.cpp
+│   │   ├── distributeInCircle.cpp
 │   │   ├── ExcelColumnTitle.cpp
+│   │   ├── hammingDistance.cpp
 │   │   ├── isPower.cpp
-│   │   ├── tempCodeRunnerFile.cpp
+│   │   ├── sieveOfEratosthenes.cpp
+│   │   ├── totalBishopMoves.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   ├── 04 Strings
+│   │   ├── amazingSubarrays.cpp
+│   │   ├── atoi.cpp
+│   │   ├── compareVersionNunmber.cpp
+│   │   ├── implementStrStr.cpp
+│   │   ├── longestCommonPrefix.cpp
+│   │   ├── NEW_rotationTimes.cpp
+│   │   ├── NEW_validNumber.cpp
+│   │   ├── validIPv4address.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   ├── 05 Bit Manipulation
+│   │   ├── countTotalSetBits.cpp
+│   │   ├── numberOfSetBits.cpp
 │   │   ├── xinput.txt
 │   │   └── xoutput.txt
 │   └── 12 Trees
-│       ├── BinaryTreeNode.hpp
-│       └── CNBinaryTree.hpp
+│   ├── BinaryTreeNode.hpp
+│   └── CNBinaryTree.hpp
 ├── LeetCode
 │   ├── Algorithms
 │   │   ├── Backtracking
 │   │   │   └── 0046h_Permutations.cpp
 │   │   └── DP
-│   │       └── 1039_min_score_triangulation.cpp
+│   │   └── 1039_min_score_triangulation.cpp
 │   ├── Data Structures
 │   │   ├── Arrays
 │   │   │   ├── 0001_Two_sum.cpp
@@ -890,14 +1054,24 @@ solve_problem_optimised()
 │   │   │   ├── 0121_Stock_buy_and_sell.cpp
 │   │   │   └── 0287_find_duplicate_in_array.cpp
 │   │   └── Trees
-│   │       └── 098_is_valid_BST.cpp
+│   │   └── 098_is_valid_BST.cpp
 │   ├── xinput.txt
 │   └── xoutput.txt
 ├── README.md
-├── Snippets
-│   ├── multispace_scanning.cpp
-│   ├── xinput.txt
-│   └── xoutput.txt
+├── Resources
+│   ├── Guides
+│   │   ├── FINAL450.xlsx
+│   │   ├── GUIDE TO COMPETITIVE PROGRAMMING*.pdf
+│   │   └── Software Testing and Analysis (CSE 4020)RCS.pdf
+│   ├── Snippets
+│   │   ├── multispace_scanning.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   └── Templates
+│   ├── bit_magic.cpp
+│   ├── cpp.tmpl
+│   └── sublime_io_template.cpp
+├── snakeToCamel.sh
 ├── SPOJ
 │   ├── ACODEn_Alphacode.cpp
 │   ├── ACPC10A_whats_next.cpp
@@ -905,7 +1079,6 @@ solve_problem_optimised()
 │   ├── AE00_Rectangles.cpp
 │   ├── AGGRCOWh_aggressive_cows.cpp
 │   ├── AGGRCOWn_Aggressive_cows.cpp
-│   ├── BUGLIFE_A_Bugs_Life
 │   ├── BUGLIFE_A_Bugs_Life.cpp
 │   ├── CANDY_Candy_1.cpp
 │   ├── FASHION_Fashion_Shows.cpp
@@ -929,10 +1102,6 @@ solve_problem_optimised()
 │   ├── TOANDFRO_To_and_Fro.cpp
 │   ├── xinput.txt
 │   └── xoutput.txt
-├── Templates
-│   ├── bit_magic.cpp
-│   ├── cpp.tmpl
-│   └── sublime_io_template.cpp
 ├── Unclassified
 │   ├── New
 │   │   ├── CODEZEN_interestingSequences2.cpp
@@ -941,142 +1110,157 @@ solve_problem_optimised()
 │   │   ├── xinput.txt
 │   │   └── xoutput.txt
 │   └── Working
-│       ├── xinput.txt
-│       └── xoutput.txt
+│   ├── xinput.txt
+│   └── xoutput.txt
 └── Youtube-learning
-    ├── Basic ALGO
-    │   ├── Backtracking_Branch_Bound
-    │   ├── Divide_and_Conquer
-    │   ├── DP
-    │   │   ├── DP Aditya Verma
-    │   │   │   ├── include
-    │   │   │   │   ├── header001_subset_sum.hpp
-    │   │   │   │   ├── header002_count_of_subset_sum.hpp
-    │   │   │   │   └── header003_longest_common_subsequence.hpp
-    │   │   │   ├── prog001_intro_to_dp.txt
-    │   │   │   ├── prog002_types_of_knapsack.txt
-    │   │   │   ├── prog003_01_Knapsack_DP_top_down_recursive_only.cpp
-    │   │   │   ├── prog004_01_Knapsack_DP_top_down_recursion_memoization.cpp
-    │   │   │   ├── prog005_01_Knapsack_DP_bottom_up_iterative.cpp
-    │   │   │   ├── prog006_problems_similar_to_01_knapsack.txt
-    │   │   │   ├── prog007_SubSet_Sum_Problem_DP_bottom_up.cpp
-    │   │   │   ├── prog008_Equal_subset_sum_DP_bottom_up.cpp
-    │   │   │   ├── prog009_Count_of_subset_sum_DP_bottom_up.cpp
-    │   │   │   ├── prog010n_min_subset_diff_DP_bottom_up.cpp
-    │   │   │   ├── prog011_count_of_subset_given_diff_DP_bottom_up.cpp
-    │   │   │   ├── prog012_target_sum_DP_bottom_up.txt
-    │   │   │   ├── prog013_ubounded_knapsack_DP_bottom_up.cpp
-    │   │   │   ├── prog014_rod_cutting_problem.cpp
-    │   │   │   ├── prog015_coin_change_max_ways_DP_bottom_up.cpp
-    │   │   │   ├── prog018_LCS_Types.txt
-    │   │   │   ├── prog019_longest_common_subsequence_DP_top_down_recursive_only.cpp
-    │   │   │   ├── prog020_longest_common_subsequence_DP_top_down_recursive_memoization.cpp
-    │   │   │   ├── prog021_longest_common_subsequence_DP_bottom_up.cpp
-    │   │   │   ├── prog022_longest_common_substring_DP_bottom_up.cpp
-    │   │   │   ├── prog023_print_longest_common_subsequence_DP_bottom_up.cpp
-    │   │   │   ├── prog024n_shortest_common_supersequence_DP_bottom_up.cpp
-    │   │   │   ├── prog025_min_num_of_insertions_deletions_DP_bottom_up.cpp
-    │   │   │   ├── prog026_longest_palindromic_sequence_DP_bottom_up.cpp
-    │   │   │   ├── prog033_matrix_chain_multiplication_DP_top_down_recursive_only.cpp
-    │   │   │   ├── prog034A_matrix_chain_multiplication_DP_top_down_recursive_memoization.cpp
-    │   │   │   ├── prog034Bn_matrix_chain_multiplication_DP_bottom_up_iterative.cpp
-    │   │   │   ├── xinput.txt
-    │   │   │   └── xoutput.txt
-    │   │   └── DP Part 1 CodeNCode
-    │   │       ├── prog001staircase.cpp
-    │   │       ├── prog002staircase2.cpp
-    │   │       ├── prog004subsets.cpp
-    │   │       ├── prog005subsetSum.cpp
-    │   │       ├── xinput.txt
-    │   │       └── xoutput.txt
-    │   ├── Greedy
-    │   ├── Recursion
-    │   │   ├── Recursion CB Webinar
-    │   │   │   ├── knight_tour_multiple_solutions_input.txt
-    │   │   │   ├── knight_tour_multiple_solutions_output.txt
-    │   │   │   ├── prog01_factorial.cpp
-    │   │   │   ├── prog02_Inc_Dec_Print.cpp
-    │   │   │   ├── prog03A_kinght_tour.cpp
-    │   │   │   ├── prog03B_kinght_tour_all_possible.cpp
-    │   │   │   └── prog04_sudoku_solver.cpp
-    │   │   └── Recursion MCS
-    │   │       ├── basic_exponentiation.cpp
-    │   │       ├── modular_exponentiation.cpp
-    │   │       ├── xinput.txt
-    │   │       └── xoutput.txt
-    │   └── Searching and Sorting
-    │       ├── Searching
-    │       │   └── iterative_binary_search.cpp
-    │       └── Sorting
-    │           ├── failBFS.c
-    │           ├── Jenny Sorting Algorithms
-    │           │   ├── bubbleSort.c
-    │           │   ├── heapANDheapSort.c
-    │           │   ├── insertionSort.c
-    │           │   ├── mergeSort.c
-    │           │   ├── quickSort.c
-    │           │   └── selectionSort.c
-    │           └── shelllSort.c
-    ├── Basic DS
-    │   ├── Arrays
-    │   │   ├── PermutationGenerationRec
-    │   │   ├── PermutationGenerationRec.cpp
-    │   │   ├── SubsetGenerationRecIter
-    │   │   ├── SubsetGenerationRecIter.cpp
-    │   │   ├── xinput.txt
-    │   │   └── xoutput.txt
-    │   ├── Graphs
-    │   │   ├──  Graphs Part 1 CodeNCode
-    │   │   │   ├── prog02graph.cpp
-    │   │   │   ├── prog03dfs.cpp
-    │   │   │   ├── prog04connectedComponents.cpp
-    │   │   │   ├── prog05ConnectedComponentsInAGraph.cpp
-    │   │   │   ├── prog07BishuAndHisGF.cpp
-    │   │   │   ├── prog08isItATree.cpp
-    │   │   │   ├── prog09BipartiteTest.cpp
-    │   │   │   ├── prog10BugsLife.cpp
-    │   │   │   ├── prog11cycleDetection.cpp
-    │   │   │   ├── prog12InOutTimesOfNodes.cpp
-    │   │   │   ├── prog13FireEscapeRoutes.cpp
-    │   │   │   ├── prog15longestPathInTreeORdiameterOfGRaph.cpp
-    │   │   │   ├── prog16subtreeSize.cpp
-    │   │   │   ├── prog18bfs.cpp
-    │   │   │   ├── prog19primePath.cpp
-    │   │   │   ├── xinput.txt
-    │   │   │   └── xoutput.txt
-    │   │   ├──  Graphs Part 2 CodeNCode
-    │   │   │   ├── prog001kruskal.cpp
-    │   │   │   ├── prog002LCA.cpp
-    │   │   │   ├── prog003LCABinaryLifting.cpp
-    │   │   │   ├── xinput.txt
-    │   │   │   └── xoutput.txt
-    │   │   └── Graphs TECH DOSE
-    │   ├── Linked_List
-    │   ├── Queues
-    │   ├── Segment Trees
-    │   │   ├── CBsegmentTrees.cpp
-    │   │   └── Code N Code
-    │   │       ├── query.cpp
-    │   │       └── segmentTree.cpp
-    │   ├── Stacks
-    │   ├── Strings
-    │   ├── Trees
-    │   │   └── Trees KnowledgeCenter
-    │   │       └── prog001_trees.cpp
-    │   └── Tries
-    │       └── AshishKumar
-    │           └── TrieCompleteAK.cpp
-    └── Competitive Programming
-        ├── Maths
-        │   ├── Arithmetic
-        │   ├── Combinatorics
-        │   ├── Geometric Algorithms
-        │   ├── Network Flow Algorithms
-        │   └── Number Theory
-        │       └── NT CodeNCode
-        │           ├── prog002sieve_of_eratosthenes.cpp
-        │           └── xoutput.txt
-        └── Others
+├── Basic ALGO
+│   ├── Backtracking_Branch_Bound
+│   ├── Divide_and_Conquer
+│   ├── DP
+│   │   ├── DP Aditya Verma
+│   │   │   ├── include
+│   │   │   │   ├── header001_subset_sum.hpp
+│   │   │   │   ├── header002_count_of_subset_sum.hpp
+│   │   │   │   └── header003_longest_common_subsequence.hpp
+│   │   │   ├── prog001_intro_to_dp.txt
+│   │   │   ├── prog002_types_of_knapsack.txt
+│   │   │   ├── prog003_01_Knapsack_DP_top_down_recursive_only.cpp
+│   │   │   ├── prog004_01_Knapsack_DP_top_down_recursion_memoization.cpp
+│   │   │   ├── prog005_01_Knapsack_DP_bottom_up_iterative.cpp
+│   │   │   ├── prog006_problems_similar_to_01_knapsack.txt
+│   │   │   ├── prog007_SubSet_Sum_Problem_DP_bottom_up.cpp
+│   │   │   ├── prog008_Equal_subset_sum_DP_bottom_up.cpp
+│   │   │   ├── prog009_Count_of_subset_sum_DP_bottom_up.cpp
+│   │   │   ├── prog010n_min_subset_diff_DP_bottom_up.cpp
+│   │   │   ├── prog011_count_of_subset_given_diff_DP_bottom_up.cpp
+│   │   │   ├── prog012_target_sum_DP_bottom_up.txt
+│   │   │   ├── prog013_ubounded_knapsack_DP_bottom_up.cpp
+│   │   │   ├── prog014_rod_cutting_problem.cpp
+│   │   │   ├── prog015_coin_change_max_ways_DP_bottom_up.cpp
+│   │   │   ├── prog018_LCS_Types.txt
+│   │   │   ├── prog019_longest_common_subsequence_DP_top_down_recursive_only.cpp
+│   │   │   ├── prog020_longest_common_subsequence_DP_top_down_recursive_memoization.cpp
+│   │   │   ├── prog021_longest_common_subsequence_DP_bottom_up.cpp
+│   │   │   ├── prog022_longest_common_substring_DP_bottom_up.cpp
+│   │   │   ├── prog023_print_longest_common_subsequence_DP_bottom_up.cpp
+│   │   │   ├── prog024n_shortest_common_supersequence_DP_bottom_up.cpp
+│   │   │   ├── prog025_min_num_of_insertions_deletions_DP_bottom_up.cpp
+│   │   │   ├── prog026_longest_palindromic_sequence_DP_bottom_up.cpp
+│   │   │   ├── prog033_matrix_chain_multiplication_DP_top_down_recursive_only.cpp
+│   │   │   ├── prog034A_matrix_chain_multiplication_DP_top_down_recursive_memoization.cpp
+│   │   │   ├── prog034Bn_matrix_chain_multiplication_DP_bottom_up_iterative.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   └── DP Part 1 CodeNCode
+│   │   ├── prog01staircase.cpp
+│   │   ├── prog02staircase2.cpp
+│   │   ├── prog03TwoXnTilingProblem.cpp
+│   │   ├── prog04subsetsAndBitmasking1.cpp
+│   │   ├── prog05subsetSumUsingBitmask.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   ├── Greedy
+│   ├── Recursion
+│   │   ├── Recursion CB Webinar
+│   │   │   ├── knight_tour_multiple_solutions_input.txt
+│   │   │   ├── knight_tour_multiple_solutions_output.txt
+│   │   │   ├── prog01_factorial.cpp
+│   │   │   ├── prog02_Inc_Dec_Print.cpp
+│   │   │   ├── prog03A_kinght_tour.cpp
+│   │   │   ├── prog03B_kinght_tour_all_possible.cpp
+│   │   │   └── prog04_sudoku_solver.cpp
+│   │   └── Recursion MCS
+│   │   ├── basic_exponentiation.cpp
+│   │   ├── modular_exponentiation.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   └── Searching and Sorting
+│   ├── Searching
+│   │   └── iterative_binary_search.cpp
+│   └── Sorting
+│   ├── failBFS.c
+│   ├── Jenny Sorting Algorithms
+│   │   ├── bubbleSort.c
+│   │   ├── heapANDheapSort.c
+│   │   ├── insertionSort.c
+│   │   ├── mergeSort.c
+│   │   ├── quickSort.c
+│   │   └── selectionSort.c
+│   └── shelllSort.c
+├── Basic DS
+│   ├── Arrays
+│   │   ├── PermutationGenerationRec.cpp
+│   │   ├── SubsetGenerationRecIter.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   ├── Graphs
+│   │   ├── Graphs Part 1 CodeNCode
+│   │   │   ├── new13FireEscapeRoutes.cpp
+│   │   │   ├── new15longestPathInTreeORdiameterOfGRaph.cpp
+│   │   │   ├── new19primePath.cpp
+│   │   │   ├── new20feasiblePath.cpp
+│   │   │   ├── new27submerge.cpp
+│   │   │   ├── new30sandroLexicographicalTopsort.cpp
+│   │   │   ├── prog02graph.cpp
+│   │   │   ├── prog03dfs.cpp
+│   │   │   ├── prog04connectedComponents.cpp
+│   │   │   ├── prog05ConnectedComponentsInAGraph.cpp
+│   │   │   ├── prog07BishuAndHisGF.cpp
+│   │   │   ├── prog08isItATree.cpp
+│   │   │   ├── prog09BipartiteTest.cpp
+│   │   │   ├── prog10BugsLife.cpp
+│   │   │   ├── prog11cycleDetection.cpp
+│   │   │   ├── prog12InOutTimesOfNodes.cpp
+│   │   │   ├── prog16subtreeSize.cpp
+│   │   │   ├── prog18bfs.cpp
+│   │   │   ├── prog23bridgesInGraph.cpp
+│   │   │   ├── prog26articulationPoints.cpp
+│   │   │   ├── prog29kahnsAlgorithmTopologicalSorting.cpp
+│   │   │   ├── prog32DFSIn2Dgrid.cpp
+│   │   │   ├── prog33connectedComponentsIn2DgridDFS.cpp
+│   │   │   ├── prog34BFSIn2Dgrid.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   └── Graphs Part 2 CodeNCode
+│   │   ├── prog001kruskal.cpp
+│   │   ├── prog002LCA.cpp
+│   │   ├── prog003LCABinaryLifting.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   ├── Linked_List
+│   ├── Queues
+│   ├── Segment Trees
+│   │   ├── CBsegmentTrees.cpp
+│   │   └── Code N Code
+│   │   ├── query.cpp
+│   │   └── segmentTree.cpp
+│   ├── Stacks
+│   ├── Trees
+│   │   └── Trees KnowledgeCenter
+│   │   └── prog001_trees.cpp
+│   └── Tries
+│   └── AshishKumar
+│   └── TrieCompleteAK.cpp
+└── Competitive Programming
+├── BIt Manipulation
+│   ├── generateSubsets.cpp
+│   ├── xinput.txt
+│   └── xoutput.txt
+└── Maths
+├── Arithmetic
+├── Combinatorics
+├── Geometric Algorithms
+├── Network Flow Algorithms
+└── Number Theory
+└── NT CodeNCode
+├── prog002primality_test.cpp
+├── prog004sieve_of_eratosthenes.cpp
+├── prog005prime_factorization.cpp
+├── prog007binary_modular_exponentiation.cpp
+├── prog010prime_factorization_using_sieve.cpp
+├── prog011matrix_exponentiation.cpp
+├── xinput.txt
+└── xoutput.txt
 
-185 directories, 862 files
+204 directories, 1007 files
 ```
