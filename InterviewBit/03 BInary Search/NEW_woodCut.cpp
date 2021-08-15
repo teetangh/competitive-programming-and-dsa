@@ -10,26 +10,53 @@ using namespace std;
 #define fastio ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
 #define watch1(x) cout << (#x) << " is " << (x) << endl
 #define watch2(x, y) cout << (#x) << " is " << (x) << " " << (#y) << " is " << (y) << endl
-#define mod 1000000007
-#define INF 1000000000
-#define pb push_back
-#define ff first
-#define ss second
-#define pii pair<int, int>
-#define vi vector<int>
-#define vpii vector<pair<int, int>>
-#define FOR(i, a, b) for (int i = a; i <= b; i++)
-#define REP(i, n) for (int i = 1; i <= n; i++)
 
-// Typedefs
-typedef long long ll;
-typedef long long int lli;
-typedef unsigned long long ull;
-typedef unsigned long long int ulli;
+int woodCut(vector<int> &A, int mid)
+{
+    int sum = 0;
+    for (int i = A.size() - 1; i >= 0; i--)
+    {
+        auto curr = A[i] - mid;
+        if (curr > 0)
+            sum += (curr);
+        else
+            break;
+    }
+
+    return sum;
+}
 
 int solve(vector<int> &A, int B)
 {
 
+    sort(A.begin(), A.end());
+
+    int low = 0;
+    int high = A[A.size() - 1];
+    int cut, mid;
+    int res;
+
+    while (low <= high)
+    {
+
+        mid = low + (high - low) / 2;
+        cut = woodCut(A, mid);
+
+        // watch2(low, high);
+        // watch2(mid, cut);
+
+        if (cut == B)
+            return mid;
+        else if (cut < B)
+            high = mid - 1;
+        else if (cut > B)
+        {
+            res = mid;
+            low = mid + 1;
+        }
+    }
+
+    return res;
 }
 
 int main()
