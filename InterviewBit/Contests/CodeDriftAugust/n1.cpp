@@ -12,24 +12,29 @@ using namespace std;
 #define watch2(x, y) cout << (#x) << " is " << (x) << " " << (#y) << " is " << (y) << endl
 #define mod 1000000007
 #define INF 1000000000
-#define pb push_back
-#define ff first
-#define ss second
-#define pii pair<int, int>
-#define vi vector<int>
-#define vpii vector<pair<int, int>>
-#define FOR(i, a, b) for (int i = a; i <= b; i++)
-#define REP(i, size) for (int i = 1; i <= size; i++)
 
-// Typedefs
-typedef long long ll;
-typedef long long int lli;
-typedef unsigned long long ull;
-typedef unsigned long long int ulli;
-
-int solve(vector<int> &A, int n)
+void watchVec(vector<int> &A)
 {
+    cout << "A is ";
+    for (auto ele : A)
+        cout << ele << " ";
+    cout << endl;
+}
 
+int solve(vector<int> &A)
+{
+    sort(A.begin(), A.end());
+    // watchVec(A);
+    // for (int i = 1; i < A.size(); i++)
+    //     A[i] = A[i] - A[i - 1];
+    // A[0] = 0;
+    watchVec(A);
+
+    int sum = 0;
+    for (int i = 0; i < A.size(); i++)
+        sum += A[i] + (A[i] - A[i - 1]);
+
+    return sum - A[0];
 }
 
 int main()
@@ -46,16 +51,11 @@ int main()
 
     while (tc--)
     {
-        int size;
-        cin >> size;
-        vector<int> A(size);
-        for (int i = 0; i < size; i++)
-            cin >> A[i];
-
         int n;
         cin >> n;
-        cout << solve(A, n) << endl;
+        vector<int> A(n);
+        for (int i = 0; i < n; i++)
+            cin >> A[i];
+        cout << solve(A) << endl;
     }
-
-    return 0;
 }
