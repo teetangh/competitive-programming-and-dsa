@@ -5,6 +5,11 @@ using namespace std;
 // } Driver Code Ends
 class Solution
 {
+
+    // int directions = 8;
+    int dx[8] = {0, -1, -1, -1, 0, 1, 1, 1};
+    int dy[8] = {-1, -1, 0, 1, 1, 1, 0, -1};
+
     bool isValid(vector<vector<char>> &grid, int i, int j)
     {
         if (i < 0 || i > grid.size() - 1)
@@ -23,11 +28,7 @@ class Solution
     {
         visited[i][j] = true;
 
-        int directions = 8;
-        int dx[directions] = {0, -1, -1, -1, 0, 1, 1, 1};
-        int dy[directions] = {-1, -1, 0, 1, 1, 1, 0, -1};
-
-        for (int k = 0; k < directions; k++)
+        for (int k = 0; k < 8; k++)
         {
             int newX = i + dx[k];
             int newY = j + dy[k];
@@ -46,7 +47,7 @@ public:
         int cc_count = 0;
         for (int i = 0; i < grid.size(); i++)
         {
-            for (int j = 0; j < grid[i].size(); j++)
+            for (int j = 0; j < grid[0].size(); j++)
             {
                 if (isValid(grid, i, j) && !visited[i][j])
                     dfs(grid, i, j, visited), cc_count++;
@@ -84,3 +85,27 @@ int main()
     }
     return 0;
 } // } Driver Code Ends
+
+// Sample IO
+// 3
+
+// 4 2
+// 0 1
+// 1 0
+// 1 1
+// 1 0
+
+// 2 7
+// 0 1 1 1 0 0 0
+// 0 0 1 1 0 1 0
+
+// 9 3
+// 0 1 0
+// 0 1 0
+// 0 0 0
+// 1 1 0
+// 1 0 1
+// 0 1 1
+// 1 1 1
+// 0 1 1
+// 1 0 1
