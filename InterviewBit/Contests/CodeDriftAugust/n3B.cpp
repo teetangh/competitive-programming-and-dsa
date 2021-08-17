@@ -40,22 +40,14 @@ int calculateCells(int A, int B, int C)
                     newViruses.insert(ttl);
             }
 
-            // viruses.insert(newViruses.begin(), newViruses.end());
             renewCounter = 0;
         }
 
-        totalViruses.clear();
-        for (auto ele : viruses)
-            if (ele > 0)
-                totalViruses.insert(--ele);
-
-        for (auto ele : newViruses)
-            if (ele > 0)
-                totalViruses.insert(--ele);
-
-        viruses.clear();
+        viruses.insert(newViruses.begin(), newViruses.end());
         newViruses.clear();
-        viruses.insert(totalViruses.begin(), totalViruses.end());
+        
+        for (auto ele : viruses)
+            ele--;
 
         renewCounter++;
     }
