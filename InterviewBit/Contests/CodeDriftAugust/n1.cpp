@@ -11,30 +11,39 @@ using namespace std;
 #define watch1(x) cout << (#x) << " is " << (x) << endl
 #define watch2(x, y) cout << (#x) << " is " << (x) << " " << (#y) << " is " << (y) << endl
 #define mod 1000000007
-#define INF 1000000000
 
-void watchVec(vector<int> &A)
+long long int solveHelper(vector<int> &A, int n, int k)
 {
-    cout << "A is ";
-    for (auto ele : A)
-        cout << ele << " ";
-    cout << endl;
+    if (n <= k)
+        return 0;
+
+    if (n == 3)
+    {
+        if (k == 0)
+            return A[0] + A[2];
+        else if (k == 1)
+        {
+            long long int temp1 = (A[0] + A[0]) + (A[1] + A[2]);
+            long long int temp2 = (A[0] + A[1]) + (A[2] + A[2]);
+            return max(temp1, temp2);
+        }
+        else if (k == 2)
+        {
+            return (2 * A[0]) + (2 * A[1]) + (2 * A[2]);
+        }
+    }
+
+    long long int answer1 = solveHelper(A, n - 1, k);
+    long long int answer2 = solveHelper(A, n - 1, k - 1) + (-A[n - 2] + A[n - 1]);
+
+    return max(answer1, answer2);
 }
 
-int solve(vector<int> &A)
+int solve(vector<int> &A, int k)
 {
-    sort(A.begin(), A.end());
-    // watchVec(A);
-    // for (int i = 1; i < A.size(); i++)
-    //     A[i] = A[i] - A[i - 1];
-    // A[0] = 0;
-    watchVec(A);
-
-    int sum = 0;
-    for (int i = 0; i < A.size(); i++)
-        sum += A[i] + (A[i] - A[i - 1]);
-
-    return sum - A[0];
+    int n = A.size();
+    auto answer = solveHelper(A, n, k);
+    return answer;
 }
 
 int main()
@@ -46,28 +55,20 @@ int main()
 
     fastio;
 
-    int tc;
+    int tc, k;
     cin >> tc;
 
     while (tc--)
     {
-        int n;
-        cin >> n;
-        vector<int> A(n);
-        for (int i = 0; i < n; i++)
+        int size;
+        cin >> size;
+        vector<int> A(size);
+        for (int i = 0; i < size; i++)
             cin >> A[i];
-        cout << solve(A) << endl;
+
+        cin >> k;
+        cout << solve(A, k) << endl;
     }
+
+    return 0;
 }
-
-// sample io
-// 3
-
-// 3
-// 2 5 1
-
-// 3
-// 2 2 2
-
-// 9
-// 20 4 2 18 19 18 19 15 16
