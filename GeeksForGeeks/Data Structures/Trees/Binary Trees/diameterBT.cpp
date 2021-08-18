@@ -102,24 +102,24 @@ struct Node
 class Solution
 {
 
-    pair<int, int> diameter2(Node *root)
+    pair<int, int> heightDiameter(Node *root)
     {
         if (root == NULL)
             return {0, 0};
 
-        if (root->left == NULL && root->right == NULL)
+        else if (root->left == NULL && root->right == NULL)
             return {1, 1};
 
-        pair<int, int> p1 = diameter2(root->left);
-        pair<int, int> p2 = diameter2(root->right);
+        auto leftHeightDiameter = heightDiameter(root->left);
+        auto rightHeightDiameter = heightDiameter(root->right);
 
-        int h1 = p1.first;
-        int d1 = p1.second;
+        auto leftHeight = leftHeightDiameter.first;
+        auto leftDiameter = leftHeightDiameter.second;
 
-        int h2 = p2.first;
-        int d2 = p2.second;
+        auto rightHeight = rightHeightDiameter.first;
+        auto rightDiameter = rightHeightDiameter.second;
 
-        return std::make_pair(1 + max(h1, h2), max(1 + h1 + h2, max(d1, d2)));
+        return {max(leftHeight, rightHeight), max({leftDiameter, rightDiameter, 1 + leftHeight + rightHeight})};
     }
 
 public:
@@ -127,7 +127,7 @@ public:
     int diameter(Node *root)
     {
         // Your code here
-        auto answer = diameter2(root);
+        auto answer = heightDiameter(root);
         return answer.second;
     }
 };
