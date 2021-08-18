@@ -96,13 +96,28 @@ int intersectPoint(Node *head1, Node *head2)
     long long int length1 = lengthOfLL(head1);
     long long int length2 = lengthOfLL(head2);
 
-    int intersectionPoint = abs(length1 - length2) + 1;
+    int d = abs(length1 - length2);
 
     auto temp1 = head1;
     auto temp2 = head2;
 
-    while (intersectionPoint--)
+    if (length1 >= length2)
+        while (d--)
+            temp1 = temp1->next;
+    else
+        while (d--)
+            temp2 = temp2->next;
+
+    while (true)
     {
-        if (temp1 == NULL || temp)
+
+        if (temp1 == NULL || temp2 == NULL)
+            return -1;
+
+        if (temp1 == temp2)
+            return temp1->data;
+
+        temp1 = temp1->next;
+        temp2 = temp2->next;
     }
 }
