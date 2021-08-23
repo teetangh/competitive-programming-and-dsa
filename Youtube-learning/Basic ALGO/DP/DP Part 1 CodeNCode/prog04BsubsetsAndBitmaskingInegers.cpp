@@ -27,8 +27,24 @@ typedef long long int lli;
 typedef unsigned long long ull;
 typedef unsigned long long int ulli;
 
-int solve(vector<int> &arr, int k)
+vector<vector<int>> solve(vector<int> &A)
 {
+    int size = A.size();
+    int subsetSize = (1 << size);
+
+    vector<vector<int>> result;
+    for (int subsetMask = 0; subsetMask < subsetSize; subsetMask++)
+    {
+        vector<int> subset;
+        for (int i = 0; i < size; i++)
+        {
+            if ((subsetMask & (1 << i)) != 0)
+                subset.push_back(A[i]);
+        }
+        result.push_back(subset);
+    }
+
+    return result;
 }
 
 int main()
@@ -47,13 +63,20 @@ int main()
     {
         int size;
         cin >> size;
-        vector<int> arr(size);
+        vector<int> A(size);
         for (int i = 0; i < size; i++)
-            cin >> arr[i];
+            cin >> A[i];
 
-        int k;
-        cin >> k;
-        cout << solve(arr, k) << endl;
+        auto answer = solve(A);
+
+        for (auto ele : answer)
+        {
+            for (auto elee : ele)
+            {
+                cout << elee << "";
+            }
+            cout << endl;
+        }
     }
 
     return 0;
