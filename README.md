@@ -46,7 +46,7 @@ solve_problem_optimised()
 
 - SPOJ
 
-# Index Last Updated on Fri Aug 13 12:26:43 IST 2021
+# Index Last Updated on Mon 23 Aug 22:44:44 IST 2021
 
 ```.
 ├── ascii_table.png
@@ -1296,3 +1296,4 @@ solve_problem_optimised()
                     └── xoutput.txt
 
 211 directories, 1034 files
+```
