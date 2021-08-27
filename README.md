@@ -27,26 +27,33 @@ solve_problem_efficient()
 solve_problem_optimised()
 ```
 
+## Notable Projects
+
+### Crossword Solver
+
+<img src="./CodeZen/03 Algorithms and Competitive Programming/11 Backtracking/output_crossword_solver.gif"/>
+
+### Sudoku Solver
+
+<img src="./CodeChef/Public/Code Marathon/output_sudoku_solver.gif"/>
+
 # Usage of Sites
-
-## Contests
-
-- Codeforces
-- Codechef
 
 ## DSA
 
 - GFG
 - Interview Bit
 - Hackerrank
-- Hackerearth (NA)
-- Leetcode (NA)
+- Hackerearth (Starting soon)
+- Leetcode (Starting soon)
 
-## Competitive Programming
+## Competitive Programming + Contests
 
+- Codeforces
+- Codechef
 - SPOJ
 
-# Index Last Updated on Mon 23 Aug 22:44:44 IST 2021
+# Index Last Updated on Sat 28 Aug 03:06:33 IST 2021
 
 ```.
 ├── ascii_table.png
@@ -121,6 +128,8 @@ solve_problem_optimised()
 │   │   │   ├── xinput.txt
 │   │   │   └── xoutput.txt
 │   │   ├── Code Marathon
+│   │   │   ├── output_sudoku_solver.gif
+│   │   │   ├── sudokuSolver
 │   │   │   ├── sudokuSolver.cpp
 │   │   │   ├── xinput.txt
 │   │   │   └── xoutput.txt
@@ -172,10 +181,16 @@ solve_problem_optimised()
 │   │       │   ├── nC.cpp
 │   │       │   ├── xinput.txt
 │   │       │   └── xoutput.txt
-│   │       └── #738-div2
-│   │           ├── B_mocha_red_blue.cpp
-│   │           ├── nA_mocha_and_math.cpp
-│   │           ├── nC_mocha_hiking.cpp
+│   │       ├── #738-div2
+│   │       │   ├── B_mocha_red_blue.cpp
+│   │       │   ├── nA_mocha_and_math.cpp
+│   │       │   ├── nC_mocha_hiking.cpp
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       └── #740-div2
+│   │           ├── nA
+│   │           ├── nA.cpp
+│   │           ├── nB
 │   │           ├── xinput.txt
 │   │           └── xoutput.txt
 │   └── problem-set
@@ -685,9 +700,11 @@ solve_problem_optimised()
 │   │   │   ├── xinput.txt
 │   │   │   └── xoutput.txt
 │   │   ├── 11 Backtracking
+│   │   │   ├── output_crossword_solver.gif
 │   │   │   ├── prog001NQueensProblem.cpp
 │   │   │   ├── prog002ratInAMaze.cpp
 │   │   │   ├── prog003sudokuSolver.cpp
+│   │   │   ├── prog004crosswordSolver
 │   │   │   ├── prog004crosswordSolver.cpp
 │   │   │   ├── self001haNQueensProblem.cpp
 │   │   │   ├── self001nNQueensProblem.cpp
@@ -1131,6 +1148,7 @@ solve_problem_optimised()
 │   └── xoutput.txt
 ├── Unclassified
 │   ├── New
+│   │   ├── add-two-ll.cpp
 │   │   ├── CODEZEN_interestingSequences2.cpp
 │   │   ├── CODEZEN_interestingSequences.cpp
 │   │   ├── CODEZEN_rat_in_maze.cpp
@@ -1258,6 +1276,8 @@ solve_problem_optimised()
     │   │       ├── prog001kruskal.cpp
     │   │       ├── prog002LCA.cpp
     │   │       ├── prog003LCABinaryLifting.cpp
+    │   │       ├── prog004distanceBetweenTwoNodes.cpp
+    │   │       ├── temp
     │   │       ├── xinput.txt
     │   │       └── xoutput.txt
     │   ├── Linked_List
@@ -1295,5 +1315,5 @@ solve_problem_optimised()
                     ├── xinput.txt
                     └── xoutput.txt
 
-211 directories, 1034 files
+212 directories, 1046 files
 ```
