@@ -29,6 +29,10 @@ solve_problem_optimised()
 
 ## Notable Projects
 
+> **NOTE**: You can CLICK ON THE GIFS to ENLARGE THEM!
+
+> **NOTE**: Scroll down to see more demos.
+
 ### Crossword Solver
 
 <img src="./CodeZen/03 Algorithms and Competitive Programming/11 Backtracking/output_crossword_solver.gif"/>
