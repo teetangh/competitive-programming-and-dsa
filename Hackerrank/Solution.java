@@ -1,3 +1,5 @@
+package Hackerrank;
+
 import java.util.Scanner;
 
 public class Solution {
@@ -14,24 +16,23 @@ public class Solution {
 
         for (int i = 0; i < a.length(); i++) {
             if (a.charAt(i) >= 97 && a.charAt(i) <= 122)
-                H[ a.charAt(i) - 97]++;
+                H[a.charAt(i) - 97]++;
 
             else if (a.charAt(i) >= 65 && a.charAt(i) <= 90)
-                H[ a.charAt(i) - 65]++;
+                H[a.charAt(i) - 65]++;
 
         }
         for (int i = 0; i < b.length(); i++) {
             if (b.charAt(i) >= 97 && b.charAt(i) <= 122)
-                H[ b.charAt(i) - 97]--;
+                H[b.charAt(i) - 97]--;
 
             else if (b.charAt(i) >= 65 && b.charAt(i) <= 90)
-                H[ b.charAt(i) - 65]--;
+                H[b.charAt(i) - 65]--;
 
         }
 
         for (int i = 0; i < a.length(); i++) {
-            if (H[i] != 0) 
-            {
+            if (H[i] != 0) {
                 return false;
             }
         }
@@ -43,9 +44,9 @@ public class Solution {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        //System.out.println("Enter 1st string");
+        // System.out.println("Enter 1st string");
         String a = scan.next();
-        //System.out.println("Enter 2nd string");
+        // System.out.println("Enter 2nd string");
         String b = scan.next();
         scan.close();
         boolean ret = isAnagram(a, b);
