@@ -27,42 +27,40 @@ solve_problem_efficient()
 solve_problem_optimised()
 ```
 
-## Notable Projects
+# Notable Projects
 
 > **NOTE**: You can CLICK ON THE GIFS to ENLARGE THEM!
 
 > **NOTE**: Scroll down to see more demos.
 
-### Crossword Solver
+## Crossword Solver
 
 <img src="./CodeZen/03 Algorithms and Competitive Programming/11 Backtracking/output_crossword_solver.gif"/>
 
-### Sudoku Solver
+## Sudoku Solver
 
-<img src="./CodeChef/Public/Code Marathon/output_sudoku_solver.gif"/>
+<img src="./CodeChef/Public/Random/Code Marathon/output_sudoku_solver.gif"/>
 
 # Usage of Sites
 
 ## DSA
 
-- GFG
+- ~~Hackerrank~~
+- ~~HackerEarth~~
+- ~~GeeksforGeeks~~
 - Interview Bit
-- Hackerrank
-- Hackerearth (Starting soon)
-- Leetcode (Starting soon)
+- Leetcode
 
 ## Competitive Programming + Contests
 
-- Codeforces
+- ~~SPOJ~~
 - Codechef
-- SPOJ
+- Codeforces
 
-# Index Last Updated on Sat 28 Aug 03:06:33 IST 2021
+# Index Last Updated on Fri 12 Aug 16:29:44 IST 2022
 
 ```.
 ├── ascii_table.png
-├── Binary Search
-│   └── firstMissingPositiveSequel.cpp
 ├── Career Cup
 │   ├── intelligent_substrings.cpp
 │   ├── xinput.txt
@@ -116,43 +114,67 @@ solve_problem_optimised()
 │   │   ├── xinput.txt
 │   │   └── xoutput.txt
 │   ├── Public
-│   │   ├── August Lunchtime 2020 Division 2
-│   │   │   ├── 1.cpp
-│   │   │   ├── 2.cpp
-│   │   │   ├── 3.cpp
-│   │   │   ├── 4.cpp
-│   │   │   ├── xinput.txt
-│   │   │   └── xoutput.txt
-│   │   ├── Code Fiesta 2020
-│   │   │   ├── BUNKGUY_the_bunking_guy.cpp
-│   │   │   ├── INTERn_my_interview.cpp
-│   │   │   ├── MAKEHAPPn_happy_employee.cpp
-│   │   │   ├── QFUNn_quarantine_fun.cpp
-│   │   │   ├── SERIESTOn_xor_xnor_series.cpp
-│   │   │   ├── xinput.txt
-│   │   │   └── xoutput.txt
-│   │   ├── Code Marathon
-│   │   │   ├── output_sudoku_solver.gif
-│   │   │   ├── sudokuSolver
-│   │   │   ├── sudokuSolver.cpp
-│   │   │   ├── xinput.txt
-│   │   │   └── xoutput.txt
-│   │   ├── Codentine-2021-ACM-Manipal
-│   │   │   ├── ACM15.cpp
-│   │   │   ├── ACM16.cpp
-│   │   │   ├── ACM1.cpp
-│   │   │   ├── ACM7.cpp
-│   │   │   ├── xinput.txt
-│   │   │   └── xoutput.txt
-│   │   ├── Feb Challenge 2018
-│   │   │   ├── PERMPAL_permutations_and_palindrome.cpp
-│   │   │   ├── sahil.cpp
-│   │   │   ├── xinput.txt
-│   │   │   └── xoutput.txt
-│   │   └── Zonal Computing Olympiad 2015
-│   │       ├── xinput.txt
-│   │       ├── xoutput.txt
-│   │       └── ZCO15002_variation_count.cpp
+│   │   ├── CookOff
+│   │   ├── Long
+│   │   ├── Lunchtime
+│   │   │   ├── August Lunchtime 2020 Division 2
+│   │   │   │   ├── 1.cpp
+│   │   │   │   ├── 2.cpp
+│   │   │   │   ├── 3.cpp
+│   │   │   │   ├── 4.cpp
+│   │   │   │   ├── xinput.txt
+│   │   │   │   └── xoutput.txt
+│   │   │   └── August Lunchtime 2022 Division 4
+│   │   │       ├── nA.cpp
+│   │   │       ├── nB.cpp
+│   │   │       ├── nC.cpp
+│   │   │       ├── nD.cpp
+│   │   │       ├── nE.cpp
+│   │   │       ├── xinput.txt
+│   │   │       └── xoutput.txt
+│   │   ├── Random
+│   │   │   ├── Code Fiesta 2020
+│   │   │   │   ├── BUNKGUY_the_bunking_guy.cpp
+│   │   │   │   ├── INTERn_my_interview.cpp
+│   │   │   │   ├── MAKEHAPPn_happy_employee.cpp
+│   │   │   │   ├── QFUNn_quarantine_fun.cpp
+│   │   │   │   ├── SERIESTOn_xor_xnor_series.cpp
+│   │   │   │   ├── xinput.txt
+│   │   │   │   └── xoutput.txt
+│   │   │   ├── Code Marathon
+│   │   │   │   ├── output_sudoku_solver.gif
+│   │   │   │   ├── sudokuSolver.cpp
+│   │   │   │   ├── xinput.txt
+│   │   │   │   └── xoutput.txt
+│   │   │   ├── Codentine-2021-ACM-Manipal
+│   │   │   │   ├── ACM15.cpp
+│   │   │   │   ├── ACM16.cpp
+│   │   │   │   ├── ACM1.cpp
+│   │   │   │   ├── ACM7.cpp
+│   │   │   │   ├── xinput.txt
+│   │   │   │   └── xoutput.txt
+│   │   │   ├── Feb Challenge 2018
+│   │   │   │   ├── PERMPAL_permutations_and_palindrome.cpp
+│   │   │   │   ├── sahil.cpp
+│   │   │   │   ├── xinput.txt
+│   │   │   │   └── xoutput.txt
+│   │   │   └── Zonal Computing Olympiad 2015
+│   │   │       ├── xinput.txt
+│   │   │       ├── xoutput.txt
+│   │   │       └── ZCO15002_variation_count.cpp
+│   │   └── Starters
+│   │       └── #50-div3
+│   │           ├── nA
+│   │           ├── nA.cpp
+│   │           ├── nB.cpp
+│   │           ├── nC
+│   │           ├── nC.cpp
+│   │           ├── nD
+│   │           ├── nD.cpp
+│   │           ├── nE.cpp
+│   │           ├── tempCodeRunnerFile.cpp
+│   │           ├── xinput.txt
+│   │           └── xoutput.txt
 │   └── Unclassified
 │       └── checkArrangement.cpp
 ├── CodeForces
@@ -191,10 +213,16 @@ solve_problem_optimised()
 │   │       │   ├── nC_mocha_hiking.cpp
 │   │       │   ├── xinput.txt
 │   │       │   └── xoutput.txt
-│   │       └── #740-div2
-│   │           ├── nA
+│   │       ├── #740-div2
+│   │       │   ├── nA.cpp
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       └── #810-div2
 │   │           ├── nA.cpp
-│   │           ├── nB
+│   │           ├── nB.cpp
+│   │           ├── nC.cpp
+│   │           ├── nD.cpp
+│   │           ├── nE.cpp
 │   │           ├── xinput.txt
 │   │           └── xoutput.txt
 │   └── problem-set
@@ -708,7 +736,6 @@ solve_problem_optimised()
 │   │   │   ├── prog001NQueensProblem.cpp
 │   │   │   ├── prog002ratInAMaze.cpp
 │   │   │   ├── prog003sudokuSolver.cpp
-│   │   │   ├── prog004crosswordSolver
 │   │   │   ├── prog004crosswordSolver.cpp
 │   │   │   ├── self001haNQueensProblem.cpp
 │   │   │   ├── self001nNQueensProblem.cpp
@@ -900,6 +927,7 @@ solve_problem_optimised()
 │   │   │   ├── NEWtopologicalSort.cpp
 │   │   │   ├── numIslands.cpp
 │   │   │   ├── printAdjacencyList.cpp
+│   │   │   ├── rottenOranges.cpp
 │   │   │   ├── xinput.txt
 │   │   │   └── xoutput.txt
 │   │   ├── Linked Lists
@@ -1079,7 +1107,6 @@ solve_problem_optimised()
 │   │   └── CNBinaryTree.hpp
 │   └── Contests
 │       └── CodeDriftAugust
-│           ├── n1
 │           ├── n1.cpp
 │           ├── n2.cpp
 │           ├── n3B.cpp
@@ -1150,12 +1177,25 @@ solve_problem_optimised()
 │   ├── TOANDFRO_To_and_Fro.cpp
 │   ├── xinput.txt
 │   └── xoutput.txt
+├── temp
+│   ├── nA.cpp
+│   ├── nB.cpp
+│   ├── nC
+│   ├── nC.cpp
+│   ├── nD.cpp
+│   ├── nE.cpp
+│   ├── Solution.java
+│   ├── tempCodeRunnerFile.cpp
+│   ├── temp.py
+│   ├── xinput.txt
+│   └── xoutput.txt
 ├── Unclassified
 │   ├── New
 │   │   ├── add-two-ll.cpp
 │   │   ├── CODEZEN_interestingSequences2.cpp
 │   │   ├── CODEZEN_interestingSequences.cpp
 │   │   ├── CODEZEN_rat_in_maze.cpp
+│   │   ├── word_wrap_newspaper.cpp
 │   │   ├── xinput.txt
 │   │   └── xoutput.txt
 │   └── Working
@@ -1207,7 +1247,6 @@ solve_problem_optimised()
     │   │       ├── prog03TwoXnTilingProblem.cpp
     │   │       ├── prog04AsubsetsAndBitmasking1.cpp
     │   │       ├── prog04BsubsetsAndBitmaskingInegers.cpp
-    │   │       ├── prog05subsetSumUsingBitmask
     │   │       ├── prog05subsetSumUsingBitmask.cpp
     │   │       ├── xinput.txt
     │   │       └── xoutput.txt
@@ -1281,7 +1320,6 @@ solve_problem_optimised()
     │   │       ├── prog002LCA.cpp
     │   │       ├── prog003LCABinaryLifting.cpp
     │   │       ├── prog004distanceBetweenTwoNodes.cpp
-    │   │       ├── temp
     │   │       ├── xinput.txt
     │   │       └── xoutput.txt
     │   ├── Linked_List
@@ -1296,10 +1334,14 @@ solve_problem_optimised()
     │   │   └── Trees KnowledgeCenter
     │   │       └── prog001_trees.cpp
     │   └── Tries
-    │       └── AshishKumar
-    │           └── TrieCompleteAK.cpp
+    │       ├── AshishKumar
+    │       │   └── TrieCompleteAK.cpp
+    │       └── Faad-Coder
+    │           ├── trie-implementation.cpp
+    │           ├── xinput.txt
+    │           └── xoutput.txt
     └── Competitive Programming
-        ├── BIt Manipulation
+        ├── Bit Manipulation
         │   ├── generateSubsets.cpp
         │   ├── xinput.txt
         │   └── xoutput.txt
@@ -1319,5 +1361,5 @@ solve_problem_optimised()
                     ├── xinput.txt
                     └── xoutput.txt
 
-212 directories, 1046 files
+221 directories, 1079 files
 ```
