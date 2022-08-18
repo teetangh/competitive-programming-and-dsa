@@ -27,37 +27,11 @@ typedef long long int lli;
 typedef unsigned long long ull;
 typedef unsigned long long int ulli;
 
-ulli solve(vector<ulli> &arr)
+string solve(ulli n)
 {
-    ulli B = 0;
-    ulli A = 1;
-
-    ulli tA = 0;
-    ulli tB = 0;
-    ulli totalTime = accumulate(arr.begin(), arr.end(), 0);
-
-    vector<int> cumArr;
-    cumArr.push_back(arr[0]);
-    for (int i = 1; i < arr.size(); i++)
-        cumArr.push_back(cumArr[i - 1] + arr[i]);
-
-    ulli waitingTime = arr[0];
-    while (tB < cumArr[cumArr.size() - 1])
-    {
-        tA++;
-        if (B < A)
-            tB++;
-        else
-            waitingTime++;
-
-        if (A < arr.size() && tA == cumArr[A + 1])
-            A = A + 1;
-        if (B < arr.size() && tB == cumArr[B + 1])
-            B = B + 1;
-    }
-
-    // cout << "total time " << totalTime << " waiting time " << waitingTime << endl;
-    return totalTime + waitingTime;
+    if (n <= 1000)
+        return "Yes";
+    return "No";
 }
 
 int main()
@@ -69,20 +43,10 @@ int main()
 
     fastio;
 
-    ulli tc;
-    cin >> tc;
+    ulli n;
+    cin >> n;
 
-    while (tc--)
-    {
-        ulli size;
-        cin >> size;
-
-        vector<ulli> arr(size - 1);
-        for (ulli i = 0; i < size - 1; i++)
-            cin >> arr[i];
-
-        cout << solve(arr) << endl;
-    }
+    cout << solve(n) << endl;
 
     return 0;
 }

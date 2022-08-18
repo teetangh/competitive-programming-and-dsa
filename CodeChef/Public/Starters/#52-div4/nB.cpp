@@ -27,37 +27,19 @@ typedef long long int lli;
 typedef unsigned long long ull;
 typedef unsigned long long int ulli;
 
-ulli solve(vector<ulli> &arr)
+
+ulli solve(vector<ulli> &testCases, string V)
 {
-    ulli B = 0;
-    ulli A = 1;
-
-    ulli tA = 0;
-    ulli tB = 0;
-    ulli totalTime = accumulate(arr.begin(), arr.end(), 0);
-
-    vector<int> cumArr;
-    cumArr.push_back(arr[0]);
-    for (int i = 1; i < arr.size(); i++)
-        cumArr.push_back(cumArr[i - 1] + arr[i]);
-
-    ulli waitingTime = arr[0];
-    while (tB < cumArr[cumArr.size() - 1])
+    ulli ans = INT_MAX;
+    for (int i = 0; i < testCases.size(); i++)
     {
-        tA++;
-        if (B < A)
-            tB++;
+        if (V[i] == '1')
+            continue;
         else
-            waitingTime++;
-
-        if (A < arr.size() && tA == cumArr[A + 1])
-            A = A + 1;
-        if (B < arr.size() && tB == cumArr[B + 1])
-            B = B + 1;
+            ans = min(ans, testCases[i]);
     }
 
-    // cout << "total time " << totalTime << " waiting time " << waitingTime << endl;
-    return totalTime + waitingTime;
+    return ans;
 }
 
 int main()
@@ -69,19 +51,26 @@ int main()
 
     fastio;
 
-    ulli tc;
+    int tc;
     cin >> tc;
 
     while (tc--)
     {
-        ulli size;
-        cin >> size;
+        ulli n;
+        cin >> n;
 
-        vector<ulli> arr(size - 1);
-        for (ulli i = 0; i < size - 1; i++)
-            cin >> arr[i];
+        vector<ulli> testCases;
+        ulli temp;
+        for (int i = 0; i < n; i++)
+        {
+            cin >> temp;
+            testCases.pb(temp);
+        }
 
-        cout << solve(arr) << endl;
+        string V;
+        cin >> V;
+
+        cout << solve(testCases, V) << endl;
     }
 
     return 0;
