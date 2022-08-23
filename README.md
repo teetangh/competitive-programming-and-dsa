@@ -6,20 +6,9 @@ It also contains various my solutions to problems asked in various Competitive C
 
 # File Naming Convention Summarised
 
-```
-prog001xyz = only one file (NO CONFLICTS) and accepted
-prog001n_xyz / new001_xyz = (Not yet Attempted/Accpeted/Submitted)
-prog001TLE_xyz = TLE
-prog001WA_xyz = Wrong Answer
+I looked at some of my files after 2 months, i was confused about which one was complete, incomplete, TLE, WA, etc...
 
-prog001h_xyz = helped
-prog001a_xyz,prog001b_xyz,prog001c_xyz,prog001d_xyz,...... = accepted versions
-
-```
-
-Actually, i looked at some of my files after 2 months, i was confused which one was complete , incomplete, TLE , WA , etc...
-
-One more important thing is that I dont make multiple files for naive , efficient , optimised solutions,rather i make 3 separate functions like:
+One more important thing is that I don't make multiple files for naive, efficient, optimized solutions, rather I make 3 separate functions:
 
 ```
 solve_problem()
@@ -39,7 +28,7 @@ solve_problem_optimised()
 
 ## Sudoku Solver
 
-<img src="./CodeChef/Public/Random/Code Marathon/output_sudoku_solver.gif"/>
+<img src="./CodeChef/Contests/Random/Code Marathon/output_sudoku_solver.gif"/>
 
 # Usage of Sites
 
