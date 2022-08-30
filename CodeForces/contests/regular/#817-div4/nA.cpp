@@ -82,8 +82,20 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 #define debug(x)
 #endif
 
-int solve(vector<int> &arr, int k)
+int solve(string &s, unordered_map<char, int> mp)
 {
+    // Check if Timur
+    for (int i = 0; i < s.size(); i++)
+    {
+        if (--mp[s[i]] != 0)
+            return 0;
+    }
+
+    for (auto ele : mp)
+        if (ele.second != 0)
+            return 0;
+
+    return 1;
 }
 
 int main()
@@ -103,13 +115,18 @@ int main()
     {
         int size;
         cin >> size;
-        vector<int> arr(size);
-        for (int i = 0; i < size; i++)
-            cin >> arr[i];
-
-        int k;
-        cin >> k;
-        cout << solve(arr, k) << endl;
+        unordered_map<char, int> mp;
+        mp['T'] = 1;
+        mp['i'] = 1;
+        mp['m'] = 1;
+        mp['u'] = 1;
+        mp['r'] = 1;
+        string temp;
+        cin >> temp;
+        if (solve(temp, mp))
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
     }
 
     return 0;

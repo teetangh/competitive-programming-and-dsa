@@ -82,10 +82,6 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 #define debug(x)
 #endif
 
-int solve(vector<int> &arr, int k)
-{
-}
-
 int main()
 {
 #ifndef ONLINE_JUDGE
@@ -103,13 +99,45 @@ int main()
     {
         int size;
         cin >> size;
-        vector<int> arr(size);
+        vector<string> A(size);
+        vector<string> B(size);
+        vector<string> C(size);
         for (int i = 0; i < size; i++)
-            cin >> arr[i];
+            cin >> A[i];
+        for (int i = 0; i < size; i++)
+            cin >> B[i];
+        for (int i = 0; i < size; i++)
+            cin >> C[i];
 
-        int k;
-        cin >> k;
-        cout << solve(arr, k) << endl;
+        map<string, vector<char>> mp;
+
+        for (auto ele : A)
+            mp[ele].push_back('A');
+        for (auto ele : B)
+            mp[ele].push_back('B');
+        for (auto ele : C)
+            mp[ele].push_back('C');
+
+        map<char, int> points;
+        points['A'] = 0;
+        points['B'] = 0;
+        points['C'] = 0;
+        for (auto ele : mp)
+        {
+            if (ele.second.size() == 3)
+                continue;
+            else if (ele.second.size() == 2)
+            {
+                points[ele.second[0]] += 1;
+                points[ele.second[1]] += 1;
+            }
+            else if (ele.second.size() == 1)
+            {
+                points[ele.second[0]] += 3;
+            }
+        }
+
+        cout << points['A'] << " " << points['B'] << " " << points['C'] << endl;
     }
 
     return 0;

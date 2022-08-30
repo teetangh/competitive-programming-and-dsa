@@ -82,10 +82,6 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 #define debug(x)
 #endif
 
-int solve(vector<int> &arr, int k)
-{
-}
-
 int main()
 {
 #ifndef ONLINE_JUDGE
@@ -96,20 +92,64 @@ int main()
 
     fastio();
 
-    int tc;
+    lli tc;
     cin >> tc;
 
     while (tc--)
     {
-        int size;
+        lli size;
         cin >> size;
-        vector<int> arr(size);
-        for (int i = 0; i < size; i++)
-            cin >> arr[i];
+        string input;
+        cin >> input;
+        vector<pair<lli, lli>> counts(size, {0, 0});
 
-        int k;
-        cin >> k;
-        cout << solve(arr, k) << endl;
+        lli score = 0;
+        priority_queue<lli> pq;
+        for (lli i = 0; i < size; i++)
+        {
+            if (input[i] == 'L')
+                counts[i] = {i, size - i - 1};
+            else if (input[i] == 'R')
+                counts[i] = {size - i - 1, i};
+
+            score += counts[i].first;
+            lli diff = 0;
+            if (counts[i].first - counts[i].second >= 0)
+                diff = counts[i].first - counts[i].second;
+            else
+                diff = counts[i].second - counts[i].first;
+
+            if (i < size / 2 && input[i] == 'L')
+                pq.push(diff);
+            else if (i >= size / 2 && input[i] == 'R')
+                pq.push(diff);
+        }
+
+        if (pq.empty())
+        {
+            cout << "0" << endl;
+            continue;
+        }
+
+        vector<lli> maxLineValue(size, 0);
+        lli k = 0;
+        while (!pq.empty())
+        {
+            lli diff = pq.top();
+            pq.pop();
+            score += diff;
+            maxLineValue[k++] = score;
+        }
+
+        k--;
+        // fill the rest of the array with the max value
+        for (lli i = k + 1; i < size; i++)
+            maxLineValue[i] = maxLineValue[k];
+
+        // print the array
+        for (lli i = 0; i < size; i++)
+            cout << maxLineValue[i] << " ";
+        cout << endl;
     }
 
     return 0;

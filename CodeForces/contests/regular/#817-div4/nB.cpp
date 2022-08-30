@@ -82,10 +82,22 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 #define debug(x)
 #endif
 
-int solve(vector<int> &arr, int k)
+bool solve(string &color1, string &color2)
 {
-}
+    for (int i = 0; i < color1.size(); i++)
+    {
+        if (color1[i] == color2[i])
+            continue;
 
+        else if (color1[i] == 'B' && color2[i] == 'G')
+            continue;
+        else if (color1[i] == 'G' && color2[i] == 'B')
+            continue;
+        else
+            return false;
+    }
+    return true;
+}
 int main()
 {
 #ifndef ONLINE_JUDGE
@@ -103,13 +115,12 @@ int main()
     {
         int size;
         cin >> size;
-        vector<int> arr(size);
-        for (int i = 0; i < size; i++)
-            cin >> arr[i];
-
-        int k;
-        cin >> k;
-        cout << solve(arr, k) << endl;
+        string color1, color2;
+        cin >> color1 >> color2;
+        if (solve(color1, color2))
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
     }
 
     return 0;

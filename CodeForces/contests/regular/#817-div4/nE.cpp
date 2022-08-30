@@ -82,9 +82,16 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 #define debug(x)
 #endif
 
-int solve(vector<int> &arr, int k)
+class Rectangle
 {
-}
+public:
+    ulli hi, wi;
+    Rectangle(ulli h, ulli w)
+    {
+        hi = h;
+        wi = w;
+    }
+};
 
 int main()
 {
@@ -96,20 +103,37 @@ int main()
 
     fastio();
 
-    int tc;
+    ulli tc;
     cin >> tc;
 
     while (tc--)
     {
-        int size;
-        cin >> size;
-        vector<int> arr(size);
-        for (int i = 0; i < size; i++)
-            cin >> arr[i];
+        ulli n, q;
+        cin >> n >> q;
 
-        int k;
-        cin >> k;
-        cout << solve(arr, k) << endl;
+        vector<Rectangle> me(n, Rectangle(0, 0));
+        vector<pair<Rectangle, Rectangle>> them(q, pair<Rectangle, Rectangle>(Rectangle(0, 0), Rectangle(0, 0)));
+
+        for (ulli i = 0; i < n; i++)
+            cin >> me[i].hi >> me[i].wi;
+
+        vector<ulli> overlappingArea(q, 0);
+        for (ulli i = 0; i < q; i++)
+        {
+            cin >> them[i].first.hi >> them[i].first.wi >> them[i].second.hi >> them[i].second.wi;
+            for (ulli j = 0; j < n; j++)
+            {
+                // if (me[j].hi < them[i].first.hi && me[j].wi < them[i].first.wi)
+                //     overlappingArea[i] += me[j].hi * me[j].wi;
+                // if (me[j].hi < them[i].second.hi && me[j].wi < them[i].second.wi)
+                //     overlappingArea[i] += me[j].hi * me[j].wi;
+                if ((them[i].first.hi < me[j].hi && me[j].hi < them[i].second.hi) &&
+                    (them[i].first.wi < me[j].wi && me[j].wi < them[i].second.wi))
+                    overlappingArea[i] += me[j].hi * me[j].wi;
+            }
+
+            cout << overlappingArea[i] << endl;
+        }
     }
 
     return 0;
