@@ -1,14 +1,13 @@
-#include <iostream>
-#include <iomanip>
-#include <bits/stdc++.h>
+/*
+ * @lc app=leetcode id=53 lang=cpp
+ *
+ * [53] Maximum Subarray
+ */
 
-using namespace std;
-
-class Solution
-{
+// @lc code=start
+class Solution {
 public:
-    int maxSubArray(vector<int> &nums)
-    {
+    int maxSubArray(vector<int>& nums) {
         int sum = 0;
         int maxSum = INT_MIN;
 
@@ -23,3 +22,5 @@ public:
         return maxSum;
     }
 };
+// @lc code=end
+
