@@ -27,11 +27,6 @@ using namespace __gnu_pbds;
 #define vi vector<int>
 #define vpii vector<pair<int, int>>
 
-#define MAX 100001
-vector<int> adj[MAX];
-vector<int> visited(MAX, 0);
-vector<int> colors(MAX, 0);
-
 // Typedefs
 typedef long double ld;
 typedef long long ll;
@@ -54,19 +49,43 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 // template <class T, class V> void _print(pair <T, V> p);
 // template <class T> void _print(vector <T> v);
 // template <class T> void _print(set <T> v);
-// template <class T, class V> void _print(map <T, V> v);
 // template <class T> void _print(multiset <T> v);
+// template <class T, class V> void _print(map <T, V> v);
+// template <class T , class V> void _print(multimap <T, V> v);
+// template <class T> void _print(stack <T> v);
+// template <class T> void _print(queue <T> v);
+// template <class T> void _print(deque <T> v);
+// template <class T> void _print(priority_queue <T> v);
+// template <class T> void _print(unordered_set <T> v);
+// template <class T> void _print(unordered_multiset <T> v);
+// template <class T, class V> void _print(unordered_map <T, V> v);
+// template <class T, class V> void _print(unordered_multimap <T, V> v);
+
 // template <class T, class V> void _print(pair <T, V> p) {cerr << "{"; _print(p.ff); cerr << ","; _print(p.ss); cerr << "}";}
 // template <class T> void _print(vector <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 // template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 // template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 // template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
+// template <class T, class V> void _print(multimap <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
+// template <class T> void _print(stack <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
+// template <class T> void _print(queue <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
+// template <class T> void _print(deque <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
+// template <class T> void _print(priority_queue <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
+// template <class T> void _print(unordered_set <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
+// template <class T> void _print(unordered_multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
+// template <class T, class V> void _print(unordered_map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
+// template <class T, class V> void _print(unordered_multimap <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
 
 #ifndef ONLINE_JUDGE
 #define debug(x) cerr << #x << " ", _print(x), cerr << endl;
 #else
 #define debug(x)
 #endif
+
+#define MAX 100001
+vector<int> adj[MAX];
+vector<int> visited(MAX, 0);
+vector<int> colors(MAX, 0);
 
 int main()
 {
@@ -81,8 +100,14 @@ int main()
     int n, m, a, b;
     cin >> n >> m;
 
+    bool isDirected = false;
     for (int i = 1; i <= m; i++)
-        cin >> a >> b, adj[a].pb(b), adj[b].pb(a);
+    {
+        cin >> a >> b;
+        adj[a].push_back(b);
+        if (isDirected == false && a != b)
+            adj[b].push_back(a);
+    }
 
     int connectedComponents = 0;
 
