@@ -20,9 +20,9 @@ public:
     ListNode *next;
     ListNode(int x) : val(x), next(NULL) {}
 
-    void printList()
+    void printList(ListNode *head)
     {
-        ListNode *temp = this;
+        ListNode *temp = head;
         while (temp != NULL)
         {
             cout << temp->val << " ";
@@ -31,38 +31,64 @@ public:
         cout << endl;
     }
 
-    void insertNode(int x)
+    ListNode *insertNode(ListNode *head, int x)
     {
-        ListNode *temp = this;
+        ListNode *temp = head;
         while (temp->next != NULL)
             temp = temp->next;
+
         temp->next = new ListNode(x);
     }
 
-    void removeNode(int x)
+    ListNode *removeOccurences(ListNode *head, int key)
     {
-        ListNode *temp = this;
-        while (temp->next != NULL)
+        ListNode *temp = head;
+        ListNode *prev = NULL;
+        while (temp != NULL)
         {
-            if (temp->next->val == x)
+            if (temp->val == key)
             {
-                temp->next = temp->next->next;
-                break;
+                if (prev == NULL)
+                {
+                    head = temp->next;
+                    temp = head;
+                }
+                else
+                {
+                    prev->next = temp->next;
+                    temp = prev->next;
+                }
             }
-            temp = temp->next;
+            else
+            {
+                prev = temp;
+                temp = temp->next;
+            }
         }
+        return head;
     }
 
-    ListNode *reverseList()
+    ListNode *reverseLinkedList(ListNode *head)
     {
-        ListNode *prev = NULL, *curr = this, *next = NULL;
+        // add your logic here
+
+        if (head == NULL || head->next == NULL)
+            return head;
+
+        ListNode *prev = NULL;
+        ListNode *curr = head;
+        ListNode *Next = NULL;
+
         while (curr != NULL)
         {
-            next = curr->next;
+
+            Next = curr->next;
             curr->next = prev;
+
             prev = curr;
-            curr = next;
+            curr = Next;
         }
+
         return prev;
     }
 };
