@@ -1,4 +1,5 @@
-class BitManipulation {
-
+template <typename T>
+class BitManipulation
+{
     
 };

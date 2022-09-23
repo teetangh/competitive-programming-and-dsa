@@ -1,13 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+template <typename T>
 class TreeNode
 {
 public:
-    int val;
+    T val;
     TreeNode *left;
     TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+    TreeNode(T x) : val(x), left(NULL), right(NULL) {}
 
     void printTree(TreeNode *root)
     {
@@ -18,7 +19,7 @@ public:
         printTree(root->right);
     }
 
-    TreeNode *insertNode(TreeNode *root, int x)
+    TreeNode *insertNode(TreeNode *root, T x)
     {
         if (root == NULL)
             return new TreeNode(x);
@@ -28,15 +29,15 @@ public:
             root->right = insertNode(root->right, x);
         return root;
     }
-    
-    TreeNode *insertNode(TreeNode *root, vector<int> levelOrder)
+
+    TreeNode *insertNode(TreeNode *root, vector<T> levelOrder)
     {
         for (int i = 0; i < levelOrder.size(); i++)
             root = insertNode(root, levelOrder[i]);
         return root;
     }
 
-    TreeNode *removeNode(TreeNode *root, int x)
+    TreeNode *removeNode(TreeNode *root, T x)
     {
         if (root == NULL)
             return NULL;
@@ -70,7 +71,7 @@ public:
         return root;
     }
 
-    TreeNode *searchNode(TreeNode *root, int x)
+    TreeNode *searchNode(TreeNode *root, T x)
     {
         if (root == NULL)
             return NULL;

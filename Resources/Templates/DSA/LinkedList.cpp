@@ -13,14 +13,15 @@ using namespace std;
 #define endl '\n'
 #define fastio() ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
 
+template <typename T>
 class ListNode
 {
 public:
-    int val;
+    T val;
     ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+    ListNode(T x) : val(x), next(NULL) {}
 
-    void printList(ListNode *head)
+    void printLL(ListNode *head)
     {
         ListNode *temp = head;
         while (temp != NULL)
@@ -31,7 +32,7 @@ public:
         cout << endl;
     }
 
-    ListNode *insertNode(ListNode *head, int x)
+    ListNode *insertNode(ListNode *head, T x)
     {
         ListNode *temp = head;
         while (temp->next != NULL)
@@ -40,7 +41,7 @@ public:
         temp->next = new ListNode(x);
     }
 
-    ListNode *removeOccurences(ListNode *head, int key)
+    ListNode *removeOccurences(ListNode *head, T key)
     {
         ListNode *temp = head;
         ListNode *prev = NULL;
@@ -68,7 +69,36 @@ public:
         return head;
     }
 
-    ListNode *reverseLinkedList(ListNode *head)
+    ListNode *removeFirstOccurence(ListNode *head, T key)
+    {
+        ListNode *temp = head;
+        ListNode *prev = NULL;
+        while (temp != NULL)
+        {
+            if (temp->val == key)
+            {
+                if (prev == NULL)
+                {
+                    head = temp->next;
+                    temp = head;
+                }
+                else
+                {
+                    prev->next = temp->next;
+                    temp = prev->next;
+                }
+                break;
+            }
+            else
+            {
+                prev = temp;
+                temp = temp->next;
+            }
+        }
+        return head;
+    }
+
+    ListNode *reverseLL(ListNode *head)
     {
         // add your logic here
 

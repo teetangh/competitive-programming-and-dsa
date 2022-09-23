@@ -1,27 +1,27 @@
+template <typename T>
 class NumberTheory
 {
-
 public:
-    static int gcd(int a, int b)
+    static T gcd(T a, T b)
     {
         if (b == 0)
             return a;
         return gcd(b, a % b);
     }
 
-    static int lcm(int a, int b)
+    static T lcm(T a, T b)
     {
         return a / gcd(a, b) * b;
     }
 
-    static int mod(int a, int b)
+    static T mod(T a, T b)
     {
         return (a % b + b) % b;
     }
 
-    static int modPow(int a, int n, int mod)
+    static T modPow(T a, T n, T mod)
     {
-        int res = 1;
+        T res = 1;
         while (n > 0)
         {
             if (n & 1)
@@ -32,19 +32,19 @@ public:
         return res;
     }
 
-    static int modInv(int a, int mod)
+    static T modInv(T a, T mod)
     {
         return modPow(a, mod - 2, mod);
     }
 
-    static int modDiv(int a, int b, int mod)
+    static T modDiv(T a, T b, T mod)
     {
         return a * modInv(b, mod) % mod;
     }
 
-    static int modComb(int n, int k, int mod)
+    static T modComb(T n, T k, T mod)
     {
-        int res = 1;
+        T res = 1;
         for (int i = 0; i < k; i++)
         {
             res = res * (n - i) % mod;
@@ -53,9 +53,9 @@ public:
         return res;
     }
 
-    static int modFact(int n, int mod)
+    static T modFact(T n, T mod)
     {
-        int res = 1;
+        T res = 1;
         for (int i = 1; i <= n; i++)
         {
             res = res * i % mod;
@@ -63,9 +63,9 @@ public:
         return res;
     }
 
-    static int modPerm(int n, int k, int mod)
+    static T modPerm(T n, T k, T mod)
     {
-        int res = 1;
+        T res = 1;
         for (int i = 0; i < k; i++)
         {
             res = res * (n - i) % mod;
@@ -73,19 +73,19 @@ public:
         return res;
     }
 
-    static int modCombWithFact(int n, int k, int mod)
+    static T modCombWithFact(T n, T k, T mod)
     {
         return modDiv(modFact(n, mod), modFact(k, mod) * modFact(n - k, mod) % mod, mod);
     }
 
-    static int modCombWithPerm(int n, int k, int mod)
+    static T modCombWithPerm(T n, T k, T mod)
     {
         return modDiv(modPerm(n, k, mod), modFact(k, mod), mod);
     }
 
-    static int modCombWithFact2(int n, int k, int mod)
+    static T modCombWithFact2(T n, T k, T mod)
     {
-        int res = 1;
+        T res = 1;
         for (int i = 0; i < k; i++)
         {
             res = res * (n - i) % mod;
@@ -94,9 +94,9 @@ public:
         return res;
     }
 
-    static int modCombWithPerm2(int n, int k, int mod)
+    static T modCombWithPerm2(T n, T k, T mod)
     {
-        int res = 1;
+        T res = 1;
         for (int i = 0; i < k; i++)
         {
             res = res * (n - i) % mod;

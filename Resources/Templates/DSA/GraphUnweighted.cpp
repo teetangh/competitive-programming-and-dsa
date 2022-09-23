@@ -11,8 +11,6 @@
 using namespace std;
 using namespace __gnu_pbds;
 
-
-
 template <typename T>
 class DSU
 {
@@ -24,7 +22,7 @@ public:
     {
         parent.resize(n);
         rank.resize(n, 0);
-        for (T i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
             parent[i] = i;
     }
 
@@ -228,7 +226,7 @@ public:
     T kruskal()
     {
         vector<pair<T, pair<T, T>>> edges;
-        for (T i = 0; i < V; i++)
+        for (int i = 0; i < V; i++)
         {
             for (auto child : adj[i])
             {
@@ -257,7 +255,7 @@ public:
     {
         vector<T> dist(V, T_MAX);
         dist[src] = 0;
-        for (T i = 0; i < V - 1; i++)
+        for (int i = 0; i < V - 1; i++)
         {
             for (T j = 0; j < V; j++)
             {
@@ -275,14 +273,14 @@ public:
     vector<vector<T>> floydWarshall()
     {
         vector<vector<T>> dist(V, vector<T>(V, T_MAX));
-        for (T i = 0; i < V; i++)
+        for (int i = 0; i < V; i++)
         {
             for (auto child : adj[i])
             {
                 dist[i][child] = 1;
             }
         }
-        for (T i = 0; i < V; i++)
+        for (int i = 0; i < V; i++)
         {
             for (T j = 0; j < V; j++)
             {
@@ -329,7 +327,7 @@ public:
         vector<T> Time(V, -1);
         vector<T> lowTime(V, -1);
         T timer = 0;
-        for (T i = 0; i < V; i++)
+        for (int i = 0; i < V; i++)
         {
             if (!visited[i])
                 dfsArticulation(i, -1, timer, Time, lowTime, isArticulation);
@@ -366,7 +364,7 @@ public:
         vector<T> Time(V, -1);
         vector<T> lowTime(V, -1);
         T timer = 0;
-        for (T i = 0; i < V; i++)
+        for (int i = 0; i < V; i++)
         {
             if (!visited[i])
                 dfsBridges(i, -1, timer, Time, lowTime, bridges);
