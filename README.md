@@ -48,77 +48,67 @@ solve_problem_optimised()
 
 # Index Last Updated on Fri 12 Aug 16:29:44 IST 2022
 
-```.
+```
+.
 ├── ascii_table.png
 ├── Career Cup
 │   ├── intelligent_substrings.cpp
 │   ├── xinput.txt
 │   └── xoutput.txt
 ├── CodeChef
-│   ├── Beginner
-│   │   ├── CIELRCPT_ceil_and_receipt.cpp
-│   │   ├── FCTRL2_small_factorials.cpp
-│   │   ├── FLOW001_add_two_numbers.cpp
-│   │   ├── FLOW002_find_remainder.cpp
-│   │   ├── FLOW006_sum_of_digits.cpp
-│   │   ├── FLOW008_helping_chef.cpp
-│   │   ├── FLOW017_second_largest.cpp
-│   │   ├── FLOW018_factorial.cpp
-│   │   ├── HS08TEST_ATM.cpp
-│   │   ├── INTEST_enormous_input_test.cpp
-│   │   ├── MUFFINS3n_packaging_cupcakes.cpp
-│   │   ├── PRB01n_primality_test
-│   │   ├── PRB01n_primality_test.cpp
-│   │   ├── START01_number_mirror.cpp
-│   │   ├── xinput.txt
-│   │   └── xoutput.txt
-│   ├── Easy
-│   │   ├── ALEXNUMB_magic_pairs.cpp
-│   │   ├── AMSGAME1n_subtraction_game1.cpp
-│   │   ├── CHEFRES_chef_restaurant.cpp
-│   │   ├── CIELAB_ceil_A_B.cpp
-│   │   ├── CNOTE_chef_and_notebooks.cpp
-│   │   ├── COOK82Cha_hussain_set.cpp
-│   │   ├── COOK82Ch_voters_list.cpp
-│   │   ├── COOK82Cn_hussain_set.cpp
-│   │   ├── FCTRL_factorial.cpp
-│   │   ├── FIRESCn_fire_escape_routes.cpp
-│   │   ├── HORSES_racing_horses.cpp
-│   │   ├── JOHNY_uncle_johnny.cpp
-│   │   ├── LEBOMBSn_little_elephants_and_bombs.cpp
-│   │   ├── MAXDIFF_maximum_difference.cpp
-│   │   ├── NAME2_your_name_is_mine.cpp
-│   │   ├── OJUMPS_chef_jumps.cpp
-│   │   ├── PRIME1_prime_generator.cpp
-│   │   ├── RRCOPY_copy_paste.cpp
-│   │   ├── SALARY_min_num_of_moves.cpp
-│   │   ├── SPCANDY_splitting_candies.cpp
-│   │   ├── TEST_Life_the_Universe_and_Everything.cpp
-│   │   ├── TOTRn_tourist_translations.cpp
-│   │   ├── VOTERSh_voters_list.cpp
-│   │   ├── xinput.txt
-│   │   └── xoutput.txt
-│   ├── Medium
-│   │   ├── COINSn_Bytelandian_gold_coins.cpp
-│   │   ├── xinput.txt
-│   │   └── xoutput.txt
-│   ├── Public
+│   ├── Contests
 │   │   ├── CookOff
 │   │   ├── Long
+│   │   │   └── 2022 September 09 Long Challenge
+│   │   │       ├── nA
+│   │   │       ├── nA.cpp
+│   │   │       ├── nB
+│   │   │       ├── nB.cpp
+│   │   │       ├── nC
+│   │   │       ├── nC.cpp
+│   │   │       ├── nD
+│   │   │       ├── nD.cpp
+│   │   │       ├── nE
+│   │   │       ├── nE.cpp
+│   │   │       ├── nF.cpp
+│   │   │       ├── nG.cpp
+│   │   │       ├── xerror.txt
+│   │   │       ├── xinput.txt
+│   │   │       └── xoutput.txt
 │   │   ├── Lunchtime
-│   │   │   ├── August Lunchtime 2020 Division 2
+│   │   │   ├── 2020 August 14 Lunchtime Division 2
 │   │   │   │   ├── 1.cpp
 │   │   │   │   ├── 2.cpp
 │   │   │   │   ├── 3.cpp
 │   │   │   │   ├── 4.cpp
 │   │   │   │   ├── xinput.txt
 │   │   │   │   └── xoutput.txt
-│   │   │   └── August Lunchtime 2022 Division 4
+│   │   │   ├── 2022 August 18 Lunchtime Division 4
+│   │   │   │   ├── nA
+│   │   │   │   ├── nA.cpp
+│   │   │   │   ├── nB.cpp
+│   │   │   │   ├── nC.cpp
+│   │   │   │   ├── nD
+│   │   │   │   ├── nD.cpp
+│   │   │   │   ├── nE
+│   │   │   │   ├── nE.cpp
+│   │   │   │   ├── nF
+│   │   │   │   ├── nF.cpp
+│   │   │   │   ├── xinput.txt
+│   │   │   │   └── xoutput.txt
+│   │   │   └── 2022 August 22 Lunchtime Division 4
+│   │   │       ├── nA
 │   │   │       ├── nA.cpp
 │   │   │       ├── nB.cpp
+│   │   │       ├── nC
 │   │   │       ├── nC.cpp
+│   │   │       ├── nD
 │   │   │       ├── nD.cpp
+│   │   │       ├── nE
 │   │   │       ├── nE.cpp
+│   │   │       ├── nF
+│   │   │       ├── nF.cpp
+│   │   │       ├── nG.cpp
 │   │   │       ├── xinput.txt
 │   │   │       └── xoutput.txt
 │   │   ├── Random
@@ -152,19 +142,134 @@ solve_problem_optimised()
 │   │   │       ├── xoutput.txt
 │   │   │       └── ZCO15002_variation_count.cpp
 │   │   └── Starters
-│   │       └── #50-div3
-│   │           ├── nA
+│   │       ├── #50-div3
+│   │       │   ├── nA
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC
+│   │       │   ├── nC.cpp
+│   │       │   ├── nD
+│   │       │   ├── nD.cpp
+│   │       │   ├── nE.cpp
+│   │       │   ├── tempCodeRunnerFile.cpp
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       ├── #52-div4
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC
+│   │       │   ├── nC.cpp
+│   │       │   ├── nD
+│   │       │   ├── nD.cpp
+│   │       │   ├── nE
+│   │       │   ├── nE.cpp
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       ├── #53-div4
+│   │       │   ├── nA
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC
+│   │       │   ├── nC.cpp
+│   │       │   ├── nD
+│   │       │   ├── nD.cpp
+│   │       │   ├── nE
+│   │       │   ├── nE.cpp
+│   │       │   ├── xerror.txt
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       ├── #54-div3
+│   │       │   ├── nA
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC
+│   │       │   ├── nC.cpp
+│   │       │   ├── nD.cpp
+│   │       │   ├── nE.cpp
+│   │       │   ├── xerror.txt
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       ├── #55-div3
+│   │       │   ├── nA
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC
+│   │       │   ├── nC.cpp
+│   │       │   ├── nD
+│   │       │   ├── nD.cpp
+│   │       │   ├── nE.cpp
+│   │       │   ├── nF
+│   │       │   ├── nF.cpp
+│   │       │   ├── nG.cpp
+│   │       │   ├── xerror.txt
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       └── #56-div3
 │   │           ├── nA.cpp
+│   │           ├── nB
 │   │           ├── nB.cpp
 │   │           ├── nC
 │   │           ├── nC.cpp
-│   │           ├── nD
 │   │           ├── nD.cpp
 │   │           ├── nE.cpp
-│   │           ├── tempCodeRunnerFile.cpp
+│   │           ├── nF.cpp
+│   │           ├── nG.cpp
+│   │           ├── xerror.txt
 │   │           ├── xinput.txt
 │   │           └── xoutput.txt
-│   └── Unclassified
+│   ├── Problems
+│   │   ├── Beginner
+│   │   │   ├── CIELRCPT_ceil_and_receipt.cpp
+│   │   │   ├── FCTRL2_small_factorials.cpp
+│   │   │   ├── FLOW001_add_two_numbers.cpp
+│   │   │   ├── FLOW002_find_remainder.cpp
+│   │   │   ├── FLOW006_sum_of_digits.cpp
+│   │   │   ├── FLOW008_helping_chef.cpp
+│   │   │   ├── FLOW017_second_largest.cpp
+│   │   │   ├── FLOW018_factorial.cpp
+│   │   │   ├── HS08TEST_ATM.cpp
+│   │   │   ├── INTEST_enormous_input_test.cpp
+│   │   │   ├── MUFFINS3n_packaging_cupcakes.cpp
+│   │   │   ├── PRB01n_primality_test
+│   │   │   ├── PRB01n_primality_test.cpp
+│   │   │   ├── START01_number_mirror.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   ├── Easy
+│   │   │   ├── ALEXNUMB_magic_pairs.cpp
+│   │   │   ├── AMSGAME1n_subtraction_game1.cpp
+│   │   │   ├── CHEFRES_chef_restaurant.cpp
+│   │   │   ├── CIELAB_ceil_A_B.cpp
+│   │   │   ├── CNOTE_chef_and_notebooks.cpp
+│   │   │   ├── COOK82Cha_hussain_set.cpp
+│   │   │   ├── COOK82Ch_voters_list.cpp
+│   │   │   ├── COOK82Cn_hussain_set.cpp
+│   │   │   ├── FCTRL_factorial.cpp
+│   │   │   ├── FIRESCn_fire_escape_routes.cpp
+│   │   │   ├── HORSES_racing_horses.cpp
+│   │   │   ├── JOHNY_uncle_johnny.cpp
+│   │   │   ├── LEBOMBSn_little_elephants_and_bombs.cpp
+│   │   │   ├── MAXDIFF_maximum_difference.cpp
+│   │   │   ├── NAME2_your_name_is_mine.cpp
+│   │   │   ├── OJUMPS_chef_jumps.cpp
+│   │   │   ├── PRIME1_prime_generator.cpp
+│   │   │   ├── RRCOPY_copy_paste.cpp
+│   │   │   ├── SALARY_min_num_of_moves.cpp
+│   │   │   ├── SPCANDY_splitting_candies.cpp
+│   │   │   ├── TEST_Life_the_Universe_and_Everything.cpp
+│   │   │   ├── TOTRn_tourist_translations.cpp
+│   │   │   ├── VOTERSh_voters_list.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   └── Medium
+│   │       ├── COINSn_Bytelandian_gold_coins.cpp
+│   │       ├── xinput.txt
+│   │       └── xoutput.txt
+│   └── Random
 │       └── checkArrangement.cpp
 ├── CodeForces
 │   ├── contests
@@ -206,12 +311,62 @@ solve_problem_optimised()
 │   │       │   ├── nA.cpp
 │   │       │   ├── xinput.txt
 │   │       │   └── xoutput.txt
-│   │       └── #810-div2
+│   │       ├── #810-div2
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC.cpp
+│   │       │   ├── nD.cpp
+│   │       │   ├── nE.cpp
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       ├── #815-div2
+│   │       │   ├── nA
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC.cpp
+│   │       │   ├── nD.cpp
+│   │       │   ├── nE.cpp
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       ├── #816-div2
+│   │       │   ├── nA
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC
+│   │       │   ├── nC.cpp
+│   │       │   ├── nD.cpp
+│   │       │   ├── nE.cpp
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       ├── #817-div4
+│   │       │   ├── nA
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC
+│   │       │   ├── nC.cpp
+│   │       │   ├── nD
+│   │       │   ├── nD.cpp
+│   │       │   ├── nE
+│   │       │   ├── nE.cpp
+│   │       │   ├── xerror.txt
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       ├── #818-div2
+│   │       │   ├── A.class
+│   │       │   └── nB
+│   │       └── #820-div3
+│   │           ├── nA
 │   │           ├── nA.cpp
+│   │           ├── nB
 │   │           ├── nB.cpp
+│   │           ├── nC
 │   │           ├── nC.cpp
 │   │           ├── nD.cpp
 │   │           ├── nE.cpp
+│   │           ├── nF.cpp
+│   │           ├── nG.cpp
+│   │           ├── xerror.txt
 │   │           ├── xinput.txt
 │   │           └── xoutput.txt
 │   └── problem-set
@@ -848,6 +1003,25 @@ solve_problem_optimised()
 │   ├── count_operations.cpp
 │   ├── xinput.txt
 │   └── xoutput.txt
+├── CSES
+│   ├── 01-introductory
+│   │   ├── prog001weirdAlgorithm
+│   │   ├── prog001weirdAlgorithm.cpp
+│   │   ├── prog002missingNumber
+│   │   ├── prog002missingNumber.cpp
+│   │   ├── prog003longestRepititions
+│   │   ├── prog003repititions.cpp
+│   │   ├── prog004increasingArray
+│   │   ├── prog004increasingArray.cpp
+│   │   ├── xerror.txt
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   └── 02-searching-sorting
+│       ├── prog001distinctNumbers
+│       ├── prog001distinctNumbers.cpp
+│       ├── xerror.txt
+│       ├── xinput.txt
+│       └── xoutput.txt
 ├── data_type_ranges.jpeg
 ├── data_types_sizes.png
 ├── DP_CN.txt
@@ -987,10 +1161,21 @@ solve_problem_optimised()
 │           ├── xinput.txt
 │           └── xoutput.txt
 ├── HackerEarth
-│   └── Graphs
-│       ├── ConnectedComponentsInAGraph.cpp
-│       ├── MonkAndIslands.cpp
-│       └── WA_BishuAndHisGirlfriend.cpp
+│   ├── Contests
+│   │   └── August 23 Cicuits 2022
+│   │       ├── nA
+│   │       ├── nA.cpp
+│   │       ├── nB.cpp
+│   │       ├── nC.cpp
+│   │       ├── nD.cpp
+│   │       ├── nE.cpp
+│   │       ├── xinput.txt
+│   │       └── xoutput.txt
+│   └── Data Structures
+│       └── Graphs
+│           ├── ConnectedComponentsInAGraph.cpp
+│           ├── MonkAndIslands.cpp
+│           └── WA_BishuAndHisGirlfriend.cpp
 ├── Hackerrank
 │   ├── Alogrithms
 │   │   ├── 01 Warmup
@@ -1045,87 +1230,91 @@ solve_problem_optimised()
 │   │           └── xoutput.txt
 │   └── Solution.java
 ├── InterviewBit
-│   ├── 01 Arrays
-│   │   ├── FindDuplicateInArray.cpp
-│   │   ├── KthRowOfPascalTriangle.cpp
-│   │   ├── MaximumAbsoluteDifference.cpp
-│   │   ├── MinimumLightsToActivate.cpp
-│   │   ├── MinStepsInInfiniteGrid.cpp
-│   │   ├── NEW_MaximumSumTriplet.cpp
-│   │   ├── PerfectPeakOfArr.cpp
-│   │   ├── SmallestPositiveInteger.cpp
-│   │   ├── SpiralOrderMatrix1.cpp
-│   │   ├── xinput.txt
-│   │   └── xoutput.txt
-│   ├── 02 Math
-│   │   ├── allFactors.cpp
-│   │   ├── binaryRepresentation.cpp
-│   │   ├── distributeInCircle.cpp
-│   │   ├── ExcelColumnTitle.cpp
-│   │   ├── hammingDistance.cpp
-│   │   ├── isPower.cpp
-│   │   ├── sieveOfEratosthenes.cpp
-│   │   ├── totalBishopMoves.cpp
-│   │   ├── xinput.txt
-│   │   └── xoutput.txt
-│   ├── 03 BInary Search
-│   │   ├── NEW_woodCut.cpp
-│   │   ├── searchInBitonicArray.cpp
-│   │   ├── smallerOrUpperElements.cpp
-│   │   ├── xinput.txt
-│   │   └── xoutput.txt
-│   ├── 04 Strings
-│   │   ├── amazingSubarrays.cpp
-│   │   ├── atoi.cpp
-│   │   ├── compareVersionNunmber.cpp
-│   │   ├── implementStrStr.cpp
-│   │   ├── longestCommonPrefix.cpp
-│   │   ├── NEW_rotationTimes.cpp
-│   │   ├── NEW_validNumber.cpp
-│   │   ├── validIPv4address.cpp
-│   │   ├── xinput.txt
-│   │   └── xoutput.txt
-│   ├── 05 Bit Manipulation
-│   │   ├── NEW_countTotalSetBits.cpp
-│   │   ├── numberOfSetBits.cpp
-│   │   ├── singleNumber2.cpp
-│   │   ├── xinput.txt
-│   │   └── xoutput.txt
-│   ├── 12 Trees
-│   │   ├── BinaryTreeNode.hpp
-│   │   └── CNBinaryTree.hpp
-│   └── Contests
-│       └── CodeDriftAugust
-│           ├── n1.cpp
-│           ├── n2.cpp
-│           ├── n3B.cpp
-│           ├── n3.cpp
-│           ├── n4.cpp
-│           ├── n5.cpp
-│           ├── xinput.txt
-│           └── xoutput.txt
+│   ├── Contests
+│   │   ├── CodeDrift27August22
+│   │   │   ├── n1
+│   │   │   ├── n1.cpp
+│   │   │   ├── n2.cpp
+│   │   │   ├── n3B.cpp
+│   │   │   ├── n3.cpp
+│   │   │   ├── n4.cpp
+│   │   │   ├── n5.cpp
+│   │   │   ├── xinput.txt
+│   │   │   └── xoutput.txt
+│   │   └── CodeDriftXAugust21
+│   │       ├── n1.cpp
+│   │       ├── n2.cpp
+│   │       ├── n3B.cpp
+│   │       ├── n3.cpp
+│   │       ├── n4.cpp
+│   │       ├── n5.cpp
+│   │       ├── xinput.txt
+│   │       └── xoutput.txt
+│   └── DSA
+│       ├── 01 Arrays
+│       │   ├── FindDuplicateInArray.cpp
+│       │   ├── KthRowOfPascalTriangle.cpp
+│       │   ├── MaximumAbsoluteDifference.cpp
+│       │   ├── MinimumLightsToActivate.cpp
+│       │   ├── MinStepsInInfiniteGrid.cpp
+│       │   ├── NEW_MaximumSumTriplet.cpp
+│       │   ├── PerfectPeakOfArr.cpp
+│       │   ├── SmallestPositiveInteger.cpp
+│       │   ├── SpiralOrderMatrix1.cpp
+│       │   ├── xinput.txt
+│       │   └── xoutput.txt
+│       ├── 02 Math
+│       │   ├── allFactors.cpp
+│       │   ├── binaryRepresentation.cpp
+│       │   ├── distributeInCircle.cpp
+│       │   ├── ExcelColumnTitle.cpp
+│       │   ├── hammingDistance.cpp
+│       │   ├── isPower.cpp
+│       │   ├── sieveOfEratosthenes.cpp
+│       │   ├── totalBishopMoves.cpp
+│       │   ├── xinput.txt
+│       │   └── xoutput.txt
+│       ├── 03 BInary Search
+│       │   ├── NEW_woodCut.cpp
+│       │   ├── searchInBitonicArray.cpp
+│       │   ├── smallerOrUpperElements.cpp
+│       │   ├── xinput.txt
+│       │   └── xoutput.txt
+│       ├── 04 Strings
+│       │   ├── amazingSubarrays.cpp
+│       │   ├── atoi.cpp
+│       │   ├── compareVersionNunmber.cpp
+│       │   ├── implementStrStr.cpp
+│       │   ├── longestCommonPrefix.cpp
+│       │   ├── NEW_rotationTimes.cpp
+│       │   ├── NEW_validNumber.cpp
+│       │   ├── validIPv4address.cpp
+│       │   ├── xinput.txt
+│       │   └── xoutput.txt
+│       ├── 05 Bit Manipulation
+│       │   ├── NEW_countTotalSetBits.cpp
+│       │   ├── numberOfSetBits.cpp
+│       │   ├── singleNumber2.cpp
+│       │   ├── xinput.txt
+│       │   └── xoutput.txt
+│       └── 12 Trees
+│           ├── BinaryTreeNode.hpp
+│           └── CNBinaryTree.hpp
 ├── LeetCode
-│   ├── Algorithms
-│   │   ├── Backtracking
-│   │   │   └── 0046h_Permutations.cpp
-│   │   └── DP
-│   │       └── 1039_min_score_triangulation.cpp
-│   ├── Data Structures
-│   │   ├── Arrays
-│   │   │   ├── 0001_Two_sum.cpp
-│   │   │   ├── 0053_Kadanes_Algo_max_sum_subarray.cpp
-│   │   │   ├── 0121_Stock_buy_and_sell.cpp
-│   │   │   └── 0287_find_duplicate_in_array.cpp
-│   │   └── Trees
-│   │       └── 098_is_valid_BST.cpp
+│   ├── 1039.minimum-score-triangulation-of-polygon.cpp
+│   ├── 121.best-time-to-buy-and-sell-stock.cpp
+│   ├── 1.two-sum.cpp
+│   ├── 226.invert-binary-tree.cpp
+│   ├── 523.continuous-subarray-sum.cpp
+│   ├── 53.maximum-subarray.cpp
+│   ├── 98.validate-binary-search-tree.cpp
 │   ├── xinput.txt
 │   └── xoutput.txt
 ├── README.md
 ├── Resources
 │   ├── Guides
 │   │   ├── FINAL450.xlsx
-│   │   ├── GUIDE TO COMPETITIVE PROGRAMMING_.pdf
-│   │   └── Software Testing and Analysis (CSE 4020)RCS.pdf
+│   │   └── GUIDE TO COMPETITIVE PROGRAMMING_.pdf
 │   ├── Snippets
 │   │   ├── changeLettersToNumbers.py
 │   │   ├── multispace_scanning.cpp
@@ -1133,7 +1322,17 @@ solve_problem_optimised()
 │   │   └── xoutput.txt
 │   └── Templates
 │       ├── bit_magic.cpp
+│       ├── CP
+│       │   ├── BitManipulation.cpp
+│       │   ├── NumberTheory.cpp
+│       │   └── SegmentTree.cpp
 │       ├── cpp.tmpl
+│       ├── DSA
+│       │   ├── BinarySearchTree.cpp
+│       │   ├── BinaryTree.cpp
+│       │   ├── GraphUnweighted.cpp
+│       │   ├── GraphWeighted.cpp
+│       │   └── LinkedList.cpp
 │       └── sublime_io_template.cpp
 ├── snakeToCamel.sh
 ├── SPOJ
@@ -1167,17 +1366,50 @@ solve_problem_optimised()
 │   ├── xinput.txt
 │   └── xoutput.txt
 ├── temp
-│   ├── nA.cpp
-│   ├── nB.cpp
-│   ├── nC
-│   ├── nC.cpp
-│   ├── nD.cpp
-│   ├── nE.cpp
-│   ├── Solution.java
-│   ├── tempCodeRunnerFile.cpp
-│   ├── temp.py
-│   ├── xinput.txt
-│   └── xoutput.txt
+│   ├── backtracking
+│   │   ├── nA.cpp
+│   │   ├── nB.cpp
+│   │   ├── nC.cpp
+│   │   ├── nD.cpp
+│   │   ├── nE.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   ├── icpc
+│   │   ├── nA.cpp
+│   │   ├── nB.cpp
+│   │   ├── nC.cpp
+│   │   ├── nD.cpp
+│   │   ├── nE.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   ├── set01
+│   │   ├── nA
+│   │   ├── nA.cpp
+│   │   ├── nB
+│   │   ├── nB.cpp
+│   │   ├── nC
+│   │   ├── nC.cpp
+│   │   ├── nD.cpp
+│   │   ├── nE.cpp
+│   │   ├── Solution.java
+│   │   ├── temp.py
+│   │   ├── xerror.txt
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   └── set02
+│       ├── nA
+│       ├── nA.cpp
+│       ├── nB
+│       ├── nB.cpp
+│       ├── nC
+│       ├── nC.cpp
+│       ├── nD
+│       ├── nD.cpp
+│       ├── nE
+│       ├── nE.cpp
+│       ├── xerror.txt
+│       ├── xinput.txt
+│       └── xoutput.txt
 ├── Unclassified
 │   ├── New
 │   │   ├── add-two-ll.cpp
@@ -1350,5 +1582,5 @@ solve_problem_optimised()
                     ├── xinput.txt
                     └── xoutput.txt
 
-221 directories, 1079 files
+242 directories, 1289 files
 ```

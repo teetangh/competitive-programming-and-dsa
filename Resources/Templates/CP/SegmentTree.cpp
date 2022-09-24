@@ -2,14 +2,14 @@ template <typename T>
 class SegmentTree
 {
 public:
-    SegmentTree(int n)
+    SegmentTree(T n)
     {
         this->n = n;
-        this->tree = new int[4 * n];
-        this->lazy = new int[4 * n];
+        this->tree = new T[4 * n];
+        this->lazy = new T[4 * n];
         this->build(1, 0, n - 1);
     }
-    void build(int node, int start, int end)
+    void build(T node, T start, T end)
     {
         if (start == end)
         {
@@ -17,13 +17,13 @@ public:
         }
         else
         {
-            int mid = (start + end) / 2;
+            T mid = (start + end) / 2;
             build(2 * node, start, mid);
             build(2 * node + 1, mid + 1, end);
             tree[node] = tree[2 * node] + tree[2 * node + 1];
         }
     }
-    void update(int node, int start, int end, int l, int r, int val)
+    void update(T node, T start, T end, T l, T r, T val)
     {
         if (lazy[node] != 0)
         {
@@ -47,12 +47,12 @@ public:
             }
             return;
         }
-        int mid = (start + end) / 2;
+        T mid = (start + end) / 2;
         update(2 * node, start, mid, l, r, val);
         update(2 * node + 1, mid + 1, end, l, r, val);
         tree[node] = tree[2 * node] + tree[2 * node + 1];
     }
-    int query(int node, int start, int end, int l, int r)
+    T query(T node, T start, T end, T l, T r)
     {
         if (start > end || start > r || end < l)
             return 0;
@@ -68,14 +68,14 @@ public:
         }
         if (start >= l && end <= r)
             return tree[node];
-        int mid = (start + end) / 2;
-        int p1 = query(2 * node, start, mid, l, r);
-        int p2 = query(2 * node + 1, mid + 1, end, l, r);
+        T mid = (start + end) / 2;
+        T p1 = query(2 * node, start, mid, l, r);
+        T p2 = query(2 * node + 1, mid + 1, end, l, r);
         return (p1 + p2);
     }
 
 private:
-    int n;
-    int *tree;
-    int *lazy;
+    T n;
+    T *tree;
+    T *lazy;
 };
