@@ -46,7 +46,7 @@ solve_problem_optimised()
 - Codechef
 - Codeforces
 
-# Index Last Updated on Fri 12 Aug 16:29:44 IST 2022
+# Index Last Updated on Wed 12 Oct 22:53:47 IST 2022
 
 ```
 .
@@ -70,8 +70,6 @@ solve_problem_optimised()
 │   │   │       ├── nD.cpp
 │   │   │       ├── nE
 │   │   │       ├── nE.cpp
-│   │   │       ├── nF.cpp
-│   │   │       ├── nG.cpp
 │   │   │       ├── xerror.txt
 │   │   │       ├── xinput.txt
 │   │   │       └── xoutput.txt
@@ -80,7 +78,6 @@ solve_problem_optimised()
 │   │   │   │   ├── 1.cpp
 │   │   │   │   ├── 2.cpp
 │   │   │   │   ├── 3.cpp
-│   │   │   │   ├── 4.cpp
 │   │   │   │   ├── xinput.txt
 │   │   │   │   └── xoutput.txt
 │   │   │   ├── 2022 August 18 Lunchtime Division 4
@@ -91,10 +88,7 @@ solve_problem_optimised()
 │   │   │   │   ├── nD
 │   │   │   │   ├── nD.cpp
 │   │   │   │   ├── nE
-│   │   │   │   ├── nE.cpp
 │   │   │   │   ├── nF
-│   │   │   │   ├── nF.cpp
-│   │   │   │   ├── xinput.txt
 │   │   │   │   └── xoutput.txt
 │   │   │   └── 2022 August 22 Lunchtime Division 4
 │   │   │       ├── nA
@@ -145,12 +139,10 @@ solve_problem_optimised()
 │   │       ├── #50-div3
 │   │       │   ├── nA
 │   │       │   ├── nA.cpp
-│   │       │   ├── nB.cpp
 │   │       │   ├── nC
 │   │       │   ├── nC.cpp
 │   │       │   ├── nD
 │   │       │   ├── nD.cpp
-│   │       │   ├── nE.cpp
 │   │       │   ├── tempCodeRunnerFile.cpp
 │   │       │   ├── xinput.txt
 │   │       │   └── xoutput.txt
@@ -177,7 +169,6 @@ solve_problem_optimised()
 │   │       │   ├── nD.cpp
 │   │       │   ├── nE
 │   │       │   ├── nE.cpp
-│   │       │   ├── xerror.txt
 │   │       │   ├── xinput.txt
 │   │       │   └── xoutput.txt
 │   │       ├── #54-div3
@@ -187,8 +178,6 @@ solve_problem_optimised()
 │   │       │   ├── nB.cpp
 │   │       │   ├── nC
 │   │       │   ├── nC.cpp
-│   │       │   ├── nD.cpp
-│   │       │   ├── nE.cpp
 │   │       │   ├── xerror.txt
 │   │       │   ├── xinput.txt
 │   │       │   └── xoutput.txt
@@ -204,21 +193,25 @@ solve_problem_optimised()
 │   │       │   ├── nE.cpp
 │   │       │   ├── nF
 │   │       │   ├── nF.cpp
-│   │       │   ├── nG.cpp
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       ├── #56-div3
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC
+│   │       │   ├── nC.cpp
 │   │       │   ├── xerror.txt
 │   │       │   ├── xinput.txt
 │   │       │   └── xoutput.txt
-│   │       └── #56-div3
+│   │       └── #60-div3
+│   │           ├── nA
 │   │           ├── nA.cpp
 │   │           ├── nB
 │   │           ├── nB.cpp
 │   │           ├── nC
 │   │           ├── nC.cpp
 │   │           ├── nD.cpp
-│   │           ├── nE.cpp
-│   │           ├── nF.cpp
-│   │           ├── nG.cpp
-│   │           ├── xerror.txt
 │   │           ├── xinput.txt
 │   │           └── xoutput.txt
 │   ├── Problems
@@ -309,33 +302,19 @@ solve_problem_optimised()
 │   │       │   └── xoutput.txt
 │   │       ├── #740-div2
 │   │       │   ├── nA.cpp
-│   │       │   ├── xinput.txt
-│   │       │   └── xoutput.txt
+│   │       │   └── xinput.txt
 │   │       ├── #810-div2
-│   │       │   ├── nA.cpp
-│   │       │   ├── nB.cpp
-│   │       │   ├── nC.cpp
-│   │       │   ├── nD.cpp
-│   │       │   ├── nE.cpp
-│   │       │   ├── xinput.txt
-│   │       │   └── xoutput.txt
 │   │       ├── #815-div2
 │   │       │   ├── nA
 │   │       │   ├── nA.cpp
 │   │       │   ├── nB.cpp
-│   │       │   ├── nC.cpp
-│   │       │   ├── nD.cpp
-│   │       │   ├── nE.cpp
 │   │       │   ├── xinput.txt
 │   │       │   └── xoutput.txt
 │   │       ├── #816-div2
 │   │       │   ├── nA
 │   │       │   ├── nA.cpp
-│   │       │   ├── nB.cpp
 │   │       │   ├── nC
 │   │       │   ├── nC.cpp
-│   │       │   ├── nD.cpp
-│   │       │   ├── nE.cpp
 │   │       │   ├── xinput.txt
 │   │       │   └── xoutput.txt
 │   │       ├── #817-div4
@@ -349,26 +328,27 @@ solve_problem_optimised()
 │   │       │   ├── nD.cpp
 │   │       │   ├── nE
 │   │       │   ├── nE.cpp
-│   │       │   ├── xerror.txt
 │   │       │   ├── xinput.txt
 │   │       │   └── xoutput.txt
 │   │       ├── #818-div2
 │   │       │   ├── A.class
 │   │       │   └── nB
-│   │       └── #820-div3
+│   │       ├── #820-div3
+│   │       │   ├── nA
+│   │       │   ├── nA.cpp
+│   │       │   ├── nB
+│   │       │   ├── nB.cpp
+│   │       │   ├── nC
+│   │       │   ├── nC.cpp
+│   │       │   ├── xerror.txt
+│   │       │   ├── xinput.txt
+│   │       │   └── xoutput.txt
+│   │       └── #826-div3
 │   │           ├── nA
 │   │           ├── nA.cpp
 │   │           ├── nB
 │   │           ├── nB.cpp
-│   │           ├── nC
-│   │           ├── nC.cpp
-│   │           ├── nD.cpp
-│   │           ├── nE.cpp
-│   │           ├── nF.cpp
-│   │           ├── nG.cpp
-│   │           ├── xerror.txt
-│   │           ├── xinput.txt
-│   │           └── xoutput.txt
+│   │           └── xinput.txt
 │   └── problem-set
 │       ├── 0001A_theatre_square.cpp
 │       ├── 0004C_registration_system.cpp
@@ -520,8 +500,6 @@ solve_problem_optimised()
 │   │   │   │   ├── prog04pairStar.cpp
 │   │   │   │   └── prog05towerOfHanoi.cpp
 │   │   │   ├── Recursion 1
-│   │   │   │   ├── new06fibonacciRecursion.cpp
-│   │   │   │   ├── new07isSortedRecursion.cpp
 │   │   │   │   ├── prog01factorial.cpp
 │   │   │   │   ├── prog02factorial2.cpp
 │   │   │   │   ├── prog03power.cpp
@@ -785,8 +763,7 @@ solve_problem_optimised()
 │   │   │   ├── prog009constantReferences.cpp
 │   │   │   ├── prog010constantPointers.cpp
 │   │   │   ├── prog012constantPointers2.cpp
-│   │   │   ├── xinput.txt
-│   │   │   └── xoutput.txt
+│   │   │   └── xinput.txt
 │   │   ├── 05 10 Recursion
 │   │   │   ├── Recursion 1 Basic
 │   │   │   │   ├── prog001factorial.cpp
@@ -827,8 +804,7 @@ solve_problem_optimised()
 │   │   │       ├── xinput.txt
 │   │   │       └── xoutput.txt
 │   │   ├── 06 Time and Space Complexity Analysis
-│   │   │   ├── new001mergeSortTimeAnalysis.cpp
-│   │   │   └── xoutput.txt
+│   │   │   └── new001mergeSortTimeAnalysis.cpp
 │   │   ├── 07 Language Tools
 │   │   │   ├── prog001removeDuplicates.cpp
 │   │   │   ├── prog002firstNonRepearingCharcterOfString.cpp
@@ -854,7 +830,6 @@ solve_problem_optimised()
 │   │   │   ├── new003rotateArray.cpp
 │   │   │   ├── new004findTheUniqueElement.cpp
 │   │   │   ├── new006pairSum.cpp
-│   │   │   ├── new007longestConsecutiveSubsequence.cpp
 │   │   │   ├── prog002tripletSum.cpp
 │   │   │   ├── prog005digitSum.cpp
 │   │   │   ├── xinput.txt
@@ -1001,7 +976,6 @@ solve_problem_optimised()
 │   └── Very important.png
 ├── Codility
 │   ├── count_operations.cpp
-│   ├── xinput.txt
 │   └── xoutput.txt
 ├── CSES
 │   ├── 01-introductory
@@ -1013,13 +987,11 @@ solve_problem_optimised()
 │   │   ├── prog003repititions.cpp
 │   │   ├── prog004increasingArray
 │   │   ├── prog004increasingArray.cpp
-│   │   ├── xerror.txt
 │   │   ├── xinput.txt
 │   │   └── xoutput.txt
 │   └── 02-searching-sorting
 │       ├── prog001distinctNumbers
 │       ├── prog001distinctNumbers.cpp
-│       ├── xerror.txt
 │       ├── xinput.txt
 │       └── xoutput.txt
 ├── data_type_ranges.jpeg
@@ -1046,7 +1018,6 @@ solve_problem_optimised()
 │   │   │   ├── MaxSumRectangles.cpp
 │   │   │   ├── MinimumNumberOfCoins.cpp
 │   │   │   ├── MinimumSubsetSumDifference_DP_BU.cpp
-│   │   │   ├── NEWCountNstairsWithOrder.cpp
 │   │   │   ├── NEWNCr2.cpp
 │   │   │   ├── NEWNCr.cpp
 │   │   │   ├── ReachGivenCoins.cpp
@@ -1165,10 +1136,6 @@ solve_problem_optimised()
 │   │   └── August 23 Cicuits 2022
 │   │       ├── nA
 │   │       ├── nA.cpp
-│   │       ├── nB.cpp
-│   │       ├── nC.cpp
-│   │       ├── nD.cpp
-│   │       ├── nE.cpp
 │   │       ├── xinput.txt
 │   │       └── xoutput.txt
 │   └── Data Structures
@@ -1233,12 +1200,9 @@ solve_problem_optimised()
 │   ├── Contests
 │   │   ├── CodeDrift27August22
 │   │   │   ├── n1
-│   │   │   ├── n1.cpp
 │   │   │   ├── n2.cpp
 │   │   │   ├── n3B.cpp
 │   │   │   ├── n3.cpp
-│   │   │   ├── n4.cpp
-│   │   │   ├── n5.cpp
 │   │   │   ├── xinput.txt
 │   │   │   └── xoutput.txt
 │   │   └── CodeDriftXAugust21
@@ -1246,8 +1210,6 @@ solve_problem_optimised()
 │   │       ├── n2.cpp
 │   │       ├── n3B.cpp
 │   │       ├── n3.cpp
-│   │       ├── n4.cpp
-│   │       ├── n5.cpp
 │   │       ├── xinput.txt
 │   │       └── xoutput.txt
 │   └── DSA
@@ -1367,21 +1329,9 @@ solve_problem_optimised()
 │   └── xoutput.txt
 ├── temp
 │   ├── backtracking
-│   │   ├── nA.cpp
-│   │   ├── nB.cpp
-│   │   ├── nC.cpp
-│   │   ├── nD.cpp
-│   │   ├── nE.cpp
-│   │   ├── xinput.txt
-│   │   └── xoutput.txt
+│   │   └── nA.cpp
 │   ├── icpc
-│   │   ├── nA.cpp
-│   │   ├── nB.cpp
-│   │   ├── nC.cpp
-│   │   ├── nD.cpp
-│   │   ├── nE.cpp
-│   │   ├── xinput.txt
-│   │   └── xoutput.txt
+│   │   └── nA.cpp
 │   ├── set01
 │   │   ├── nA
 │   │   ├── nA.cpp
@@ -1393,20 +1343,26 @@ solve_problem_optimised()
 │   │   ├── nE.cpp
 │   │   ├── Solution.java
 │   │   ├── temp.py
-│   │   ├── xerror.txt
 │   │   ├── xinput.txt
 │   │   └── xoutput.txt
-│   └── set02
-│       ├── nA
+│   ├── set02
+│   │   ├── nA
+│   │   ├── nA.cpp
+│   │   ├── nB
+│   │   ├── nB.cpp
+│   │   ├── nC
+│   │   ├── nC.cpp
+│   │   ├── nD
+│   │   ├── nD.cpp
+│   │   ├── nE
+│   │   ├── nE.cpp
+│   │   ├── xinput.txt
+│   │   └── xoutput.txt
+│   └── test
 │       ├── nA.cpp
 │       ├── nB
 │       ├── nB.cpp
-│       ├── nC
 │       ├── nC.cpp
-│       ├── nD
-│       ├── nD.cpp
-│       ├── nE
-│       ├── nE.cpp
 │       ├── xerror.txt
 │       ├── xinput.txt
 │       └── xoutput.txt
@@ -1460,8 +1416,7 @@ solve_problem_optimised()
     │   │   │   ├── prog033_matrix_chain_multiplication_DP_top_down_recursive_only.cpp
     │   │   │   ├── prog034A_matrix_chain_multiplication_DP_top_down_recursive_memoization.cpp
     │   │   │   ├── prog034Bn_matrix_chain_multiplication_DP_bottom_up_iterative.cpp
-    │   │   │   ├── xinput.txt
-    │   │   │   └── xoutput.txt
+    │   │   │   └── xinput.txt
     │   │   └── DP Part 1 CodeNCode
     │   │       ├── prog01staircase.cpp
     │   │       ├── prog02staircase2.cpp
@@ -1495,8 +1450,6 @@ solve_problem_optimised()
     │           │   ├── bubbleSort.c
     │           │   ├── heapANDheapSort.c
     │           │   ├── insertionSort.c
-    │           │   ├── mergeSort.c
-    │           │   ├── quickSort.c
     │           │   └── selectionSort.c
     │           └── shelllSort.c
     ├── Basic DS
@@ -1514,8 +1467,6 @@ solve_problem_optimised()
     │   │   │   ├── new15longestPathInTreeORdiameterOfGRaph.cpp
     │   │   │   ├── new19primePath.cpp
     │   │   │   ├── new20feasiblePath.cpp
-    │   │   │   ├── new27submerge.cpp
-    │   │   │   ├── new30sandroLexicographicalTopsort.cpp
     │   │   │   ├── prog02graph.cpp
     │   │   │   ├── prog03dfs.cpp
     │   │   │   ├── prog04connectedComponents.cpp
@@ -1541,12 +1492,10 @@ solve_problem_optimised()
     │   │       ├── prog002LCA.cpp
     │   │       ├── prog003LCABinaryLifting.cpp
     │   │       ├── prog004distanceBetweenTwoNodes.cpp
-    │   │       ├── xinput.txt
-    │   │       └── xoutput.txt
+    │   │       └── xinput.txt
     │   ├── Linked_List
     │   ├── Queues
     │   ├── Segment Trees
-    │   │   ├── CBsegmentTrees.cpp
     │   │   └── Code N Code
     │   │       ├── query.cpp
     │   │       └── segmentTree.cpp
@@ -1582,5 +1531,4 @@ solve_problem_optimised()
                     ├── xinput.txt
                     └── xoutput.txt
 
-242 directories, 1289 files
-```
+245 directories, 1235 files
