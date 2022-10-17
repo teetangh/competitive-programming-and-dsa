@@ -1,0 +1,4 @@
+firstZeroIndex 2
+slidingWindowSize 3
+firstZeroIndex 3
+slidingWindowSize 4
